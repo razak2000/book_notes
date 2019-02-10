@@ -1,0 +1,114 @@
+Because an option has a fixed expiration date, you should determine the time horizon of the move in the underlying stock as well as how far and how fast (velocity) the underlying stock will move. As a result, the best option strategy should involve a determination regarding the direction, timing, and velocity of a move in the underlying stock.
+
+A way to look at the difference between buying versus selling is that when you buy, your position can be profitable, at expiration, under one scenario, but if you sell, your position can be profitable under three scenarios.
+
+You should consider buying (going long) an option if you have confidence that you can predict the direction and magnitude of a stock move.
+
+You should consider selling (going short) an option if you are comfortable estimating a trading range and you want short-term statistical probabilities on your side.
+
+When you buy or sell an option, a key factor that will determine whether or not you profit from the trade is the strike price you choose.
+
+A short option, for example, achieves its maximum profit, at expiration, if the underlying stock finishes at or below the strike price of a call or at or above the strike price of a put.
+
+A short option can be structured so that it has a higher probability of success, but the downside is a lower relative premium collected, and you can lose more money than the premium collected.
+
+Delta can be used as a general guideline to determine what options are best to buy and sell. As a reminder, delta can be used to approximate the statistical probability of an option finishing in-the-money on the expiration date.
+
+Keep in mind that the statistical percentages are based on representative delta amounts and that delta can be viewed as a measurement of the likelihood that an option will finish (by $0.01) in-the-money.
+
+If you look closer at the delta numbers, you will realize that the statistical probabilities are naturally slanted in favor of the option seller.
+
+If the underlying stock moves sideways, the at-the-money or out-of-the-money option seller is allowed to earn the entire premium, and the buyer loses the entire premium.
+
+Therefore, delta does not equate to the probability of profiting, but instead is the probability of finishing in-the-money
+
+In general, buying an in-the-money option can enable you to benefit from a rise in a stock almost dollar for dollar, with a built-in limited risk feature and the ability to take advantage of leverage.
+
+Buying an at-the-money or out-of-the-money option has the benefit of lower cost, but if the underlying stock does not move far and fast enough, an option buyer may lose money because of time decay.
+
+Buying an option can make a lot of sense because the purchase of a deep-in-the-money call can serve as a proxy for owning stock, and a put can serve as a proxy for shorting stock.
+
+Buying a deep-in-the-money option can be a cost-effective, limited-risk strategy preferable to trading the underlying stock itself.
+
+depending on the rules in effect, the shorting of a stock may be subject to the uptick rule. The uptick rule does not permit the shorting of a stock unless the last trade was higher than the previous trade (an uptick). Buying a put can be an effective way to avoid the uptick rule if it is in effect.
+
+The object of selling an out-of-the-money option can be to make a limited but consistent profit, by stacking the statistical probability on your side.
+
+When you write an option, the option premium is your maximum profit (ignoring your ability to offset it and establish a new position) and is set at the time of sale. Option writing, as a result, offers the unique opportunity to know in advance the target profit from the transaction. As a result, you can establish a goal to earn a certain amount each month or quarter from the sale of options.
+
+When selling an out-of-the-money option, you should first determine where the underlying stock will not go; for instance, when you sell a far-out-of-the-money option, you are concerned about where stock prices will not be headed, which can be an easier task than determining where a stock is headed, when, and to what magnitude.
+
+When selling an option, you can still make money, even though your market prediction was incorrect, as long as there is not drastic movement in the stock in the wrong direction.
+
+Writing a far-out-of-the-money option can provide you with a statistical edge, where you can take advantage of time decay, while not having to worry about minor movements in the underlying stock.
+
+Selling an out-of-the-money option can be an appropriate strategy investment for a trader who is not comfortable predicting precisely the direction of an underlying stock, index, ETF, or futures.
+
+A far-out-of-the-money call option can usually be written at a fairly inexpensive price, it can offer a leveraged way to make a higher-probability trade and possibly consistent profit.
+
+Keep in mind that greater risk accompanies the potential for greater profit.
+
+Although the markets can have a tendency to move in a range or to trend, which creates an environment that can be attractive to option selling, the market can break out of its range or trend and create havoc (that is a euphemism for losing money) for option sellers.
+
+option sellers have a number of choices they can make; for instance, an option seller, like an option buyer, can offset his position in the marketplace at any time during regular trading hours.
+
+Also, an option seller can manage overall risk by buying and selling the underlying stock to hedge his current position or adding other options to limit risk.
+
+In general, when a trader enters into a short option position, he is required to post (have on deposit by the date set by the broker) an initial margin of an amount specified by the broker, exchange, or clearing organization.
+
+Thereafter, the position is monitored daily. If the amount of money in the margin account falls below the specified maintenance margin, the trader is required to take appropriate action to bring the account up to the initial margin level.
+
+Briefly, margin on equities is typically determined under the 20 percent standard margin or portfolio margin, and margin on futures is typically determined under the Standard Portfolio Analysis of Risk Assessment (SPAN) margining system.
+
+In general, under traditional margining rules, the minimum initial margin requirement for uncovered options is set at the option premium credited plus 20 or 25 percent (15 percent for a broad-based index) of the underlying security or index minus the amount the option is out-of-the-money, subject to a minimum.
+
+The 20 percent standard margin requirement is a strategy-based methodology that primarily uses the price of the underlying stock or index as a starting point.
+
+In contrast, portfolio margining is a method for computing margin option positions based on the risk profile of the account, rather than on fixed percentages, for qualified customers.
+
+The portfolio margining method uses a risk-based scheme, instead of a strategy-based scheme, by using theoretical pricing models to calculate the loss of a position at different price points above and below the current stock or index price.
+
+Futures margins are typically determined by the SPAN margining system, which takes into account all positions in a customer’s account and, in general, usually produces a lower margin requirement than the 20 percent standard margin methodology.
+
+For options, the margin is essentially a bookkeeping entry and does not represent the actual use of money. As a result, interest can be earned in an account for the full amount.
+
+Leverage and margin are interrelated because the margin requirement affects the amount of leverage allowed by a seller of an option.
+
+Buying an option does not automatically mean that you are bullish, and selling an option does not necessarily mean that you are bearish. Instead, if you are bullish, you can buy a call or sell a put, and if you are bearish, you can buy a put or sell a call.
+
+In general, if you buy an option, you want unlimited profit potential with limited risk, and if you sell an option, you want a high probability of success in exchange for limited profit potential (with unlimited risk).
+
+Although a long call and a short put are bullish strategies, the similarities, risks, and rewards seem to end there
+
+buying a call is a limited-risk strategy, and selling a put is an unlimited-risk strategy
+
+Which strategy is better in your particular circumstance depends on your risk profile, time frame, and anticipated magnitude of the move.
+
+If you are bullish in the short run, then the purchase of a call may be appropriate; however, if you are bullish but believe that the underlying stock can fluctuate to a lower level and that it will take time for the bullish move to occur, then selling an out-of-the-money put may be appropriate.
+
+A long put and a short call are bearish strategies but have opposite risks and rewards. For example, buying a put is a limited-risk strategy, and selling a call is an unlimited-risk strategy.
+
+If you are bearish in the short run, then the purchase of a put may be appropriate; however, if you are bearish but believe that the underlying stock can fluctuate to a higher level and that it will take time for the bearish move to occur, then selling an out-of-the-money call may be appropriate.
+
+You should be familiar with rolling options. When you roll an option position, you offset your current position and reestablish a new position on the same underlying stock.
+
+In some cases, you may offset your current position because there are only a few days left in an option’s expiration cycle and you are interested in reestablishing a new position in the subsequent expiration month.
+
+In other cases, you may roll options to minimize risk, cut losses, and/or take into account your new view of the market.
+
+When rolling, you can establish the new position with the same or a different number of options and with the same or a different strike price and expiration date. You are readjusting your option positions to take advantage of opportunities, play defense, or take into account new market conditions.
+
+Rolling up occurs when one position is closed out at a lower strike price and another position is opened at a higher strike price (offset long February 100 call and buy February 110 call).
+
+Rolling down means closing out one option at one strike price and simultaneously opening another option at a lower strike price (offset long February 100 put and buy February 95 put).
+
+Rolling out means one option position is closed at a near-term expiration date and another position is opened at the same strike but at a longer-term expiration date (offset long February 100 call and buy March 100 call).
+
+Rolling back is when an investor replaces an old option position with a new one having an earlier expiration date and the same strike price (offset long March 100 call and buy February 100 call).
+
+Flipping (I made up this term) occurs by closing out a call option and simultaneously opening a put option to change directions (offset short February 105 call and sell February 95 put) or by closing out a put option and simultaneously opening a call option to change directions (offset short February 95 put and sell February 105 call).
+
+
+
+
+

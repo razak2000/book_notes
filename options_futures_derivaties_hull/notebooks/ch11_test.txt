@@ -1,0 +1,287 @@
+There are six factors affecting the price of a stock option:
+    1. The current stock price, S 0
+    2. The strike price, K
+    3. The time to expiration, T
+    4. The volatility of the stock price, 
+    5. The risk-free interest rate, r
+    6. The dividends that are expected to be paid.
+
+If a call option is exercised at some future time, the payoff will be the amount by which
+the stock price exceeds the strike price. Call options therefore become more valuable as
+the stock price increases and less valuable as the strike price increases.
+
+For a put option,
+the payoff on exercise is the amount by which the strike price exceeds the stock price.
+Put options therefore behave in the opposite way from call options: they become less
+valuable as the stock price increases and more valuable as the strike price increases.
+
+Both put and call American options
+become more valuable (or at least do not decrease in value) as the time to expiration
+increases.
+
+The long-life option must therefore
+always be worth at least as much as the short-life option.
+
+Although European put and call options usually become more valuable as the time
+to expiration increases (see Figure 11.1e, f), this is not always the case.
+
+The dividend will cause the stock price to decline, so that the short-life option
+could be worth more than the long-life option
+
+Roughly
+speaking, the volatility of a stock price is a measure of how uncertain we are about
+future stock price movements.
+
+As volatility increases, the chance that the stock will do
+very well or very poorly increases. For the owner of a stock, these two outcomes tend to
+offset each other.
+
+The owner of a
+call benefits from price increases but has limited downside risk in the event of price
+decreases because the most the owner can lose is the price of the option. Similarly, the
+owner of a put benefits from price decreases, but has limited downside risk in the event
+of price increases.
+
+The values of both calls and puts therefore increase as volatility
+increases
+
+The risk-free interest rate affects the price of an option in a less clear-cut way.
+
+As
+interest rates in the economy increase, the expected return required by investors from
+the stock tends to increase.
+
+In addition, the present value of any future cash flow
+received by the holder of the option decreases.
+
+The combined impact of these two
+effects is to increase the value of call options and decrease the value of put options
+
+It is important to emphasize that we are assuming that interest rates change while all
+other variables stay the same.
+In practice, when interest rates rise
+(fall), stock prices tend to fall (rise)
+
+The combined effect of an interest rate increase and
+the accompanying stock price decrease can be to decrease the value of a call option and
+increase the value of a put option. Similarly, the combined effect of an interest rate
+decrease and the accompanying stock price increase can be to increase the value of a
+call option and decrease the value of a put option.
+
+Dividends have the effect of reducing the stock price on the ex-dividend date. This is
+bad news for the value of call options and good news for the value of put options.
+
+Consider a dividend whose ex-dividend date is during the life of an option. The value of
+the option is negatively related to the size of the dividend if the option is a call and
+positively related to the size of the dividend if the option is a put.
+
+11.2
+We assume that there are some market participants,
+such as large investment banks, for which the following statements are true:
+    1. There are no transaction costs.
+    2. All trading profits (net of trading losses) are subject to the same tax rate.
+    3. Borrowing and lending are possible at the risk-free interest rate.
+
+For the purposes of our
+analysis, it is therefore reasonable to assume that there are no arbitrage opportunities.
+
+It should be noted that r is the nominal risk-free rate of interest, not the real risk-free
+rate of interest. The real rate of interest is the rate of interest earned after adjustment for the effects of inflation.
+
+11.3
+If an option price is above the upper bound or below the lower bound,
+then there are profitable opportunities for arbitrageurs.
+
+No matter what happens, the option can never be worth more
+than the stock. Hence, the stock price is an upper bound to the option price:
+
+No matter how low the stock price becomes, the option can never be worth more
+than K.
+
+For European options, we know that at maturity the option cannot be worth more
+than K. It follows that it cannot be worth more than the present value of K today:
+
+    p 6 Ke rT
+
+A lower bound for the price of a European call option on a non-dividend-paying stock is
+S 0  Ke rT
+
+
+For a European put option on a non-dividend-paying stock, a lower bound for the
+price is
+Ke rT  S 0
+
+11.4
+We now derive an important relationship between the prices of European put and call
+options that have the same strike price and time to maturity.
+
+The components of portfolio A are worth c and Ke rT today, and the components of
+portfolio C are worth p and S 0 today.
+
+Hence,
+c þ Ke rT 1⁄4 p þ S 0
+This relationship is known as put–call parity
+
+It shows that the value of a European call
+with a certain exercise price and exercise date can be deduced from the value of a
+European put with the same exercise price and exercise date, and vice versa.
+
+Put–call parity holds only for European options. However, it is possible to derive some
+results for American option prices.
+
+It can be shown (see Problem 11.18) that, when
+there are no dividends,
+ð11:7Þ
+S 0  K 6 C  P 6 S 0  Ke rT
+
+11.5
+In this section, we first show that it is never optimal to exercise an American call option
+on a non-dividend-paying stock before the expiration date.
+
+Because the owner of an American call has all the exercise opportunities open to the
+owner of the corresponding European call, we must have C > c.
+
+Hence,
+C > S 0  Ke rT
+
+Given r > 0, it follows that C > S 0  K when T > 0. This means that C is always greater
+than the option’s intrinsic value prior to maturity. If it were optimal to exercise at a
+particular time prior to maturity, C would equal the option’s intrinsic value at that
+time. It follows that it can never be optimal to exercise early.
+
+To summarize, there are two reasons an American call on a non-dividend-paying
+stock should not be exercised early.
+
+One relates to the insurance that it provides. A call
+option, when held instead of the stock itself, in effect insures the holder against the
+stock price falling below the strike price.
+Once the option has been exercised and the
+strike price has been exchanged for the stock price, this insurance vanishes.
+
+The other
+reason concerns the time value of money. From the perspective of the option holder,
+the later the strike price is paid out the better.
+
+Because American call options are never exercised early when there are no dividends,
+they are equivalent to European call options, so that C 1⁄4 c
+
+11.6
+It can be optimal to exercise an American put option on a non-dividend-paying stock
+early.
+
+Indeed, at any given time during its life, the put option should always be exercised
+early if it is sufficiently deep in the money.
+
+Like a call option, a put option can be viewed as providing insurance.
+
+A put option,
+when held in conjunction with the stock, insures the holder against the stock price
+falling below a certain level.
+
+However, a put option is different from a call option in that
+it may be optimal for an investor to forgo this insurance and exercise early in order to
+realize the strike price immediately.
+
+In general, the early exercise of a put option
+becomes more attractive as S 0 decreases, as r increases, and as the volatility decreases.
+
+From equations (11.3) and (11.5), lower and upper bounds for a European put option
+when there are no dividends are given by
+maxðKe rT  S 0 ; 0Þ 6 p 6 Ke rT
+
+For an American put option on a non-dividend-paying stock, the condition
+P > maxðK  S 0 ; 0Þ
+must apply because the option can be exercised at any time.
+
+Using the result
+in equation (11.2), bounds for an American put option on a non-dividend-paying
+stock are
+maxðK  S 0 ; 0Þ 6 P 6 K
+
+As we argued earlier, provided that r > 0, it is always optimal to exercise
+an American put immediately when the stock price is sufficiently low.
+
+When early
+exercise is optimal, the value of the option is K  S 0 .
+
+Because there are some circumstances when it is desirable to exercise an American
+put option early, it follows that an American put option is always worth more than the
+corresponding European put option.
+
+Furthermore, because an American put is some-
+times worth its intrinsic value (see Figure 11.6), it follows that a European put option
+must sometimes be worth less than its intrinsic value.
+
+This means that the curve
+representing the relationship between the put price and the stock price for a European
+option must be below the corresponding curve for an American option.
+
+11.7
+We assume that the dividends that will be paid during the life of the option
+are known
+
+A similar argument to the one used to derive equation (11.4) shows that
+c > maxðS 0  D  Ke rT ; 0Þ
+
+A similar argument to the one used to derive equation (11.5) shows that
+p > maxðD þ Ke rT  S 0 ; 0Þ
+
+When dividends are expected, we can no longer assert that an American call option will
+not be exercised early.
+
+Sometimes it is optimal to exercise an American call immediately
+prior to an ex-dividend date. It is never optimal to exercise a call at other times.
+
+Comparing the value at option maturity of the redefined portfolios A and C shows that,
+with dividends, the put–call parity result in equation (11.6) becomes
+c þ D þ Ke rT 1⁄4 p þ S 0
+
+Dividends cause equation (11.7) to be modified (see Problem 11.19) to
+S 0  D  K 6 C  P 6 S 0  Ke rT
+
+SUMMARY
+There are six factors affecting the value of a stock option: the current stock price, the
+strike price, the time to expiration, the stock price volatility, the risk-free interest rate,
+and the dividends expected during the life of the option.
+
+The value of a call usually
+increases as the current stock price, the time to expiration, the volatility, and the risk-
+free interest rate increase.
+
+The value of a call decreases as the strike price and expected
+dividends increase.
+
+he value of a put usually increases as the strike price, the time to
+expiration, the volatility, and the expected dividends increase.
+
+The value of a put
+decreases as the current stock price and the risk-free interest rate increase.
+
+A European call option on a non-dividend-paying stock must be worth more than
+maxðS 0  Ke rT ; 0Þ
+
+A European put option on a non-dividend-paying stock must be
+worth more than
+maxðKe rT  S 0 ; 0Þ
+
+When dividends with present value D will be paid, the lower bound for a European call
+option becomes
+maxðS 0  D  Ke rT ; 0Þ
+and the lower bound for a European put option becomes
+maxðKe rT þ D  S 0 ; 0Þ
+
+Put–call parity is a relationship between the price, c, of a European call option on a
+stock and the price, p, of a European put option on a stock.
+
+For a non-dividend-paying
+stock, it is
+c þ Ke rT 1⁄4 p þ S 0
+
+For a dividend-paying stock, the put–call parity relationship is
+c þ D þ Ke rT 1⁄4 p þ S 0
+
+Put–call parity does not hold for American options. However, it is possible to use
+arbitrage arguments to obtain upper and lower bounds for the difference between the
+price of an American call and the price of an American put.
+
+

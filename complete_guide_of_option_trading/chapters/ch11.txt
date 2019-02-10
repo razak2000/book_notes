@@ -1,0 +1,206 @@
+Each option spread strategy has its own unique risks, rewards, margin requirement, time frames, probabilities of success, and volatility characteristics. As a result, you should be able to tailor your spread strategy to your specific risk-reward profile and view of the markets; for example, you may not want to assume the unlimited risk of a naked option, so there are strategies that offer limited risk
+
+A vertical spread consists of the simultaneous purchase and sale of options with the same expiration date but different strike prices.
+
+A vertical spread consists of all calls or all puts.
+
+A vertical spread consists of options with the same expiration date but different strike prices. Each option is assumed to be in the same class (same expiration date, same underlying stock, and same type, meaning all calls or all puts).
+
+The term vertical, in this context, means the same expiration date (but different strike prices). “Vertical” in this sense is comparable to looking at an option chain in a newspaper and moving up and down (vertically) on the same page to select the options in the spread.
+
+A vertical spread is a strategy to trade options with defined and/or reduced risk.
+
+When the option purchased is more expensive than the option sold, a net debit results and is a vertical debit spread.
+
+When the option sold is at a price greater than the option purchased, a net credit results and is a vertical credit spread.
+
+To exit the spread, you can offset it in a closing transaction, exercise the long option if it is in-the-money, wait for assignment of the short option if it is in-the-money, let both legs expire worthless (if both are out-of-the-money at expiration), or offset one leg at a time.
+
+In a spread, you are, in effect, combining the characteristics of each option (delta, gamma, vega, and theta) into one trade. When you combine these characteristics and convert them to dollars, you have position Greeks; for example, when you combine the two opposing deltas of a vertical spread, you have a net delta (which can be stated in dollars).
+
+In a spread, every individual option has its own unique delta, gamma, and theta.
+
+In a vertical spread, you are long an option and short an option, and your overall position Greek is the net of both.
+
+In a vertical spread, the Greeks for the long leg are offset, in part, by the Greeks from the short leg.
+
+A vertical call debit spread consists of buying a call and selling a higher-strike call with the same expiration date.
+
+The purpose of such a spread is to profit from a bullish move at a reasonable cost
+
+To execute a call debit spread, you can, for example, buy an at-the-money call option and sell an out-of-the-money call option.
+
+ Alternatively, you can buy an out-of-the-money call option at one strike price and sell a further out-of-the-money call option at a higher strike price.
+
+In effect, in a call debit spread, you are subject to the risks and rewards of a long call, but you have limited profit potential from selling a call.
+
+A call debit spread can be considered a type of hedge but, in this case, you are hedging the high cost of the long option by offsetting a portion of its cost with the sale of another option.
+
+The maximum profit potential of a vertical debit spread, such as a call debit spread, is limited to the difference in the strike prices times the unit of measure (100 shares per contract for a stock) minus the premium paid.
+
+A call debit spread is bullish, has limited profit potential, has maximum profit occurring when the underlying stock expires at or above the higher exercise price at expiration, and has limited risk equal to the premium paid.
+
+The time decay of the long option typically exceeds the time decay of the short option, an increase in volatility typically increases the value of the long option more than the short option, and a decrease in volatility typically decreases the value of the long option more than the short option.
+
+The break-even point at expiration is where the underlying stock equals the lower strike price plus net debit.
+
+The full net premium must be paid at the time of purchase, and a debit is charged to your account. A call debit spread may be permitted in an IRA.
+
+If the stock price closes between the strike prices of the two option positions at expiration, your long call will be in-the-money and your short call will be out-of-the-money.
+
+Because the long call is in the money, you can offset it and let the short call expire worthless.
+
+If you offset the long leg of the spread, keep in mind that you are then carrying a naked short position, so you need to check with your brokerage firm to determine margin requirements.
+
+If the short option expires in-the-money, it may be assigned, but you are protected by the long call.
+
+A vertical put debit spread consists of buying a higher-strike put and selling a lower-strike put with the same expiration date. The purpose of such a spread is to profit from a bearish move at a reasonable cost.
+
+To execute a put debit spread, you can, for example, buy an at-the-money put option and sell an out-of-the-money put option. Alternatively, you can buy an out-of-the-money put option at one strike price and sell a further out-of-the-money put option at a lower strike price.
+
+In effect, in a put debit spread, you are subject to the risks and rewards of a long put, but you have limited profit potential by selling the put.
+
+A put debit spread can be considered a type of hedge but, in this case, you are hedging the high cost of the long option by offsetting a portion of its cost with the sale of another option.
+
+The maximum profit potential of a vertical debit spread, such as a put debit spread, is limited to the difference in the strike prices times the unit of measure (100 shares per contract for a stock) minus the premium paid.
+
+A put debit spread is bearish, has limited profit potential, has maximum profit occurring when the underlying stock expires at or below the lower exercise price at expiration, and has limited risk equal to the premium paid.
+
+The time decay of the option purchased typically exceeds the time decay of the option sold, an increase in volatility typically increases the value of the option purchased more than the option sold, and a decrease in volatility typically decreases the value of the option purchased more than the option sold.
+
+The break-even point is where the underlying stock equals the higher strike price minus the net premium paid.
+
+The full net premium must be paid at the time of purchase and a debit is charged to your account. A put debit spread may be permitted in an IRA.
+
+ If the stock price closes between the strike prices of the two option positions at expiration, your long put will be in-the-money and your short put will be out-of-the-money. Because the long put is in-the-money, you can sell it and let the short put expire worthless.
+
+If you offset the long leg of the spread, keep in mind that you are then carrying a naked short position, so you need to check with your brokerage firm to determine if that is allowable in your account.
+
+If the short option expires in-the-money, it may be assigned, but you are protected by the long put.
+
+A vertical call credit spread consists of selling a call and buying a higher-strike call with the same expiration date. Instead of selling an uncovered call, you can limit risk by also purchasing a higher-strike call.
+
+The purpose of such a spread is to profit from a neutral to bearish bias, limit risk, and lower volatility.
+
+In effect, in a call credit spread, you are subject to the risks and rewards of a short call, but you have limited risk by paying the premium for the long call.
+
+To execute a call credit spread, you can, for example, sell an at-the-money call option and buy an out-of-the-money call option. Alternatively, you can sell an out-of-the-money call option at one strike price and buy a further out-of-the-money call option at a higher strike price.
+
+The higher-strike call should be close enough to limit losses based on your risk tolerance.
+
+In this spread, you, in effect, collect less for the call sold because it is offset by the premium on the call purchased.
+
+The maximum loss in a vertical credit spread, such as a call credit spread, is limited to the difference in the strike prices times the unit of measure (100 shares per contract for a stock) minus the premium collected.
+
+A call credit spread is bearish to neutral, has limited profit potential equal to net credit, has maximum profit occurring when the underlying stock expires at or below the lower exercise price at expiration, has limited risk for the difference between the two strike prices times $100 (assuming it is a stock) minus the net credit, and has maximum loss occurring when the underlying stock is at or above the higher exercise price at expiration.
+
+The time decay of the option sold typically exceeds the time decay of the option purchased, an increase in volatility typically increases the value of the option sold more than the option bought, and a decrease in volatility typically decreases the value of the option sold more than the option bought.
+
+The break-even point is where the underlying stock equals the lower strike price plus the net credit.
+
+A credit is reflected in your account. A call credit spread may be permitted in an IRA.
+
+For the February 100/105 call credit spread, if both strike prices are in-the-money, then you may be assigned on your short call and will be required to sell the stock at $100 per share. By exercising your long call, you can sell those shares at $105 per share.
+
+If the stock price closes between the strike prices of the two option positions at expiration, your short call will be in-the-money and your long call will be out-of-the-money. Because the short call is in-the-money, you may be assigned, but the loss is limited by the long call.
+
+A vertical put credit spread consists of selling a put and buying a lower-strike put with the same expiration date. Instead of selling an uncovered put, you can limit risk by also purchasing a lower-strike put.
+
+The purpose of such a spread is to profit from a neutral to bullish bias, limit risk, and lower volatility.
+
+In effect, in a put credit spread, you are subject to the risks and rewards of a short put, but you have limited risk by paying the premium for the long put.
+
+To execute a put credit spread, you can, for example, sell an at-the-money put option and buy an out-of-the-money put option. Alternatively, you can sell an out-of-the-money put option at one strike price and buy a further out-of-the-money put option at a lower strike price. The lower-strike put should be close enough to limit losses based on your risk tolerance.
+
+In this spread, you, in effect, collect less for the put sold because it is offset by the premium on the put purchased.
+
+The maximum loss in a vertical credit spread, such as a put credit spread, is limited to the difference in the strike prices times the unit of measure (100 shares per contract for a stock) minus the premium collected.
+
+A put credit spread is bullish to neutral, has limited profit potential equal to net credit, has maximum profit occurring when the underlying stock expires at or above the higher exercise price at expiration, has limited risk for the difference between the two strike prices times $100 (assuming it is a stock) minus the net credit, and has maximum loss occurring when the underlying stock is at or below the lower exercise price at expiration.
+
+The time decay of the option sold typically exceeds the time decay of the option purchased, an increase in volatility typically increases the value of the option sold more than the option bought, and a decrease in volatility typically decreases the value of the option sold more than the option bought.
+
+The break-even point is where the underlying stock equals the higher strike price minus the net credit.
+
+A credit is reflected in your account. A put credit spread may be permitted in an IRA.
+
+If the stock price closes between the strike prices of the two option positions at expiration, your short put will be in-the-money and your long put will be out-of-the-money. Because the short put is in-the-money, you may be assigned, but the loss is limited by the long put.
+
+In general, margin on a vertical credit spread is generally calculated as the lesser of the short option margin or the difference between the strike prices minus the premium collected.
+
+A long option position is not subject to a margin requirement and, instead, must be paid in full. As a result, for example, full payment is required for a vertical debit spread.
+
+If you are bullish, you can buy a call debit spread or sell a put credit spread, and if you are bearish, you can buy a put debit spread or sell a call credit spread.
+
+ A call debit spread and put credit spread are both bullish, but both have their own unique risk-reward characteristics.
+
+ Both strategies are bullish, but there are more scenarios in which a put credit spread can be profitable.
+
+ A call debit spread is profitable if the stock rises but a put credit spread can profit if the stock rises, moves sideways, or moves lower, as long as it stays at or above the strike price of the option sold.
+
+ In other words, when you write a put credit spread, the odds are more on your side, but you take on more risk in the process in comparison to a call debit spread.
+
+ To determine which vertical spread strategy is best, you should project how far the stock will move and how quickly.
+
+ If you believe that the stock is going to move quickly, you are probably better off buying a call debit spread, but if you believe that it will take time for the stock to move, then a put credit spread may be more appropriate.
+
+ If you are the type of trader who is only comfortable sleeping at night if the potential loss is relatively small, you may feel more comfortable with a call debit spread and not the higher-dollar risk strategy of the put credit spread. Conversely, you may prefer the higher probabilities of the put credit spread.
+
+ A put debit spread and call credit spread are both bearish, but both have their own unique risk-reward characteristics.
+
+ Both strategies are bearish, but there are more scenarios in which a call credit spread can be profitable.
+
+ A put debit spread is profitable if the stock declines, but a call credit spread can profit if the stock declines, moves sideways, or moves higher, as long as it stays at or below the strike price of the option sold.
+
+ In other words, when you write a call credit spread, the odds are more on your side, but you take on more risk in the process.
+
+If you believe that the stock is going to move a lot and/or very quickly, you are better off buying a put debit spread, but if you believe that it will take time for the stock to move, then a call credit spread may be more appropriate.
+
+If you are the type of trader who is only comfortable sleeping at night if the potential loss is relatively small, you may feel more comfortable with a put debit spread and not the higher-dollar risk strategy of the call credit spread. Conversely, you may prefer the higher probabilities of the call credit spread.
+
+A vertical spread at expiration will have a value between zero and the width between exercise prices. As a result, you can expect the price of the spread to be within this range
+
+In a spread, you have partially offsetting deltas and other Greeks.
+
+You can choose the strike price differential (width) and whether the option purchased is in-the-money, at-the-money, or out-of-the-money. In this manner, you can establish position Greeks that fit your risk-reward profile; for example, the position delta of a vertical call debit spread (bull call spread) is increased if you purchase an option at a lower strike price.
+
+The lower the call strike price of the option purchased, the higher the sensitivity (higher delta) of the call to a change in the underlying stock. The higher the call strike price, the lower the sensitivity (lower delta) to a change in the underlying stock.
+
+You can fine-tune the delta and other Greeks based on the width in the strike prices; for instance, if you want to establish a higher delta position, you can purchase a call with a lower strike price and sell a call with a higher strike price.
+
+You can increase the delta of a call debit spread by buying an in-the-money call option instead of buying an out-of-the-money call option.
+
+As with other spread strategies, you can pick and choose the strike prices to refine maximum profit, maximum risk, and at what point you make a profit or lose.
+
+How you trade will likely be determined by your risk-reward profile; for example, a trader may be comfortable in a credit spread in which the short options have a 60 percent chance of success (0.60 delta), whereas another trader may not be able to sleep well at night unless he has at least an 80 percent chance.
+
+Which strategy is right for you, in many cases, comes down to your risk-reward profile.
+
+Keep in mind that with any strategy, you can lose money, and it is always a wise idea to have predetermined exit points in case the strategy moves against you.
+
+Delta, as mentioned in Chapter 4, can be used as a measure of the probability of an option finishing in-the-money on the expiration date.
+
+If we ignore the sign of the delta, the delta is approximately equal to the probability that the option will finish in-the-money (according to option pricing models).
+
+As a rule of thumb, you can estimate the probability of profiting from a spread by taking the difference between the width of the strike prices and the net premium collected and dividing that by the width in strike prices. The resulting percentage can represent the approximate probability of profiting on the spread position
+
+In general, at first, a spread may appear less risky than an outright uncovered option, but things are not always as they appear. In some cases, traders inadvertently convert a lower-risk spread trade into a higher-risk trade
+
+In this case, the risk profile of the spread is simply different than the risk profile of the uncovered option, but that does not mean you are assuming less real risk (even though your maximum risk is defined in the spread).
+
+Also, traders may be tempted to sell a greater number of spreads versus uncovered options because a spread generates less premium.
+
+Selling additional contracts can diminish or eliminate the spread risk advantage.
+
+The width (distance) in exercise prices affects the risk-reward characteristics of a vertical spread; for example, the greater the distance between exercise prices, the greater the net delta
+
+Remember that two options with different exercise prices cannot have identical deltas, or other Greeks, for that matter.
+
+In a debit spread, the distance (width) between the strike prices defines the maximum gain, so it is important to balance the benefits of paying less net premium (from narrow strike prices) against the benefits associated with greater profit potential (from wider strike prices).
+
+ In a credit spread, the distance between the strike prices defines the maximum risk, so it is important to balance the benefits associated with greater profit potential with the collection of less net premium. The further the distance between the two strike prices, the greater the potential loss and the less net credit received.
+
+ Remember that a debit spread needs to expand for you to profit, whereas a credit spread needs to contract.
+
+ Expansion of a spread can occur by movement in the underlying stock or a volatility increase. Contraction of a spread can occur by movement in the underlying stock, a volatility decrease, and/or time passing.
+

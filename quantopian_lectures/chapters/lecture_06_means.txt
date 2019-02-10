@@ -1,0 +1,4 @@
+xs = np.linspace(-6,6, 300)
+normal = stats.norm.pdf(xs)
+
+print 'Skew:', stats.skew(returns)

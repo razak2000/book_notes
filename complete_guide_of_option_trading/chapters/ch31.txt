@@ -1,0 +1,310 @@
+Whereas a stock trade is usually concerned with the number of shares to buy, an option order is concerned with the number of contracts to buy or sell as well as what strategy is best, such as a long or short call or put, vertical spread, iron condor, ratio spread, backspread, straddle, strangle, butterfly, condor, time spread, diagonal spread, double diagonal spread, or covered call or put.
+
+You should have a trading platform supplied by your broker (or software provider) that automatically establishes simple and complex option orders to open or close positions.
+
+There are more than a dozen types of orders you can place for stocks.
+
+Similarly, you can generally enter the same types of orders for options; for example, you can enter option limit, market, good-until-canceled, and other types of orders like stock orders.
+
+It may be useful to use a practice account prior to executing any real option trades so you can gain confidence.
+
+In their practice accounts, some brokerage firms have developed trading platforms that parallel their live trading platforms, but with simulated trading, which does not use real money.
+
+Therefore, simulated trading enables you to practice using the trading platform of your broker without the risk of loss and can be an effective method through which to learn the unique features and capabilities of your broker’s software (trading platform) so that you can efficiently enter and exit option trades.
+
+Simulated trading can help you become familiar with the types of option orders that can be entered.
+
+If simulated trading is not available at your broker, you can trade one option at a time, making sure that the amount of money is small and that you have acceptable and limited risk.
+
+It is an advantage to have access to a trading platform that can handle and quickly generate option orders.
+
+As a result of entering an order in this manner, you will not be executed on only one or two portions of the transaction unless the entire transaction is executed.
+
+It can be more efficient to enter and exit positions all in the same order rather than leg in and out one position at a time.
+
+In a spread order, however, you may be restricted from using certain types of orders such as a stop order, stop limit order, or trailing stop.
+
+Option order types are not the same for all brokers because some order types permitted at one broker may not be permitted at another broker.
+
+A day order is an order to buy or sell that expires at the end of the day on which it was entered if it is not executed
+
+All orders are automatically day orders, unless otherwise specified.
+
+A good-until-canceled order (open order) is an order to buy or sell that remains in force until the order is filled or canceled or the option contract expires. All orders are either good-until-canceled or day orders.
+
+A market order is an order to buy or sell a stated number of option contracts that are to be executed at the best price obtainable.
+
+The risk of a market order is the execution price. You should keep in mind that the bid/ask price that you see on your computer screen is not guaranteed.
+
+In addition, if you place a larger order, it is possible that some contracts will be filled at one price and other contracts will be filled at a different price.
+
+Many brokers recommend against placing market orders.
+
+A limit order is an order to buy or sell a stated number of option contracts that can be executed only at a specified price or better.
+
+It is commonly the default order type for single-option, spread, and stock orders on a trading platform. A risk is that the order may not be filled.
+
+If you prefer to place a market order but are concerned about slippage in price, you may want to place a sell limit order below the current market price at a level that would be acceptable to you.
+
+If you place a limit order for more than one contract, you may be filled on a portion of your order
+
+The problem with placing a limit order at the bid or ask price is that it may not be filled, and you may find yourself chasing the order at a less favorable price.
+
+My general rule of thumb is that if the option is attractively priced and I am confident in the position, I will not haggle over a small difference in price.
+
+The most common types of orders are probably market orders and limit orders.
+
+A limit order is automatically considered a day order unless you change it to a good-until-canceled order.
+
+A stop order (stop loss) becomes an active market order if and when the stop price is reached.
+
+A buy stop (stop order to buy) is triggered when the option trades (or is at the bid or ask price) on any exchange at or above the specified stop price.
+
+A buy stop is placed above the market.
+
+A sell stop is placed at a price below the market.
+
+A stop order can be based on the value of the underlying option trading price, the bid price, or the ask price.
+
+You should check with your broker regarding which types of orders are allowable.
+
+A stop order is an order used to open or close a position by buying if the market rises or selling if the market falls.
+
+I recommend stop loss and buy stop orders because they enable you to cut losses and manage risk.
+
+If you are already long a position, a stop sell order can limit a loss.
+
+If you are already short a position, a stop buy order can limit a loss.
+
+Conversely, assuming that you do not have a current position, if you place a stop buy order above the market price, the market price will need to rise for you to be executed.
+
+If the option price declines before reaching your stop, you will not be executed and will not lose any money.
+
+A stop loss order can be used to take profits in a short option position.
+
+A stop buy order can be used to manage a short option position.
+
+Using a buy stop order can be an outstanding technique to limit risk during regular trading hours in a short option position.
+
+Keep in mind, however, that you are subject to gap risk because markets can move dramatically against you in a short period of time.
+
+You are subject to gap risk that may occur during and outside normal trading hours.
+
+A stop order is automatically considered a day order unless you change it to a good-until-canceled order.
+
+A stop limit order is a stop order that turns into a limit order if and when the stop price is triggered. When the stop price is triggered, the limit order is activated.
+
+The stop price for a buy order is placed above the current market price.
+
+The stop price for a sell order is placed below the current market price.
+
+The stop price does not need to be the same as the limit price.
+
+Just as with a limit order, the stop limit order will be filled at the limit price or better or may not be filled at all.
+
+A stop limit order is automatically considered a day order unless you change it to a good-until-canceled order.
+
+A trailing stop order is a stop order that continually adjusts the stop price based on changes in the market price. A trailing stop to sell raises the stop price as the option price increases but does not lower the stop price when the option price decreases. A trailing stop to buy lowers the stop price as the option price decreases but does not increase the stop price as the option price increases. When the stop price is reached, the order becomes a market order.
+
+This can be a good strategy to lock in profits as the value of your option rises.
+
+A trailing stop order is automatically considered a day order unless you change it to a good-until-canceled order.
+
+A trailing stop limit order works the same way as the trailing stop, but instead of a market order, it becomes a limit order. With this order, you can specify the worst price you are willing to accept for a fill. There is no guarantee that you will be filled because the price may gap through your limit price.
+
+A trailing stop limit order is automatically considered a day order unless you change it to a good-until-canceled order.
+
+A one-cancels-other order is an order involving the entry of two separate orders, where if one order is filled, the other is automatically canceled. This type of order can enable you to take advantage of anticipated volatility in one direction, where you can see the next move in the market, without having to commit first to a position. A one-cancels-other order is automatically considered a day order unless you change it to a good-until-canceled order.
+
+An all-or-none order is a market or limit order that is to be executed in its entirety or not at all.
+
+Without instructions to the contrary, if you place a straight limit order for more than one contract, you may be filled on a portion of your order.
+
+To prevent this from occurring, you can place an all-or-none limit order, where you will not be filled unless you are executed on all options at your limit price or better.
+
+An all-or-none limit order is automatically considered a day order unless you change it to a good-until-canceled order.
+
+A market-on-close order is an order that executes at the market price at the close of trading.
+
+A limit-on-close order executes at a limit price at the close of trading. The order can be filled at the limit price or better, but you are not guaranteed a fill.
+
+A fill-or-kill order, in futures, is a limit order that is to be executed in its entirety when received; if not executed, it is canceled.
+
+A fill-or-kill order instructs the broker to make one attempt to fill and, if not filled immediately, to cancel the order.
+
+By placing this order, you will be filled at the first attempt or the order will be canceled. A fill-or-kill order is common in the bond market.
+
+A cancel order is an order that attempts to cancel an existing order. This may also be called a straight cancel, which means the order being canceled is not being replaced with another order.
+
+After an order has been entered, you can attempt to cancel the order prior to its execution. You should check to make sure that the order you have attempted to cancel is verified as canceled.
+
+A cancel/replace order is an order that attempts to cancel an existing order and replace it with another order. After you have entered an order, you can attempt to cancel your existing order and replace it with another order. You should check to verify that your previous order has been canceled and that your new order has been executed.
+
+Some futures contracts and options, such as S&P 500 futures options, are pit-traded (open outcry) and not electronically traded.
+
+As a result, the full-sized S&P futures options are handled manually on the exchange floor.
+
+You can phone in your order to your broker, or you can call directly to the floor and place the order with a floor broker.
+
+If you call your broker to place the order, he will contact the floor broker to place the order and then get back to you regarding the execution fill.
+
+It is usually more efficient for you to call the floor of the exchange directly to place a pit-traded order if you decide not to use a trading platform
+
+You should discuss with your futures broker or futures commission merchant whether you can bypass his trading desk.
+
+If you decide to place a pit-traded order by telephone, you are best served by having direct contact with a floor broker, even though you will be charged a floor brokerage fee
+
+It can be worth the extra fee because you can communicate directly how you want the floor broker to negotiate the bid/ask spreads. In some cases, a futures broker will charge a floor brokerage fee whether you or he calls the floor.
+
+If you transmit a pit-traded order electronically through a trading platform, it will be picked up on the floor for execution.
+
+In the futures market, online trading platforms with quick and advanced capabilities are not as readily available.
+
+Listed equity options are only traded during regular trading hours, as opposed to stocks, which trade during regular trading hours and also during extended-hour sessions before the market opens and after the market closes
+
+With an equity option, unfortunately, you are not able to take advantage of extended-hour trading (although this could be changed at some point).
+
+As a result, if you place an option trade outside regular trading hours, your order will be effective when the regular trading session begins
+
+If you place an option order in the evening after the regular trading session has expired, your order will be effective the following day. If you place your option order in the morning prior to the beginning of the regular trading session, your order will be effective when the regular trading session begins to trade on that day.
+
+If you place an option order outside regular trading hours, you may not be able to place a market order. Instead, you will likely be required to place a limit order.
+
+Limit orders are especially useful at the opening of trading. Placing a limit order prior to the market opening for regular trading hours means that it can be executed when the market opens.
+
+I find that the market opening can provide the greatest liquidity and the greatest chance of having an option order executed at the best price.
+
+An order to buy or sell an option should, in general, be placed at the midpoint between the bid/ask prices, but there is no guarantee that the order will be executed.
+
+As a matter of fact, your trading platform may default to automatically enter orders at the midpoint unless you modify the order.
+
+If you place an order at the bid/ask midpoint and it is not filled, a seller may want to subtract $0.05 or $0.10 from the midpoint in a cancel/replace order, whereas a buyer may want to add $0.05 or $0.10 to the midpoint in a cancel/replace order.
+
+If the order is not filled again, a seller of an option may want to subtract an additional $0.05 or $0.10, whereas a buyer may want to add an additional $0.05 or $0.10. This process can be repeated until the order is filled.
+
+As an alternative, you can place limit sell orders $0.05, $0.10, or $0.20 above the bid and buy limit orders at $0.05, $0.10, or $0.20 below the ask price, depending on the width of the bid/ask spread, liquidity, if the market is moving rapidly, and so on. If your order is not filled, you can wait for about 30 seconds and change it to a market order by entering a cancel/replace order. That way, you have attempted to obtain a better price than what the market has offered and not allowed the option price to move away from you.
+
+A spread position can be opened (and later closed) by placing separate orders for each leg of the spread or by placing one spread order.
+
+As a result of entering a spread order, you will not be executed on only one leg of the transaction unless the entire transaction is executed.
+
+It can be more efficient to enter and exit positions all in the same order rather than leg in and out one position at a time. Placing an order as a spread can make a lot of sense, especially if there are multiple legs to the order.
+
+However, an alternative to placing an order as a spread order is to leg into the spread by entering each leg separately. An advantage of this approach is that you can separately negotiate the bid/ask price of each leg. Whether the midpoint is filled depends on the liquidity of the option and other market factors, but it can be worth a try.
+
+The weakness of legging into or out of a position is that it requires more work, and the market may move against you while you are placing the orders.
+
+If you place a market order to sell an option, you typically will be filled at the bid price, and if you place a market order to buy an option, you typically will be filled at the ask price.
+
+You can view the bid/ask price spread of an option as the markets first proposal to you for a specific number of options; however, that does not mean you need to pay what the market is proposing.
+
+The bid and ask prices are the market prices at a particular point in time for a specific number of options.
+
+In a spread order, the bid is shown as one number and the ask is shown as one number, even though they are the difference between option prices.
+
+However, you can mechanically determine a bid/offer price so that it can be compared to what is being offered.
+
+In a vertical call spread, the bid price is the difference between the bid price of the lower-strike call and the ask price of the higher-strike call. The ask price is the difference between the ask price of the lower-strike call and the bid price of the higher-strike call.
+
+In a vertical put spread, the bid price is the difference between the bid price of the higher-strike put and the ask price of the lower-strike put. The ask price is the difference between the ask price of the higher-strike put and the bid price of the lower-strike put
+
+A wide bid/ask spread can be a hurdle to a trader.
+
+In some cases, depending on the underlying instrument, the ask price at the immediately next lower put strike price is actually higher, not lower, than the bid price of the immediately higher strike option that you want to sell.
+
+The distance between the strike prices of the option sold and the option purchased defines the maximum amount of risk for a vertical credit spread.
+
+A smaller difference between strike prices means that there is less risk, and a larger difference between strike prices means that there is greater risk.
+
+If the bid/ask spread is wide, a trader can have difficulty buying an option at a strike price that is reasonably close to the option that he is selling to limit the maximum risk in the spread.
+
+The bid/ask spread is essentially the amount of money that the market gods charge you for the privilege of being able to trade.
+
+Trading options on large-capitalization stocks can mitigate the effects of wide bid/ask spreads.
+
+Deep-in-the-money options may have wider bid/ask spreads than at-the-money options.
+
+At-the-money options tend to be the most liquid options with the greatest open interest and typically have more narrow bid/ask spreads.
+
+Some options only trade in nickel increments, whereas others trade in pennies, which can affect the spread size.
+
+The bid/ask spread can vary depending on volume and fear in the marketplace.
+
+In a fast market, an option bid/ask quote directly from the exchange floor can change instantly without notice.
+
+If you calculate the percentage cost for the bid/ask, you may be shocked at the real cost of entering and exiting a trade.
+
+In some respects, the bid/ask spread is the pink elephant in the room that very few people are willing to address directly.
+
+A wide bid/ask spread may not hurt an option writer as much as an option buyer, provided that he receives a favorable premium at the time of sale and the option expires worthless or near worthless.
+
+As a result of the option expiring worthless, a writer is not required to offset the option at a later date by incurring the additional cost of paying at or near the ask price.
+
+Conversely, an option buyer intends to sell those options at a later date at a higher price, thus intending to subject himself to the detriments of a wide bid/ask spread at a later date.
+
+A wide index option bid/ask spread, such as on the SPX, may make index options somewhat unattractive for many investors.
+
+To negotiate the best price, assuming that you are placing an order to sell an uncovered put, for example, you can place the order to sell at the midpoint between the bid/ask and, if it does not fill, enter a cancel/replace order and move the sale price a fraction toward the bid. If it is not filled again, keep repeating the process.
+
+A wide bid/ask spread can be particularly onerous if there are multiple legs to an index option strategy
+
+You should compare the bid/ask spreads of equity index options relative to futures options. S&P 500 futures options tend to be more heavily traded, which can lower the bid/ask spread in relative terms.
+
+one SPX is 10 times the value of one SPDR S&P 500 index (SPY).
+
+s a result, an advantage of trading an SPX stock index option versus an ETF is that an SPX index option may provide greater leverage relative to ETFs, resulting in lower commissions.
+
+If you pay commissions based on the number of option contracts you trade, you would be able to trade fewer index option contracts because you are trading the larger-sized index product instead of the smaller-sized ETF
+
+As a result, you can use this leverage to your advantage when it comes to paying commissions because you can trade fewer contracts. You need to check with your futures and equity brokers to compare the commission structures of each.
+
+The index commission advantage, however, can be partially or totally offset by wide index option bid/ask spreads
+
+An at-the-money SPX option usually has a lower percentage spread, with a bid/ask spread of something similar to 23/25, an 8 percent cost.
+
+The commission structure in the futures market is different from the commission structure in the stock market.
+
+In the stock market, you typically pay a commission each time you sell an option contract, with no commission if the option expires worthless (and if it is not exercised).
+
+In the futures market, commissions are typically paid when the transactions are initiated (called a round-turn commission), without payment of a commission when the option is offset or becomes worthless.
+
+You should take into account differences in the bid/ask spreads of instruments you are trading; for example, a $0.05 spread in the SPY is the equivalent of 25 times that amount in futures, or $1.25.
+
+You should calculate your break-even point, taking into account commission costs to enter and exit the trade.
+
+You may also want to calculate a break-even point not only to cover the commissions but also to cover the bid/ask spread if you are a buyer.
+
+An advantage of trading S&P 500 futures index options relative to the cash market SPX is that the future options trade in $250 increments and the cash market SPX options trade in $100 increments.
+
+As a result, you can use this leverage to your advantage when it comes to paying commissions because you can sell fewer contracts in the futures market, assuming that you have a similar commission structure in the futures versus cash market.
+
+Your trading platform should permit you, with the click of a mouse, to buy or sell complex option positions.
+
+It should enable you to click on any existing single or multileg position and quickly enter a closing order.
+
+Your trading platform can be a big help because you do not need to manually create each option strategy from scratch or exit a position one leg at a time
+
+Orders are handled by option exchanges that clear the trades and establish fixed strike prices, expiration dates, and other terms.
+
+For stocks, an option holder looks to the Options Clearing Corporation (OCC) rather than to any particular option writer because it is the common clearing entity for all exchange-traded option transactions
+
+After the OCC matches orders from a buyer and a seller, it severs the link between the parties and, in effect, becomes the buyer to the seller and the seller to the buyer
+
+As a result, the seller can buy back the same option he has written and a buyer can sell the same option, closing out his initial transactions
+
+The OCC serves as the counterparty for stock option transactions and is the largest clearing organization in the world for financial derivative instruments.
+
+ It issues, guarantees, and clears options on underlying financial assets, including common stocks, foreign exchange, stock indexes, U.S. Treasury securities, and interest rate composites.
+
+ If you are trading a stock, it is probably not necessary that you trade in a paper/practice account because such a trade is rather straightforward. However, when trading options, a practice account is recommended so that you can learn the trading platform and how your broker defines terms and strategies.
+
+ If you do not have a trading platform that allows you to practice your trading, you should trade one contract for which risk is limited.
+
+ For example, the SPY is one tenth of the SPX and may be a good starting point to learn how to trade options.
+
+ It is recommended that you open accounts to trade options at a firm that specializes in option trading. If you do not, you will always be fighting against the wind or going uphill (or whatever analogy you want to use), and you will never realize your full potential as an option trader.
+
+ In many cases, especially if you are pleased with the bid or ask price, you should enter a market order and not let small amounts dictate your trades (assuming that you are trading a liquid instrument). 
+
+
+

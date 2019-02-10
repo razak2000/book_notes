@@ -1,0 +1,155 @@
+ combination is any option strategy utilizing both call and put options.
+
+ For the purposes of this chapter, a combination is typically long one side and short the other side, where both options work in the same direction.
+
+ A combination can be executed when there is a one-to-one ratio of options, it can be unbalanced (ratioed) when there is a different number of options on each side, and the options can expire in different months.
+
+A combination, such as a straddle or strangle, can consist of call and put options working in opposite directions
+
+As mentioned previously, a combination is any option strategy utilizing both call and put options; however, a combination (sometimes called a combo), for the purposes of this chapter, is established by selling a put and buying a call (long combination) or by selling a call and buying a put (short combination)
+
+In a long combination (short put/long call), if the underlying stock rises, the long call value should rise and the short put value should decline so that you have a gain from both sides. If the underlying stock declines, the long call value should decline and the short put value should rise so that you have a loss from both sides.
+
+In a short combination (short call/long put), if the underlying stock rises, the short call value should rise and the long put value should decline so that you have a loss from both sides. If the underlying stock declines, the short call value should decline and the long put value should rise so that you have a gain from both sides.
+
+A straddle and a strangle can be considered types of combinations. A straddle and a strangle each consist of both a call and a put, where the options work in opposite directions.
+
+A combination can share the same strike price, but it does not have to do so.
+
+The strike price chosen can be below, at, or above the current level of the underlying stock or can have a gap between the call and put strikes.
+
+If the underlying stock, at the expiration date of the options, closes between the gap in strike prices of the call and put, then the gain or loss is equal to the credit or debit to establish the position.
+
+Your trading platform may permit you to enter a combination as one order
+
+As a result of entering a limit order in this manner, you will not be executed on only one side of the transaction unless the entire transaction is executed.
+
+You have unlimited upside profit potential from the call (above the 105 strike price) and unlimited risk from the short put (below the 95 strike price).
+
+A combination can be used to take advantage of a pricing discrepancy between calls and puts (e.g., where a call may be priced higher than a comparable put) or to reduce risk and fluctuations in an account to take advantage of the fact that the positions have no value at expiration if the underlying stock lands between the call/put strike prices
+
+A combination would typically have an initial margin requirement equal to the short option side
+
+A combination is established by selling a put and, in effect, using the proceeds to purchase a call (long combination) or by selling a call and, in effect, using the proceeds to purchase a put (short combination).
+
+There is no requirement that the strike prices of the call versus the put be equidistant from the price of the underlying stock
+
+You can sell fewer calls relative to the number of puts, or you can sell more calls relative to the number of puts.
+
+In a long combo, if you are short a put and are assigned, you are forced to buy the underlying stock at the exercise price.
+
+In a short combo, if you are short a call and are assigned, you are forced to sell the underlying stock at the exercise price
+
+Establishing a combination can be structured to vary the level of probability that an option will be in-the-money at the expiration date, depending on the strike prices and time frame selected.
+
+The further out-of-the-money the option, the lower the premium, the lower the delta, and the lower the probability of assignment.
+
+A long combination is a strategy that involves a short put and a long call on the same underlying stock. In a long combination, the call and put work together in the same direction, rather than as a hedge against one another, and the long combination performs like a long stock position.
+
+A long combination (short put/long call) is bullish, has unlimited profit potential based on the call strike price, and has unlimited risk based on the put strike price.
+
+If the underlying stock closes between the strike prices of the call and put at expiration, both options expire out-of-the-money
+
+A long combination generates a gain if the underlying stock is above the call exercise price (ignoring the premium) and a loss if the underlying stock is below the put exercise price (ignoring the premium).
+
+The maximum loss of a long combination is considered unlimited because it consists of an uncovered put.
+A long combination has one of two possible break-even points. The break-even point occurs where the stock, at expiration, is at the call strike price plus a debit or, alternatively, is at the put strike price minus a credit.
+
+Time decay reduces call and put values. An increase in volatility increases call and put values, and a decrease in volatility reduces call and put values.
+
+A net credit or debit is reflected in your account; if it is a net debit, it must be paid at the time of purchase.
+
+There is margin requirement for the short option. Although margin is not permitted in an IRA, some brokerage firms may allow a long combination because the risk is mathematically limited to the difference between the put strike price and zero.
+
+A short combination is a strategy that involves a short call and a long put on the same underlying stock. In a short combination, the call and put work together in the same direction, and the short combination performs like a short stock position.
+
+A short combination (short call/long put) is bearish, has unlimited profit potential based on the put strike price, and has unlimited risk based on the call strike price.
+
+If the underlying stock closes at or between the strike prices of the call and put at expiration, both options expire out-of-the-money.
+
+A short combination generates a gain if the underlying stock is below the put exercise price (ignoring the premium) and a loss if the underlying stock is above the call exercise price (ignoring the premium).
+
+The maximum loss of a long combination is unlimited because it consists of an uncovered call.
+
+A short combination has one of two possible break-even points. The break-even point occurs where the stock, at expiration, is at the call strike price plus a credit or, alternatively, is at the put strike price minus a debit.
+
+A combination can be established as a net credit, a net debit, or at even cost (zero cost), depending on the strike prices chosen and the current price of the options. Whether the combination is at a credit or debit depends on the relative price of the put and the call.
+
+For a long combination, assuming an equal number of options are bought as sold, if the price of the put is greater than the price of the call, it is established for a credit. If the price of the put is less than the price of the call, it is established for a debit.
+
+If the call and put prices are the same, then it is even cost. The term “zero cost” is used, at times, when the credit from the sale of an option equals the debit from the purchase price of another option.
+
+To establish a combination, you should compare call prices to put options on the same underlying stock.
+
+for many equity options, a close-to-the-money call will typically have a value greater than a comparable put.
+
+A call on an underlying stock almost always has a higher value relative to a put. As a result, a short combination may be priced more favorably than a long combination.
+
+In general, option pricing models have a tendency to value calls more than comparable puts because of interest rate assumptions and because of the fact that a stock can theoretically increase in value to infinity, but a stock can only decline in value to zero.
+
+If call values are greater than put values, you can execute a short combination for a credit more easily because a call is sold, and you can simultaneously use the proceeds to purchase a put.
+
+Conversely, on broad-based indexes, the call/put pricing relationship is reversed.
+
+An out-of-the-money call on an underlying broad-based index typically has a lower value relative to a comparable put.
+
+Apparently, there is often a greater demand for buying puts relative to calls on broad-based indexes such as the S&P 500 index, creating higher put prices relative to calls for out-of-the-money options.
+
+As a result, a long combination may be priced more favorably than a short combination in that case
+
+A combination can be unbalanced so that the number of options bought differs from the number of options sold
+
+Also, a combination can have different expiration dates;
+
+If you are bullish and want limited risk, you can sell a vertical put spread and buy a naked call
+
+A combination can also be executed with a long or a short underlying stock
+
+When transitioning from an initial combination to a new combination, you can wait until the initial combination expires and then enter into the new combination.
+
+Alternatively, if the initial combination is near zero but has not yet expired, you may want to offset the options in the marketplace and simultaneously roll to a new combination
+
+Reestablishing positions to take advantage of the various option cycles can be part of your overall strategy
+
+When you roll, you can select different strike prices, based on the current level of the stock as well as on your view of the market and prospects for the stock
+
+ In both a covered call and a short naked put, you benefit if the stock rises but lose substantially if the stock declines substantially.
+
+Both of these positions have the same risk-reward profile and profit and loss graph. This illustrates that a covered call is the equivalent position of a naked put, and vice versa.
+
+if you buy a call and simultaneously sell a put without owning or shorting the underlying stock, it is considered a synthetic long.
+
+If you sell a call and simultaneously buy a put without owning or shorting the underlying stock, it is considered a synthetic short.
+
+A trader can use synthetics in a number of different ways, including in a directional strategy, a volatility strategy, or an arbitrage strategy.
+
+A synthetic consists of two or more positions that, in combination with each other, act like a third position.
+
+A synthetic position can be composed of options and underlying instruments used in combination with other options and underlying instruments to create positions with characteristics that are almost identical to some other strategy or combination of contracts.
+
+Combinations, sometimes in conjunction with the underlying stock, can be used to create synthetic positions and equivalent positions
+
+A synthetic long can be created by combining a long call option and a short put option with the same expiration date and the same strike price.
+
+A synthetic short can be created by combining a long put and a short call with the same expiration date and the same strike price.
+
+Accordingly, using synthetic equivalents, if you sell a call against a long stock, you have effectively sold a put; if you sell a put against a short stock, you have effectively sold a call; and so on.
+
+Two or more option strategies that are combined to achieve the same profit/loss potential as other strategies are synthetic equivalent positions.
+
+Equivalent positions have the same profit and loss graphs; for example, a covered call is the equivalent of selling a naked put.
+
+You should not forget about using a combination with an ETF, stock index, or stock index futures.
+
+Using out-of-the-money options in a combination trade can be a possible strategy for someone who does not want to incur the stress of small fluctuations in the marketplace and instead is more interested in a major move.
+
+In this way, a combination trade can enable you to stay with the trade longer.
+
+Utilizing out-of-the-money strike prices can give you room for error; for example, there is no loss for a long combination, at expiration, unless the underlying stock closes below the strike price of the put.
+
+As a result, the stock can decline without a loss to the extent that the put strike price is out-of-the-money.
+
+By using a combination, you can utilize the market’s money to execute all or a portion of the position. By using the market’s money, you can lower your risk in comparison to going long or short in the underlying stock.
+
+
+

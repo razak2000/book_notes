@@ -1,0 +1,24 @@
+3.1
+Evaluation of criteria effectiveness, consistent with our expectations, developing and constructing criteria, concrete
+and definite goals, check if the result is satisfactory, goals have been achieved
+
+suitability of a particular criterion, tested thoroughly, set of numerical characteristics, reflect the performance,
+indicators of criteria effectiveness, maximize the test reliability, use as many, set of effectiveness indicators,
+strengths and weaknesses, joint use
+
+ criteria effectiveness, type of the task, selecting indicators, developing evaluation procedures, different areas of
+ criteria application, selecting option combinations, strategies, and underlying assets, universal and specific ones,
+ multifunctional, heterogeneous suitability
+
+ high effectiveness, certain situations, evaluation of criteria quality, one general task, sorting option combinations,
+ potential profitability, all areas of criteria application
+
+ criteria effectiveness, type of option strategy, detect profitable variants, set of combinations created under one
+ strategy
+
+ short strangle/straddle, long strangle/straddle, short calendar spread, and long calendar spread, payoff function
+
+ wide range of payoff functions, opposite to each other, neutral to an underlying asset market
+
+ 3.2
+ 3.2.1

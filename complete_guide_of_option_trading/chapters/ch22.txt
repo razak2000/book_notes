@@ -1,0 +1,118 @@
+This chapter examines a combination that is established by selling a call and selling a put, in which the underlying stock is owned (covered combination ).
+
+A covered combination is a combination in which the underlying stock is owned.
+
+The word covered simply means that the underlying stock is owned and does not mean, for the purposes of this chapter, that all losses are offset by an opposing position.
+
+A covered short strangle can be executed when there is a one-to-one ratio of calls written versus puts written, or it can be ratioed (unbalanced) with a different number of calls versus puts.
+
+A covered (short) strangle consists of a long stock, a short call, and a short put
+
+In such a covered combination, you receive two premiums: one for the written call and one for the written put.
+
+On the upside, this strategy performs like a covered call (ignoring the put for a moment); on the downside, it performs like an uncovered put (ignoring the stock for a moment).
+
+As mentioned in Chapter 20, a long stock and short call is the synthetic equivalent of a short put. As a result, overall, this position is like shorting two puts.
+
+In a covered short strangle, you are positioned to sell your stock if you are assigned on the short call, but you will add to your stock position if assigned on the short put.
+
+You can use this strategy if you want to sell into strength but want to purchase additional shares if the stock price declines
+
+A covered short strangle can be viewed as a long stock and a short strangle if different exercise prices are used and as a long stock and a short straddle if the same exercise price is used.
+
+A covered short strangle is a type of covered combination.
+
+When you establish a covered short strangle, you can potentially profit from a rise in the underlying stock, the credit received, and any dividend on the stock.
+
+If the stock closes above the call strike price at expiration, you would be assigned on the call, and the long put would expire out-of-the-money.
+
+You would be obligated to sell the 100 shares at the call strike price if assigned, but you already own the stock to cover it.
+
+The strategy is called “covered,” but it is not covered in the conventional sense if the underlying stock declines in value.
+
+Although the long stock protects against a loss from the short call, it does not protect against a loss from the short put and, instead, results in an additional loss if the stock price declines.
+
+If the stock closes below the short put strike price at expiration, the put would expire in-the-money, the short call would expire out-of-the-money, and the stock would show a loss. In this case, you can expect assignment on the put and an obligation to purchase additional shares at the put strike price.
+
+If the stock is between the strike prices of the call and put at expiration, both options expire out-of-the-money, resulting in a profit from the options to the extent of the credit.
+
+Remember, however, that the gain or loss from the stock would also need to be taken into account
+
+A covered short strangle can be an effective way to automatically sell into strength and add to your position at a lower price
+
+Likewise, a covered short strangle can be an effective way to add automatically more shares at a lower price.
+
+A covered short strangle is profitable if the stock rises or trades within a range and is designed to sell into strength if the stock price rises or add to the stock position if a stock decline occurs.
+
+Establishing a covered short strangle can be structured to vary the levels of probability, depending on the strike prices selected.
+
+A disadvantage of a covered short strangle is the inability to earn interest on the proceeds used to purchase the stock. You are, however, entitled to receive dividends on the stock.
+
+Many trading platforms may not permit you to enter and exit a covered combination as one order and may require you to enter the orders separately.
+
+If you cannot enter a covered strangle as one order, you may be permitted to buy the stock and enter a separate strangle (or straddle) order
+
+An option position is typically considered covered if there is a fully offsetting opposite market position; for example, a short call is considered covered if you are also long a call at the same or lower strike price on the same stock
+
+However, the word “covered” is also used to indicate whether the underlying stock is owned; for example, a short call is considered covered if you also long the stock (covered-call strategy).
+
+An option strategy in which stock is owned can be called “covered” and an option strategy where stock is not owned can be called “uncovered.”
+
+Any type of option sale can be covered (long or short stock) or uncovered (no underlying stock)
+
+Practically any strategy can be modified to add a long or short stock position.
+
+A covered combination can include a covered strangle or a covered straddle.
+
+A long strangle consists of a long call and a long put with different strike prices and the same expiration date;
+
+A short strangle consists of a short call and a put with different strike prices and the same expiration date
+
+A covered short strangle is a short strangle while the stock is owned.
+
+A covered strangle is similar to a covered straddle, except a straddle uses the same strike price.
+
+A long straddle consists of a long call and a long put with the same strike price and expiration date and is used to profit from volatility
+
+A short straddle consists of a short call and a put with the same strike price and expiration date and is used to profit from a trading range or volatility contraction
+
+A covered straddle is a short straddle while the stock is owned.
+
+A covered short strangle consists of a long stock, a short call, and a short put. In such a strategy, you receive two premiums: one for the written call and one for the written put.
+
+Overall, this position is like shorting two puts.
+
+A covered short strangle is bullish, has limited profit potential based on the call strike price, and is worth its maximum value, at expiration, if the underlying stock is at or above the call exercise price.
+
+A covered short strangle has unlimited risk because it consists of a long stock and a short put.
+
+If the stock is between the strike prices of the call and put at expiration, both options expire out-of-the-money, resulting in a profit from the options to the extent of the credit.
+
+The break-even point, at expiration, is equal to the original stock price minus the credit.
+
+Time decay reduces call and put values. Prior to expiration, an increase in volatility increases call and put values, and a decrease in volatility reduces call and put values. A net credit is reflected in your account for the options.
+
+There is no margin requirement for the call because it is covered by the stock, but there is a margin requirement for the short put (and stock).
+Although margin is not permitted in an IRA, some brokerage firms may allow a short put because the risk is mathematically limited to the difference between the put strike price and zero.
+
+If the stock price is between the strike prices at expiration, you can write another covered short strangle to collect additional premium.
+
+A covered short strangle can be unbalanced so that the number of options bought differs from the number of options sold
+
+Also, a covered short strangle can have different expiration dates
+
+When transitioning to the new covered short strangle, you can wait until the initial covered short strangle expires and then enter into the new covered short strangle
+
+Alternatively, if the initial covered short strangle is near zero but has not yet expired, you may want to offset the options in the marketplace and simultaneously roll to a new covered short strangle
+
+If you roll, you can select different strike prices, based on the current level of the stock as well as on your view of the market and prospects for the stock
+
+A covered combination can be executed in reverse (buy call and buy put) against a short stock position
+
+An attraction of the covered strangle strategy is collecting double premium.
+
+A covered short strangle can be an effective way to automatically sell into strength and/or add to your position at a lower price.
+
+If the stock rises, you will have a profit from the underlying shares and double premium. If the stock declines, you can purchase the shares at the put strike price and benefit from double premium.
+
+

@@ -1,0 +1,388 @@
+Physical systems are typically described
+in continuous time, but control and state estimation algorithms are typically im-
+plemented on digital computers.
+
+Section 1.4 discusses some standard methods for
+obtaining a discrete-time representation of a continuous-time system.
+
+Section 1.5
+discusses how to simulate continuous-time systems on a digital computer.
+
+# 1.1
+A scalar is a single quantity.
+
+A vector consists of scalars that are arranged in a row or column
+
+Note that a scalar can be viewed as a 1-element vector; a scalar
+is a degenerate vector.
+
+Note
+that a vector can be viewed as a degenerate matrix.
+
+A scalar can also be viewed as a degenerate matrix
+
+The rank of a matrix is defined as the number of linearly independent rows. This
+is also equal to the number of linearly independent columns.
+
+The rank of a matrix
+A is often indicated with the notation $\sigma(A)$
+
+The rank of a matrix is always less
+than or equal to the number of rows, and it is also less than or equal to the number
+of columns.
+
+A matrix whose elements are com-
+prised entirely of zeros has a rank of zero.
+
+An $n \times m$ matrix whose rank is equal
+to $\min(n,m)$ is called full rank.
+te
+The nullity of an   $n \times m$   matrix A is equal to
+[m - P ( 4 1
+
+A symmetric matrix is one for which $A = A^T$
+
+The hermitian transpose of a matrix (or vector) is the complex conjugate of the
+transpose, and is indicated with an H superscript, as in $A^H$
+
+A hermitian matrix is one for which A = $A^H$.
+
+Suppose that we have a $p \times n$ matrix H and an $n \times n$ matrix P. Then $H^T$ is a
+n x p matrix, and we can compute the $p \times p$ matrix product  $HPH^T$ 
+
+Matrix division is not defined; we cannot divide a matrix by another matrix
+(unless, of course, the denominator matrix is a scalar).
+
+The determinant of a matrix is defined inductively for square matrices. The
+determinant of a scalar (i.e., a 1 x 1 matrix) is equal to the scalar.
+
+The determinant of A is defined as
+for any value of i E [I, n]. This is called the Laplace expansion of A along its
+ith row
+
+The determinant of
+A can also be defined as
+2=1
+(1.19)
+for any value of j E [l, n ] . This is called the Laplace expansion of A along its j t h
+column.
+
+A matrix cannot have an inverse unless it is square.
+
+Some square
+matrices do not have an inverse. A square matrix that does not have an inverse is
+called singular or invertible
+
+In the scalar case, the only number that does not have
+an inverse is the number 0. But in the matrix case, there are many matrices that
+are singular.
+
+A matrix that does have an inverse is called nonsingular or invertible.
+
+The nonsingularity of an $n \times n$ matrix A can be stated in many equivalent
+ways
+    A is nonsingular.
+    0 A-l exists.
+    0 The rank of A is equal to n.
+    0 The rows of A are linearly independent.
+    0 The columns of A are linearly independent.
+    IAl # 0.
+    0 A z = b has a unique solution z for all b.
+    0 0 is not an eigenvalue of A.
+
+The trace of a square matrix is defined as the sum of its diagonal elements:
+(1.24)
+
+The trace of a matrix is defined only if the matrix is square
+
+One interesting property of the trace of a square matrix is
+a
+That is, the trace of a square matrix is equal to the sum of its eigenvalues
+
+The trace of a matrix product is independent of the order in which
+the matrices are multiplied.
+
+The two-norm of a column vector of real numbers, also called the Euclidean
+norm, is defined as follows:
+])x))2 =
+d z
+(1.27)
+
+An $n \times n$ matrix A has n eigenvalues and n eigenvectors
+
+The scalar X is an
+eigenvalue of A, and the n x 1 vector x is an eigenvector of A, if the following
+equation holds:
+AX = AX
+(1.30
+
+The eigenvalues and eigenvectors of a matrix are collectively referred to as the
+eigend $A^TA$  of the matrix
+
+An $n \times n$ matrix has exactly n eigenvalues, although some may be repeated
+
+So if A has eigend $A^TA$  (X,z), then A2 has eigend $A^TA$  (X2,z)
+
+It can be shown that
+A-l exists if and only if none of the eigenvalues of A are equal to 0
+
+f A is
+symmetric then all of its eigenvalues are real numbers
+
+A symmetric $n \times n$ matrix A can be characterized as either positive definite,
+positive semidefinite, negative definite, negative semidefinite, or indefinite
+
+Positive definite if xTAx > 0 for all nonzero n x 1 vectors z. This is equivalent
+to saying that all of the eigenvalues of A are positive real numbers. If A is
+positive definite, then A-' is also positive definite
+
+Positive semidefinite if z T A z 2 0 for all n x 1 vectors z. This is equivalent to
+saying that all of the eigenvalues of A are nonnegative real numbers. Positive
+semidefinite matrices are sometimes called nonnegative definite.
+
+Negative definite if z T A z < 0 for all nonzero n x 1 vectors z. This is equivalent
+t o saying that all of the eigenvalues of A are negative real numbers. If A is
+negative definite, then A-' is also negative definite
+
+Negative semidefinite if z T A z 5 0 for all n x 1 vectors 2 . This is equivalent to
+saying that all of the eigenvalues of A are nonpositive real numbers. Negative
+semidefinite matrices are sometimes called nonpositive definite
+
+Indefinite if it does not fit into any of the above four categories. This is
+equivalent to saying that some of its eigenvalues are positive and some are
+negative.
+
+The weighted two-norm of an n x 1 vector x is defined as
+; 1 . 1
+=
+mz
+(1.32)
+where Q is required to be an $n \times n$ positive definite matrix.
+
+The above norm is
+also called the Q-weighted two-norm of 2
+
+A quantity of the form xTQz is called a
+quadratic in analogy to a quadratic term in a scalar equation
+
+The singular values g of a matrix A are defined as
+02(A)
+=
+X( $A^TA$ )
+= X(AA~)
+(1.33)
+
+If A is an   $n \times m$   matrix, then it has min(n,m) singular values
+
+AT will have
+n eigenvalues, and  $A^TA$  will have m eigenvalues.
+
+If n > m then $AA^T$ will have
+the same eigenvalues as  $A^TA$  plus an additional ( n - m) zeros
+
+These additional
+zeros are not considered to be singular values of A , because A always has min(n, m)
+singular values. This knowledge can help reduce effort during the computation of
+singular values
+
+Suppose we have the partitioned matrix
+[ : E ]
+where A and D are invertible
+square matrices, and the B and C matrices may or may not be square
+
+We define
+E and F matrices as follows:
+E
+F
+D-CA-lB
+= A-BD-lC
+=
+(1.34
+
+Now we can use the definition of F to obtain
+( A - B D - l C ) - l = A-'
++ A-lB(D - CA-'B)-lCA-l
+(1.38)
+
+This is called the matrix inversion lemma. It is also referred to by other terms, such
+as the Sherman-Morrison formula, Woodbury's identity, and the modified matrices
+formula.
+
+The matrix inversion
+lemma is often stated in slightly different but equivalent ways. For example,
+( A + B D - l C ) - ' = A-' - A-'B(D
++ CA-lB)-lCA-l
+(1.39
+
+The matrix inversion lemma can sometimes be used to reduce the computational
+effort of matrix inversion
+
+However, with larger
+matrices, such as 1000 x 1000 matrices, the computational savings that is
+realized by using the matrix inversion lemma could be significant
+
+Now suppose that A , B, C, and D are matrices, with A and D being square.
+[ 4 A I - l
+I 0 ] [ C
+A D
+B ] [ 0 I - A I - I B ] = [ A
+0 D - CA-lB
+]
+(1.46)
+(1.47)
+
+Similarly, it can be shown that
+(1.48)
+
+These formulas are called product rules for determinants
+
+Matrix calculus
+As intuition would lead us to believe, the time derivative of a matrix is simply
+equal to the matrix of the time derivatives of the individual matrix elements.
+
+Also,
+the integral of a matrix is equal to the matrix of the integrals of the individual
+matrix elements
+
+Suppose that
+matrix A(t), which we will denote as A, has elements that are functions of time.
+We know that $AA^-1$ = I; that is, $AA^-1$ 6s a constant matrix and therefore has a
+time derivative of zero.
+
+But the time derivative of $AA^-1$ can be computed as
+d
+dt
+-(AA-l)
+d
+= A A - l + A-((A-')
+dt
+(1.50)
+
+Since this is zero, we can solve for d(A-')/dt as
+- d ( ~ - 1 )
+= -A-~AA-~
+dt
+(1.51)
+
+Now suppose that x is an n x 1 vector and f (x) is a scalar function of the elements
+of 2. Then
+af = [ af/axl . . . af/axn ]
+(1.53)
+
+Even though x is a column vector, d f / d x is a row vector. The converse is also
+true - if x is a row vector, then d f / d x is a column vector
+
+Note that some authors
+define this the other way around. That is, they say that if x is a column vector then
+d f / d z is also a column vector.
+
+There is no accepted convention for the definition of
+the partial derivative of a scalar with respect to a vector. It does not really matter
+which definition we use as long as we are consistent
+
+Now suppose that A is an $m \times n$ matrix and f ( A ) is a scalar. Then the partial
+derivative of a scalar with respect to a matrix can be computed as follows:
+(1.54)
+
+With these definitions we can compute the partial derivative of the dot product of
+two vectors.
+
+Suppose x and y are n-element column vectors. Then
+xTy = x l y l + . . .
++ znyn
+- -
+(1.55)
+
+Likewise, we can obtain
+(1.56)
+
+Now we will compute the partial derivative of a quadratic with respect to a vector.
+X ~ A X
+=
+[
+21
+' * *
+xn
+]
+[
+An1
+: I
+*
+*
+a
+Ann
+[
+X x n l
+]
+(1.57)
+
+Now take the partial derivative of the quadratic as follows:
+
+If A is symmetric, as it often is in quadratic expressions, then A = AT and the
+above expression simplifies to
+d(xTAx)
+= 2xTA
+ax
+[ ''r) ]
+[ :'I.
+ifA=AT
+(1.59)
+
+Suppose g ( z ) =
+gm ( x )
+andx=
+Then
+X n
+(1.60)
+
+If either g(x) or x is transposed, then the partial derivative is also transposed.
+(1.61)
+
+With these definitions, the following important equalities can be derived. Suppose
+A is an $m \times n$ matrix and x is an n x 1 vector. Then
+-
+a(Ax)
+- - A
+ax
+d(xTA)
+ax
+= A
+(1.62)
+
+Now we suppose that A is an $m \times n$ matrix, B is an $n \times n$ matrix, and we want
+to compute the partial derivative of Tr(ABAT) with respect to A
+
+First compute
+ABA~
+as follows:
+(1.64)
+
+(1.65)
+
+f B is symmetric, as it often is in partial derivatives of the form above, then this
+can be simplified to
+~ T ~ ( A B A ~ )
+=2AB
+dA
+ifB=BT
+(1.66)
+
+Cauchy also discovered matrix
+eigenvalues and diagonalization, and introduced the idea of similar matrices. He
+was the first to prove that every real symmetric matrix is diagonalizable.
+
+The fact that a
+matrix satisfies its own characteristic equation is now called the Cayley-Hamilton
+theorem (see Problem 1.5).
+
+Leon Mirsky’s
+book in 1955 [MirSO] helped solidify matrix theory as a fundamentally important
+topic in university mathematics.
+
+1.2 LINEAR SYSTEMS
+
+
+
+
+
+

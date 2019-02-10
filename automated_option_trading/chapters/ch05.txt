@@ -1,0 +1,54 @@
+testing options trading strategies, historical data
+
+a historical database, a generator of position opening and closing signals, a simulator of trading orders execution,
+system of performance evaluation, model a long-term trading process, evaluate its results
+
+5.1
+Historical data,
+5.1.1
+brokerage firms, observation, current option quotes,  Current quotes, option contracts, finance.yahoo.com, finance
+.google.com, options price history, special data vendors, range of underlying assets, OptionVue system, price history
+directly
+
+wide range of underlying assets,  considerable length of price history, www.historicaloptiondata.com, www.ivolatility
+.com, www.livevol.com, www.optionmetrics.com, and www.stricknet.com,  livevol.com, daily close prices, intra-day prices,
+ IVolatility.com, option-specific indicators, analytical materials
+
+ problem of omission of underlying assets, survival bias problem, company acquisition, bankruptcy, or delisting,
+ “extinct” underlying assets, overlook important market events, volatility selling strategy, full set of all underlying
+ assets that have existed, backtesting period
+
+5.1.2
+minimum information, certain time frame, open and close prices of the day, daily high and low prices, detailed
+databases, intra-day prices, given frequency,  ticks data, all deals executed, time frame
+
+Historical prices of options, distinctive features, task of synchronization, option quotes, connected, underlying asset
+price,  same moment, structure of the historical database
+
+wide spreads, low liquidity of options, bid and ask quotes, when close prices of a trading day, last option transaction,
+ underlying asset, last transaction, moment of market closing,  mistiming
+
+Underlying assets price history, open, close, high, and low prices, supported time frames
+
+Options prices history, history of bid/ask quotes, option contract, ticker, transactions history, options related, same underlying asset
+
+Trading volume, underlying assets and options, open interest (for options
+
+History of dividend payments, splits, and ticker changes,  underlying assets
+
+History of quarterly earnings reports, simulate the past decision-making process, real chronology of quarterly earnings
+reports, fundamental errors, expected date of the event, expected dates of earnings releases,  real dates, automatic
+daily scanning,  www.marketwatch.com, www.earnings.com, and www.finance.yahoo.com.
+
+History of irregular corporate events, mergers/acquisitions, bankruptcies, court decisions, announcements of products
+approval or rejection, influence the implied volatility, reliable only after the event,  use only assumptions and
+expectations, before the date of occurrence of the event,  impossible to determine the information, given moment in the
+past, transaction should be excluded
+
+Fundamental financial indicators, P/E, PEG, ROE, EPS, corporate financial statements, fundamental analysis, fundamental
+indicators, application in the option strategies, data from quarterly reports, estimates by the leading financial
+analysts, before the report was published
+
+data vendors, different variants of volatility calculations, volatility indexes, the Greeks
+
+5.1.3

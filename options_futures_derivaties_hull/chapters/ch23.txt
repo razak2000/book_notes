@@ -1,0 +1,406 @@
+When calculating value at risk, we are most interested in the current
+levels of volatilities and correlations because we are assessing possible changes in the
+value of a portfolio over a very short period of time.
+
+When valuing derivatives, forecasts
+of volatilities and correlations over the whole life of the derivative are usually required.
+
+Define $\sigma_n$ as the volatility of a market variable on day n, as estimated at the end of
+day n - 1. The square of the volatility, $\sigma^2_n$ , on day n is the variance rate.
+
+The variable $u_i$ is defined
+as the continuously compounded return during day i (between the end of day i - 1 and
+the end of day i)
+
+An unbiased estimate of the variance rate per day, $\sigma^2_n$ , using the most recent m
+observations on the $u_i$ 
+
+An unbiased estimate of the variance rate per day, $\sigma^2_n$ , using the most recent m
+observat ions on the $u_i$
+
+For the purposes of monitoring daily volatility, the formula in equation (23.1) is
+usually changed in a number of ways:
+
+they allow us to simplify the formula for the variance rate to equation (23.3)
+
+to give more weight to recent
+data.
+
+The variable  i is the amount of weight given to the observation i days ago.
+
+The ’s are
+positive. If we choose them so that  i <  j when i > j, less weight is given to older
+observations.
+
+The weights must sum to unity,
+
+An extension of the idea in equation (23.4) is to assume that there is a long-run average
+variance rate and that this should be given some weight.
+
+where V L is the long-run variance rate and  is the weight assigned to V L
+
+the
+weights must sum to unity
+
+This is known as an ARCH(m) model. The estimate of
+the variance is based on a long-run average variance and m observations. The older an
+observation, the less weight it is given.
+
+23.2
+The exponentially weighted moving average (EWMA) model is a particular case of the
+model in equation (23.4) where the weights  i decrease exponentially as we move back
+through time.
+
+Specifically,  iþ1 1⁄4  i , where  is a constant between 0 and 1.
+
+It turns out that this weighting scheme leads to a particularly simple formula for
+updating volatility estimates
+
+The estimate,  n , of the volatility of a variable for day n (made at the end of day n  1) is
+calculated from  n1 (the estimate that was made at the end of day n  2 of the volatility
+for day n  1) and u n1 (the most recent daily percentage change in the variable).
+
+For large m, the term  m  nm
+is sufficiently small to be ignored, so that equation (23.7)
+is the same as equation (23.4) with  i 1⁄4 ð1  Þ i1
+
+The weights for the u i decline at
+rate  as we move back through time.
+
+Each weight is  times the previous weight.
+
+The EWMA approach has the attractive feature that relatively little data need be
+stored.
+
+At any given time, only the current estimate of the variance rate and the most
+recent observation on the value of the market variable need be remembered.
+
+When a
+new observation on the market variable is obtained, a new daily percentage change is
+calculated and equation (23.7) is used to update the estimate of the variance rate.
+
+The
+old estimate of the variance rate and the old value of the market variable can then be
+discarded.
+
+The EWMA approach is designed to track changes in the volatility.
+
+The value of  governs how responsive the estimate of the daily volatility is to the
+most recent daily percentage change.
+
+A low value of  leads to a great deal of weight
+being given to the u 2 n1 when  n is calculated.
+
+In this case, the estimates produced for
+the volatility on successive days are themselves highly volatile.
+
+A high value of  (i.e.,
+a value close to 1.0) produces estimates of the daily volatility that respond relatively
+slowly to new information provided by the daily percentage change.
+
+The RiskMetrics database, which was originally created by JP Morgan and made
+publicly available in 1994, used the EWMA model with  1⁄4 0:94 for updating daily
+volatility estimates.
+
+This is because the company found that, across a range of different
+market variables, this value of  gives forecasts of the variance rate that come closest
+to the realized variance rate. 6 The realized variance rate on a particular day was
+calculated as an equally weighted average of the u 2 i on the subsequent 25 days
+
+23.3
+In
+GARCH(1,1),  n 2 is calculated from a long-run average variance rate, V L , as well as
+from  n1 and u n1
+
+ is the weight assigned to V L ,  is the weight assigned to u 2 n1 , and  is the weight
+2
+assigned to  n1
+
+the weights must sum to unity
+
+The EWMA model is a particular case of GARCH(1,1)
+
+The ‘‘(1,1)’’ in GARCH(1,1) indicates that  n 2 is based on the most recent observa-
+tion of u 2 and the most recent estimate of the variance rate.
+
+The more general
+GARCH(p, q) model calculates  n 2 from the most recent p observations on u 2 and
+the most recent q estimates of the variance rate.
+
+For a stable GARCH(1,1) process
+we require  þ  < 1. Otherwise the weight applied to the long-term variance is
+negative.
+
+The weights
+decline exponentially at rate .
+
+The parameter  can be interpreted as a ‘‘decay rate’’.
+
+It is similar to  in the EWMA model. It defines the relative importance of the observa-
+tions on the u’s in determining the current variance rate.
+
+The GARCH(1,1) model is similar to the EWMA model except that, in addition to
+assigning weights that decline exponentially to past u 2 , it also assigns some weight to
+the long-run average volatility.
+
+The GARCH (1,1) model recognizes that over time the variance tends to get pulled
+back to a long-run average level of V L
+
+The GARCH(1,1) is equivalent to a model where the variance V follows the
+stochastic process
+
+This
+is a mean-reverting model.
+
+The variance has a drift that pulls it back to V L at rate a.
+When V > V L , the variance has a negative drift; when V < V L , it has a positive drift.
+
+Superimposed on the drift is a volatility 
+
+23.4
+In practice, variance rates do tend to be mean reverting.
+
+The GARCH(1,1) model
+incorporates mean reversion, whereas the EWMA model does not
+
+GARCH (1,1) is
+therefore theoretically more appealing than the EWMA model.
+
+In
+circumstances where the best-fit value of ! turns out to be negative, the GARCH(1,1)
+model is not stable and it makes sense to switch to the EWMA model.
+
+23.5
+Our next example of maximum likelihood methods considers the problem of estimating
+the variance of a variable X from m observations on X when the underlying distribution
+is normal with zero mean
+
+The likelihood of u i being observed is defined as the probability density
+function for X when X 1⁄4 u i
+
+The likelihood of m observations occurring in the order in which they are observed
+
+Maximizing an expression is equivalent to maximizing the logarithm of the expres-
+sion.
+
+Define v i 1⁄4  i 2 as the variance estimated for day i. Assume that the probability
+distribution of u i conditional on the variance is normal.
+
+It is
+necessary to search iteratively to find the parameters in the model that maximize the
+expression in equation (23.12).
+
+
+An alternative approach to estimating parameters in GARCH(1,1), which is some-
+times more robust, is known as variance targeting. 1
+
+This involves setting the long-run
+average variance rate, V L , equal to the sample variance calculated from the data (or to
+some other value that is believed to be reasonable)
+
+The value of ! then equals
+V L ð1    Þ and only two parameters ( and ) have to be estimated
+
+The assumption underlying a GARCH model is that volatility changes with the passage
+of time.
+
+During some periods volatility is relatively high; during other periods it is
+relatively low. To put this another way, when u 2 i is high, there is a tendency for u 2 iþ1 ,
+u 2 iþ2 , . . . to be high; when u 2 i is low, there is a tendency for u 2 iþ1 , u 2 iþ2 , . . . to be low.
+
+We
+can test how true this is by examining the autocorrelation structure of the u 2 i .
+
+Let us assume the u 2 i do exhibit autocorrelation. If a GARCH model is working well, it
+should remove the autocorrelation.
+
+We can test whether it has done so by considering the
+autocorrelation structure for the variables u 2 i = i 2
+
+If these show very little autocorrelation,
+our model for  i has succeeded in explaining autocorrelations in the u 2 i
+
+For a
+more scientific test, we can use what is known as the Ljung–Box statistic
+
+For K 1⁄4 15, zero autocorrelation can be rejected with 95% confidence when the Ljung–
+Box statistic is greater than 25
+
+23.6
+This equation forecasts the volatility on day n þ t using the information available at the
+end of day n  1.
+
+In the EWMA model,  þ  1⁄4 1 and equation (23.13) shows that the
+expected future variance rate equals the current variance rate.
+
+When  þ  < 1, the final
+term in the equation becomes progressively smaller as t increases
+
+As mentioned earlier, the variance rate exhibits mean reversion
+with a reversion level of V L and a reversion rate of 1    
+
+Our forecast of the future
+variance rate tends towards V L as we look further and further ahead
+
+This analysis
+emphasizes the point that we must have  þ  < 1 for a stable GARCH(1,1) process.
+
+When  þ  > 1, the weight given to the long-term average variance is negative and the
+process is ‘‘mean fleeing’’ rather than ‘‘mean reverting’’
+
+V ðtÞ is an estimate of the instantaneous variance rate in t days
+
+The average
+variance rate per day between today and time T is given by
+
+The larger T is, the closer this is to V L
+
+As discussed in Chapter 20, the market prices of different options on the same asset are
+often used to calculate a volatility term structure.
+
+This is the relationship between the
+implied volatilities of the options and their maturities
+
+Equation (23.14) can be used to
+estimate a volatility term structure based on the GARCH(1,1) model
+
+The estimated
+volatility term structure is not usually the same as the implied volatility term structure.
+
+However, as we will show, it is often used to predict the way that the implied volatility
+term structure will respond to volatility changes.
+
+When the current volatility is above the long-term volatility, the GARCH(1,1)
+model estimates a downward-sloping volatility term structure.
+
+When the current
+volatility is below the long-term volatility, it estimates an upward-sloping volatility
+term structure.
+
+Many financial institutions use analyses such as this when determining the exposure
+of their books to volatility changes. Rather than consider an across-the-board increase
+of 1% in implied volatilities when calculating vega, they relate the size of the volatility
+increase that is considered to the maturity of the option
+
+23.7
+As
+explained in Chapter 22, correlations also play a key role in the calculation of VaR
+
+The correlation between two variables X and Y can be defined as
+
+where  X and  Y are the standard deviations of X and Y and covðX; YÞ is the covariance
+between X and Y
+
+The covariance between X and Y is defined as
+
+where
+ X and
+ Y are the means of X and Y
+
+Define x i and y i as the percentage changes in X and Y between the end of day i  1
+and the end of day i
+
+We also define the
+following:
+ x;n : Daily volatility of variable X, estimated for day n
+ y;n : Daily volatility of variable Y, estimated for day n
+cov n : Estimate of covariance between daily changes in X and Y, calculated on day n.
+
+Using equal weighting and assuming that the means of x i and y i are zero, equation (23.3)
+shows that the variance rates of X and Y can be estimated from the most recent m
+observations as
+
+A similar estimate for the covariance between X and Y
+
+One alternative for updating covariances is an EWMA model similar to equation (23.7).
+
+A similar analysis to that presented for the EWMA volatility model shows that the
+weights given to observations on the x i y i decline as we move back through time. The
+lower the value of , the greater the weight that is given to recent observations
+
+GARCH models can also be used for updating covariance estimates and forecasting the
+future level of covariances.
+
+Formulas similar to those in
+equations (23.13) and (23.14) can be developed for forecasting future covariances and
+calculating the average covariance during the life of an option
+
+Once all the variances and covariances have been calculated, a variance–covariance
+matrix can be constructed.
+
+Not all symmetric variance–covariance matrices are internally consistent
+
+The con-
+dition for an N  N variance–covariance matrix  to be internally consistent is
+
+for all N  1 vectors w, where w T is the transpose of w
+
+A matrix that satisfies this
+property is known as positive-semidefinite.
+
+To ensure that a positive-semidefinite matrix is produced, variances and covariances
+should be calculated consistently
+
+For example, if variances are calculated by giving equal
+weight to the last m data items, the same should be done for covariances. If variances are
+updated using an EWMA model with  1⁄4 0:94, the same should be done for covariances.
+
+23.8
+We now return to the example considered in Section 22.2. This involved a portfolio on
+September 25, 2008, consisting of a $4 million investment in the Dow Jones Industrial
+Average, a $3 million investment in the FTSE 100, a $1 million investment in the
+CAC 40, and a $2 million investment in the Nikkei 225
+
+Daily returns were collected
+over 500 days ending on September 25, 2008. Data and all calculations presented here
+can be found at: www-2.rotman.utoronto.ca/hull/OFOD/VaRExample.
+
+The correlation matrix that would be calculated on September 25, 2008, by giving
+equal weight to the last 500 returns is shown in Table 23.5
+
+The covariance matrix for the equal-weight case is shown in Table 23.6
+
+Instead of calculating variances and covariances by giving equal weight to all observed
+returns, we now use the exponentially weighted moving average method with  1⁄4 0:94
+
+This gives the variance–covariance matrix in Table 23.7
+
+The standard deviation of a portfolio consisting of long
+positions in securities increases with the standard deviations of security returns and also
+with the correlations between security returns
+
+. Table 23.8 shows that the estimated daily
+standard deviations are much higher when EWMA is used than when data are equally
+weighted
+
+This is because volatilities were much higher during the period immediately
+preceding September 25, 2008, than during the rest of the 500 days covered by the data
+
+Most popular option pricing models, such as Black–Scholes–Merton, assume that the
+volatility of the underlying asset is constant. This assumption is far from perfect
+
+In
+practice, the volatility of an asset, like the asset’s price, is a stochastic variable
+
+Unlike
+the asset price, it is not directly observable
+
+Maximum likelihood methods are usually used to estimate parameters from historical
+data in the EWMA, GARCH(1,1), and similar models
+
+These methods involve using an
+iterative procedure to determine the parameter values that maximize the chance or
+likelihood that the historical data will occur
+
+For every model that is developed to track variances, there is a corresponding model
+that can be developed to track covariances
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+Any estimate comes with a degree of uncertainty, but often that uncertainty is ignored. This is incredibly dangerous in finance, as a wrong estimate can be the difference between steady gains and massive losses. 
+
+A parameter is anything that a model uses to constrain its predictions. Commonly, a parameter is a quantity that helps to describe a data set or a distribution. 
+
+ If we take the mean of a set of samples drawn from the normal distribution, we get an estimate of the mean of the distribution
+
+ Other parameters include the median, the correlation coefficient to another series, the standard deviation, and every other measurement of a data set.
+
+ to determine how good your estimate is by looking at its stability/standard error/confidence intervals.
+
+ Whenever we consider a set of observations, our calculation of a parameter can only be an estimate. It will change as we take more measurements or as time passes and we get new observations
+
+ We can quantify the uncertainty in our estimate by looking at how the parameter changes as we look at different subsets of the data.
+
+ For instance, standard deviation describes how different the mean of a set is from the mean of each observation, that is, from each observation itself.
+
+ In financial applications, data often comes in time series. In this case, we can estimate a parameter at different points in time; say, for the previous 30 days.
+
+ By looking at how much this moving estimate fluctuates as we change our time window, we can compute the instability of the estimated parameter.
+
+ Notice that, although the probability of getting closer to 0 and 1 for the mean and standard deviation, respectively, increases with the number of samples, we do not always get better estimates by taking more data points.
+
+ Whatever our expectation is, we can always get a different result, and our goal is often to compute the probability that the result is significantly different than expected.
+
+ With time series data, we usually care only about contiguous subsets of the data. The moving average (also called running or rolling) assigns the mean of the previous  n  data points to each point in time. 
+
+ What happens if the underlying data isn't normal? A mean will be very deceptive. Because of this it's important to test for normality of your data. We'll use a Jarque-Bera test as an example.
+
+We'll test our data using the Jarque-Bera test to see if it's normal. A significant p-value indicates non-normality.
+
+from statsmodels.stats.stattools import jarque_bera
+jarque_bera(X)
+
+One statistic often used to describe the performance of assets and portfolios is the Sharpe ratio, which measures the additional return per unit additional risk achieved by a portfolio, relative to a risk-free source of return such as Treasury bills:
+$$R = \frac{E[r_a - r_b]}{\sqrt{Var(r_a - r_b)}}$$
+where $r_a$ is the returns on our asset and $r_b$ is the risk-free rate of return.
+
+def sharpe_ratio(asset, riskfree):
+    return np.mean(asset - riskfree)/np.std(asset - riskfree)
+start = '2012-01-01'
+end = '2015-01-01'
+#/ Use an ETF that tracks 3-month T-bills as our risk-free rate of return
+treasury_ret = get_pricing('BIL', fields='price', start_date=start, end_date=end).pct_change()[1:]
+pricing = get_pricing('AMZN', fields='price', start_date=start, end_date=end)
+returns = pricing.pct_change()[1:] # Get the returns on the asset
+#/ Compute the running Sharpe ratio
+running_sharpe = [sharpe_ratio(returns[i-90:i], treasury_ret[i-90:i]) for i in range(90, len(returns))]
+#/ Plot running Sharpe ratio up to 100 days before the end of the data set
+_, ax1 = plt.subplots()
+ax1.plot(range(90, len(returns)-100), running_sharpe[:-100]);
+ticks = ax1.get_xticks()
+ax1.set_xticklabels([pricing.index[i].date() for i in ticks[:-1]]) # Label x-axis with dates
+plt.xlabel('Date')
+plt.ylabel('Sharpe Ratio');
+
+The Sharpe ratio looks rather volatile, and it's clear that just reporting it as a single value will not be very helpful for predicting future values. Instead, we can compute the mean and standard deviation of the data above, and then see if it helps us predict the Sharpe ratio for the next 100 days.
+
+#/ Plot its mean and the +/- 1 standard deviation lines
+ax2.axhline(mean_rs)
+ax2.axhline(mean_rs + std_rs, linestyle='--')
+ax2.axhline(mean_rs - std_rs, linestyle='--')
+ax2.axvline(len(returns) - 100, color='pink');
+
+The standard deviation in this case is about a quarter of the range, so this data is extremely volatile. Taking this into account when looking ahead gave a better prediction than just using the mean, although we still observed data more than one standard deviation away. 
+
+We could also compute the rolling mean of the Sharpe ratio to try and follow trends; but in that case, too, we should keep in mind the standard deviation.
+
+Let's say you take the average with a lookback window; how would you determine the standard error on that estimate? 
+
+#/ Compute the rolling mean for each day
+mu = pd.rolling_mean(pricing, window=90)
+
+This lets us see the instability/standard error of the mean, and helps anticipate future variability in the data. 
+
+We can quantify this variability by computing the mean and standard deviation of the rolling mean.
+
+In fact, the standard deviation, which we use to quantify variability, is itself variable. 
+
+#/ Compute rolling standard deviation
+std = pd.rolling_std(pricing, window=90)
+
+To see what this changing standard deviation means for our data set, let's plot the data again along with the Bollinger bands: the rolling mean, one rolling standard deviation (of the data) above the mean, and one standard deviation below.
+
+Note that although standard deviations give us more information about the spread of the data, we cannot assign precise probabilities to our expectations for future observations without assuming a particular distribution for the underlying process.
+
+Whenever we compute a parameter for a data set, we should also compute its volatility. Otherwise, we do not know whether or not we should expect new data points to be aligned with this parameter.
+
+A good way of computing volatility is dividing the data into subsets and estimating the parameter from each one, then finding the variability among the results.
+
+There may still be outside factors which are introduced after our sample period and which we cannot predict. 
+
+However, the instability analysis and testing for standard error is still very useful for telling us how much we should distrust our estimates.

@@ -1,0 +1,16 @@
+There are six factors affecting the price of a stock option:
+    1. The current stock price, S 0
+    2. The strike price, K
+    3. The time to expiration, T
+    4. The volatility of the stock price, 
+    5. The risk-free interest rate, r
+    6. The dividends that are expected to be paid.
+
+If a call option is exercised at some future time, the payoff will be the amount by which
+the stock price exceeds the strike price. Call options therefore become more valuable as
+the stock price increases and less valuable as the strike price increases.
+
+For a put option,
+the payoff on exercise is the amount by which the strike price exceeds the stock price.
+Put options therefore behave in the opposite way from call options: they become less
+valuable as the stock price increases and more valuable as the strike price increases.

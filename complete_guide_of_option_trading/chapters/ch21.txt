@@ -1,0 +1,110 @@
+A collar consists of a covered call and a protective put.
+
+In a collar, the stock is essentially “collared” between two options.
+
+A collar can be executed where there is a one-to-one ratio of options sold versus stock owned, or it can be ratioed (unbalanced) where there is a different number of calls versus puts or a different number of options relative to shares owned
+
+A collar can be viewed as a covered call and a protective put.
+
+ A collar is established by owning stock, selling an out-of-the-money call, and, in effect, using the proceeds to purchase an out-of-the-money put.
+
+In a collar, you know the highest and lowest dollar amounts you can potentially lose or gain.
+
+A collar combines a protective put in return, in effect, for the limited upside profit potential of a covered call
+
+A collar is the equivalent of a short combination with long stock
+
+If the stock rises, this strategy performs like a covered call. If the stock declines, this strategy limits the loss at the put strike price (ignoring the premium for a moment).
+
+If the underlying stock closes above the call strike price at expiration, the long put will expire out-of-the-money and is worthless, and the investor will most likely be assigned on the call.
+
+If the underlying stock closes below the short put strike price at expiration, the short call will expire out-of-the-money and is worthless and the put will be in-the-money. In this case, you have the right to sell stock at the put strike price.
+
+If the underlying stock is between the strike prices of the call and put at expiration, both options expire out-of-the-money, resulting in a profit if established at a credit or a loss if at a debit for the option portion of the position.
+
+A collar can be established after stock is purchased to protect a gain
+
+Your trading platform may permit you to enter a collar as one order
+
+Depending on the strike prices chosen, an equity collar may be established at a net credit, with an investor being paid to protect underlying shares already owned.
+
+The credit or debit depends on the relative price of the put versus the call. If the price of the call is greater than the price of the put, the collar can be established for a credit (assuming all other factors are the same).
+
+When you establish a collar for a credit, you can profit potentially from a rise in the underlying stock, dividend on the stock, and net credit.
+
+If the price of the call is less than the price of the put, the collar would be established for a debit. If the call and put prices are approximately the same, it may be called a zero-cost collar (even-cost collar; see Table 21.1)
+
+A collar can be used to take advantage of a pricing discrepancy between calls and puts (e.g., where a call may be priced higher than a comparable put) or to reduce risk and fluctuations in an account.
+
+A collar is a limited-reward/limited-risk strategy.
+
+Profit is maximized when the underlying stock is at or above the call strike price at the expiration date.
+
+The long stock position protects you against assignment risk associated with the short call position because any assignment would be protected by the stock gain.
+
+A collar is considered limited risk because the put protects you from a loss below the put strike price (ignoring the premium)
+
+The break-even point, at expiration, is equal to the original stock price minus any net credit or plus any debit.
+
+There is no margin requirement for the call because it is covered by the stock, and the put is required to be paid in full at the time of purchase. The stock purchase has a stock margin requirement.
+
+Establishing a collar can be structured to vary the levels of probability, depending on the strike prices selected.
+
+The strike prices and the time frame you choose should be determined based on your projection of the underlying movement of the stock.
+
+A disadvantage of a collar is the inability to earn interest on the proceeds used to purchase the stock. You are, however, entitled to receive dividends on the stock.
+
+A collar is a strategy that involves long stock, a short call, and a long put. In a collar, the call and put work together to define the maximum profit and loss.
+
+A collar is primarily bullish, has limited profit potential based on the call strike price, and has limited risk based on the put strike price.
+
+If the underlying stock closes between the strike prices of the call and put at expiration, both options expire out-of-the-money.
+
+The break-even point, at expiration, is equal to the original stock price minus any net credit (or plus any debit)
+
+Time decay reduces call and put values, an increase in volatility increases the call and put values, and a decrease in volatility reduces the call and put values.
+
+A collar may be executed for a credit or a net debit. Any net debit must be paid at the time of purchase.
+
+A collar can be an effective way to automatically sell into strength and trim a portfolio as stocks rise.
+
+A collar can be executed in reverse (buy call and sell put) against a short stock position
+
+ A collar can be established as a net credit, a net debit, or at even cost (zero cost), depending on the strike prices chosen and the current price of the options. Whether the collar is at a credit or a debit depends on the relative price of the put and the call.
+
+For a collar, assuming an equal number of options are bought as sold, if the price of the call is greater than the price of the put, it is established for a credit. If the price of the call is less than the price of the put, it is established for a debit.
+
+If the call and put prices are the same, then it is even cost. The term “zero cost” is used, at times, when the credit from the call equals the debit from the put.
+
+Even if you do not own the stock, your trading platform may permit you to enter a collar as one order.
+
+A call on an underlying stock almost always has a higher value relative to a put. If call values are greater than put values, you can execute a collar for a credit more easily
+
+ Conversely, on broad-based indexes, the call-put pricing relationship is reversed.
+
+An out-of-the-money call on an underlying broad-based index typically has a lower value relative to a comparable put.
+
+Apparently, there is a greater demand for buying puts relative to calls on broad-based indexes such as the S&P 500 index (SPX), creating higher put prices relative to calls for out-of-the-money options.
+
+A collar can be unbalanced so that the number of options bought differs from the number of options sold
+
+When transitioning from an initial collar to the new collar, you can wait until the initial collar expires and then enter into the new collar
+
+Alternatively, if the initial collar is near zero but has not yet expired, you may want to offset the options in the marketplace and simultaneously roll to a new collar
+
+If you roll, you can select different strike prices, based on the current level of the stock as well as on your view of the market and prospects for the stock
+
+Portfolio managers have a tendency to sell short-term calls to finance the purchase of puts (i.e., a collar), having the effect of driving down the prices of short-term calls and driving up the prices of short-term puts in the SPX and S&P 500 futures. This creates a pricing environment in which the prices of puts are higher than the prices of comparable calls.
+
+The tendency of the marketplace to sell SPX and S&P 500 futures out-of-the-money calls and buy such out-of-the-money puts creates a discrepancy in the relative pricing of SPX and S&P 500 futures calls versus puts.
+
+It should be noted, however, that the effects of such call suppression can be mitigated if you trade further out in time.
+
+By trading SPX and S&P 500 futures call options with a later expiration date, the downward pressure on call prices can be minimized. In other words, longer-term call options are more on par with longer-term put options.
+
+In a collar, you can profit from the triple combination of stock appreciation, dividends, and a net credit.
+
+If you already own the underlying stock, a collar can be considered a low-risk and low-cost strategy.
+
+Collar trades can be prudent whether the market is moving up, down, or sideways.
+

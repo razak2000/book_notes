@@ -1,0 +1,160 @@
+A covered call strategy consists of owning stock and selling at-the-money or out-of-the-money calls based on the shares owned.
+
+Selling a covered call means you can benefit from time decay and/or volatility contraction while you wait for the next move in the stock.
+
+A covered call is a strategy in which you own stock and then sell at-the-money or out-of-the-money calls in proportion to the shares owned.
+
+A buy-write (also called a covered call write) strategy is a version of a covered-call strategy in which the stock purchase and option sale occur as part of the same transaction.
+
+Your trading platform may include the ability to execute a buy-right order
+
+When you sell a covered call, you can potentially profit from three sources:
+    1. A rise in the underlying stock,
+    2. Dividends on the stock,
+    3. Option premium.
+
+An option position is typically considered covered, for this purpose, if there is a fully offsetting opposite market position such as the long stock.
+
+Keep in mind that a disadvantage of a covered call or buy-write is the inability to earn interest on the proceeds used to purchase the stock. You are, however, entitled to receive dividends if you own the stock.
+
+A covered option has unlimited risk (although the stock cannot go below zero)
+
+To exit an option position, you can offset it in a closing transaction, wait for assignment (if it is in-the-money), or let it expire worthless (if it is out-of-the-money at expiration).
+
+ Because a covered call is supported (covered) dollar for dollar by the underlying shares, many brokerage firms permit a covered call to be written in an IRA.
+
+If you are short a call and are assigned, you are forced to sell the underlying stock at the exercise price, but you already own the shares.
+
+A covered call can be an effective strategy to automatically sell into strength. Equity options are American-style expirations.
+
+An attraction of the covered-call strategy is that, ideally, calls can be sold every month, every couple of months, or every quarter so that you have an opportunity to collect additional premium.
+
+If the call option expires worthless, you may want to consider selling another call expiring in the next month or quarter to earn additional premium.
+
+If the original call option has not yet expired, you can roll the call option by offsetting it in the marketplace and selling a call option expiring in the subsequent month.
+
+Keep in mind that a covered call as well as most options strategies can also be executed using LEAPS.
+
+A covered put is the mirror image of the covered call.
+
+A covered put is a strategy in which you are short stock and then sell at-the-money or out-of-the-money puts in proportion to the shares shorted
+
+Remember that an option position is considered covered if there is a fully offsetting opposite market position.
+
+Selling a covered call can enable you to profit in a sideways market, take advantage of an anticipated decline in volatility, and share in some stock appreciation.
+
+A covered call is primarily bullish but can profit in a neutral environment.
+
+A covered call has limited profit potential and unlimited risk.
+
+The maximum profit of a covered call, at expiration, is equal to the out-of-the-money amount plus the premium and occurs when the underlying stock is at or above the exercise price.
+
+In this case, you profit from the option premium plus a rise in the underlying stock up to the strike price.
+
+The maximum loss is unlimited because of the potential decline in the stock price.
+
+The break-even point of the call itself occurs when the stock, at expiration, is at the strike price plus the credit.
+
+The break-even point of the combined stock and call position is where the stock, at expiration, is at the original price of the stock minus the premium credit.
+
+Time decay reduces the call value, benefiting the seller; an increase in volatility increases the call value; and a decrease in volatility reduces the call value.
+
+A credit is reflected in your account for the premium, but a covered call is, in total, a debit transaction because of the purchase of the stock. A covered call may be permitted in an IRA.
+
+The triple combination of stock appreciation, dividends, and premium income can make selling covered calls attractive.
+
+The stock dividend can be added to the premium income in calculating your potential return.
+
+If you already own stock, and volatility in the marketplace rises dramatically, you may want to consider selling a covered call because the option premium may be attractive and you can profit from a decline in volatility (theta).
+
+ If implied volatility declines after the call is sold, assuming that all other factors remain constant, a call option will decrease in value.
+
+Selling a covered call can be an effective way to automatically sell into strength and trim a portfolio as stocks rise
+
+The covered call is often described as popular, conservative, safe, simple, and a smart way to make money. However, referring to the typical covered call in this manner unfortunately can be misleading, especially when you realize that a covered call has approximately the same amount of risk as a naked put.
+
+Selling an at-the-money covered call, in effect, is the equivalent position of selling a naked at-the-money put.
+
+When you sell a naked put, you benefit if the stock rises but can lose substantially if the stock declines substantially.
+
+In reality, call prices on stocks are typically higher in comparison to put prices when the call and put are at an equal distance from the price of the underlying stock.
+
+As a result, a covered call and an out-of-the-money naked put should produce similar results but may not be exactly the same.
+
+The strike price you choose is an important ingredient in determining the potential risk and reward.
+
+Selling an out-of-the-money covered call means that you can benefit from time decay.
+
+You should use your trading platform to determine the Greeks, including the probability of being assigned on the covered call position.
+
+The further the call is out-of-the-money, the lower the premium, the lower the delta, and the lower the probability of assignment
+
+If you want to retain your stock, you should select a strike price that is far-out-of-the-money. If you are comfortable selling your stock near its current value, then you should consider selling an at-the-money option. Also, you also need to decide how far out in time the option will expire
+
+ In general, the near-term (front) month is often used to take advantage of time decay, but a longer-term option can be used.
+
+ One of the advantages of using a longer-term option is that you collect greater premium and incur lower commission charges because you adjust the position less often.
+
+The strike price and the time frame you choose should be determined based on your projection of the movement of the stock.
+
+There are advantages and disadvantages to selling an at-the-money versus a slightly-out-of-the-money versus a far-out-of-the-money option in a covered call strategy.
+
+If you sell an at-the-money option, you will collect relatively more premium, but you will have a higher probability of being assigned; if you sell a slightly-out-of-the-money call option, you may collect a reasonable amount of premium, but there will still be reasonable assignment risk; and if you sell a far-out-of-the-money option, you will collect the least amount of premium, but you will have the least probability of being assigned.
+
+A covered-call strategy can be used every month, every couple of months, or every quarter so that you have an opportunity to collect additional premium.
+
+When transitioning from the original option to the new call option, you can wait until the initial call option expires and then sell a new call option.
+
+Alternatively, if the original call option is valued near zero and has not yet expired, you may want to roll the position by offsetting the option in the marketplace and establishing a call option in a subsequent month.
+
+A covered call can be viewed as a way to buy stock and to finance it, in part, by the sale of calls.
+
+Rolling can be part of your overall strategy to earn income on a monthly or quarterly basis;
+
+The problem with the covered call strategy is that it assumes an oversimplification regarding how the underlying stock moves on a daily, weekly, and monthly basis. Rarely do stocks move in a predictable fashion so that we can simply collect premium every month on an option.
+
+If the stock surges above the strike price, you should, in general, not offset the option without also selling the stock because if the stock subsequently plunges, you may have a loss on the option and on the stock.
+
+Likewise, if the stock initially plunges, you should not sell the stock without also offsetting the option because if the stock subsequently surges, you may have a loss on the option and on the stock.
+
+The management of covered calls (and any option position, for that matter) at times is not always easy
+
+Some confusion may result because some strategies are more tailored toward protecting existing portfolios, whereas other strategies are designed to profit without regard to existing holdings.
+
+An outstanding strategy for a portfolio manager or hedge fund, such as selling a covered call, may be a risky strategy for the average investor
+
+The portfolio manager may not be as concerned with a market decline because he may have cash sitting on the sidelines waiting to invest, and his primary concern may be to beat various benchmarks and the performance of other managers.
+
+As an aside, portfolio managers have a tendency to sell covered calls against their existing positions and buy protective puts, thus driving down the price of calls and inflating the value of puts on broad-based indexes
+
+Conversely, the average investor is not operating under similar circumstances and is unlikely to have a broad-based portfolio of long-term stocks. As a result, the average investor selling a covered call may find himself with limited upside potential and a great deal of risk to the downside.
+
+Remember that a covered put is the mirror image of a covered call.
+
+ A covered put is a strategy in which you are short stock and then sell at-the-money or out-of-the-money puts in proportion to the shares shorted.
+
+Selling a covered put can enable you to profit in a sideways market, take advantage of an anticipated decline in volatility, and share in some stock decline.
+
+A covered put is primarily bearish but can profit in a neutral environment
+
+Like a covered call, a covered put has limited profit potential and unlimited risk.
+
+Very few advisers recommend the selling of naked put options because it is too risky, but many advisers recommend selling covered calls as a risk-reduction strategy. A flaw in the logic regarding covered calls is that most of the attention is focused on profiting from the decay of the call option, whereas in reality, it is the stock price that has a much greater effect on your overall gain or loss position.
+
+You should therefore set appropriate stop losses to protect your overall investment.
+
+The covered-call strategy is a popular strategy but seems to be overrated and misunderstood because it encourages individuals to take excessive risk, using the argument that such losses, should they occur, are intellectually appealing.
+
+However, selling a covered call can be an effective strategy if you know what you are doing.
+
+The best candidates for covered calls are not necessarily the options with the highest implied volatility. Instead, in many cases, an underlying instrument that is more predictable may be the better choice.
+
+The covered-call strategy tends to be more appropriate for stocks that trade in a relatively narrow range
+
+Selling calls on dividend-paying stocks provides an opportunity to profit from the dividend, option premium, and stock appreciation. Dividend-yielding ETFs may provide an opportunity for covered call opportunities.
+
+If you choose an underlying instrument that pays a high dividend, such as utilities, real estate investment trusts, selected bank stocks, and ETFs (e.g., high-yielding bond funds), you may be stacking the odds of success on your side
+
+Remember that a covered call can be executed with many combinations of strike prices and expiration months, and it can be unbalanced with a different number of options relative to the number of shares.
+
+As an aside, if you purchase a deep-in-the-money call and sell a far-out-of-the-money call, you have created a position similar to a covered call position.

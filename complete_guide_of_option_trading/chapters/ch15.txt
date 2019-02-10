@@ -1,0 +1,197 @@
+A long call butterfly consists of purchasing one call at a lower strike, selling two calls at a middle strike, and purchasing one call at a higher strike.
+
+The outside strikes are referred to as the wings, whereas the two short options located at the middle strike are referred to as the body.
+
+A butterfly is a limited-risk/limited-reward strategy with which you can take advantage of a range-bound market (long butterfly) or of an increase in volatility (short butterfly) with a relatively low margin requirement.
+
+A long butterfly spread is a strategy designed to profit from a trading range, with limited risk.
+
+A short butterfly spread is a strategy designed to profit from volatility, with limited risk.
+
+You might establish a long butterfly if you believe that the stock will trade within a trading range and a short butterfly if you believe that the stock will trade outside a range.
+
+A butterfly is executed with all calls or all puts.
+
+A long butterfly spread consists of three equally spaced exercise prices, in which the same number of options are purchased at the outside exercise prices and twice the number of options are sold at the inside exercise price (four total contracts)
+
+When you buy a butterfly, you typically (but not always) pay a net debit
+
+A short butterfly spread consists of three equally spaced exercise prices, in which the same number of options are sold at the outside exercise prices and twice the number of options are purchased at the inside exercise price (four total contracts).
+
+When you sell a butterfly, you typically (but not always) collect a credit.
+
+A long butterfly is considered a long position because the lowest strike price (assuming calls are used) is long. A short butterfly is considered a short position because the lowest strike price (assuming calls are used) is short.
+
+The lowest and highest strike prices in a long butterfly are long legs, whereas the lowest and highest strike prices in a short butterfly are short legs.
+
+Long butterfly: Three equally spaced exercise prices; all options expire at the same time, the same number of options at outside exercise prices are purchased, and twice the number of options at inside exercise price are sold.
+
+Short butterfly: Three equally spaced exercise prices; all options expire at the same time, the same number of options at outside exercise prices are sold, and twice the number of options at inside exercise price are purchased.
+
+In a short butterfly, margin is generally required for the short vertical portion of the spread.
+
+Full payment is required if the spread is a long butterfly.
+
+You can execute a long or short butterfly with all calls or all puts
+
+An advantage of a long or short butterfly is its limited risk and the low volatility of the position (because the option positions trend to offset one another).
+
+A butterfly (at expiration) will have a value (ignoring the premium paid or collected) somewhere between zero and the width between exercise prices
+
+A call butterfly, at expiration, has a value of zero when the stock is at or below the lowest strike price (95, for example), achieves its maximum value when the stock is at the middle strike price (100, for example), and declines to zero when the stock is at or above the highest strike price (105, for example).
+
+In a long butterfly, you typically pay a debit and profit if the underlying instrument trades within a range. This is contrary to the general rule for a vertical spread, for example, that a debit strategy typically attempts to profit as an underlying stock moves by a large amount in one direction.
+
+Likewise, a credit in a short butterfly profits if the underlying stock trades outside a range, contrary to the general rule for a vertical spread, for example, that a credit strategy typically profits because an underlying stock trades sideways or in one direction.
+
+Whether a butterfly is executed for a debit or a credit depends, in part, on the width of strike prices, time remaining to expiration, the relative value of the options that are bought and sold, and the bid/ask spread.
+
+As a general rule, wider strike prices mean a larger debit (if long) or credit (if short), whereas a wider bid/ask spread increases a debit and decreases a credit.
+
+An attraction of a butterfly is that it has low volatility because there are two long options and two short options that tend to offset one another.
+
+In a butterfly, time decay of short options typically approximates time decay of long options, and a volatility increase or decrease affects the value of short options by approximately the same amount as long options.
+
+Keep in mind that the value of a butterfly declines as the underlying stock moves farther away from the middle strike price.
+
+Before establishing a long call butterfly spread, you should first determine at what price you believe the underlying stock will be trading at the expiration date. That price is the strike price for two options that you will sell for a long butterfly and is the middle strike price.
+
+At the same time, you will buy an option with a lower strike price and buy an option with a higher strike price, where the distance between strike prices is equal.
+
+A long butterfly is a strategy that has limited profit potential, limited risk, and is profitable if the underlying stock trades within the range of strike prices.
+
+A long butterfly maximum profit occurs when the stock is at the middle strike price at expiration, and its maximum loss occurs (at expiration) if the stock closes at or below the lowest strike price or at or above the highest strike price. It is worth zero if the underlying stock is at or below the lowest exercise price or at or above the highest exercise price.
+
+A long butterfly is considered a limited-reward strategy because it cannot be worth more than the difference between the strikes. A long butterfly is considered a limited-risk strategy because you cannot lose more than the debit paid.
+
+In a butterfly, there are two break-even points. The break-even points in a long butterfly occur when the stock (at expiration) is at the lowest strike price plus the debit or at the highest strike price minus the debit.
+
+In a long butterfly, the time decay of the short options typically approximates the time decay of the long options, and a volatility increase or decrease affects the value of short options by approximately the same amount as long options.
+
+For a long butterfly, a debit charged to your account must be paid in full. A long butterfly may be permitted in an IRA.
+
+A long call butterfly can be viewed as a combination of a bull call spread (the lower two strikes) and a bear call spread (the upper two strikes)
+
+The characteristics of a long put butterfly are the same as those of a long call butterfly. You should first determine at what price you believe the underlying stock will be trading at the expiration date. That price is the strike price for two options that you will sell and is the middle strike price. At the same time, you will buy an option with a lower strike price and buy an option with a higher strike price, for which the distance between strike prices is equal.
+
+A long butterfly is a strategy that has limited profit potential, limited risk, and is profitable if the underlying stock trades within the range of strike prices.
+
+A long butterfly maximum profit occurs when the stock is at the middle strike price at expiration, and its maximum loss occurs (at expiration) if the stock closes at or below the lowest strike price or at or above the highest strike price.
+
+At expiration, a long butterfly is worth its maximum if the underlying stock is at the inside exercise price and is worth zero if the underlying stock is at or below the lowest exercise price or at or above the highest exercise price.
+
+A long put butterfly, like a long call butterfly, is considered a limited-reward strategy because it cannot be worth more than the difference between the strikes.
+
+A long butterfly is considered a limited-risk strategy because you cannot lose more than the debit paid.
+
+In a butterfly, there are two break-even points. The break-even points in a long butterfly occur when the stock (at expiration) is at the lowest strike price plus the debit or at the highest strike price minus the debit.
+
+In a long butterfly, the time decay of the short options typically approximates the time decay of the long options, and a volatility increase or decrease affects the value of short options by approximately the same amount as long options.
+
+For a long butterfly, a debit charged to your account must be paid in full. A long butterfly may be permitted in an IRA.
+
+Before establishing a short call butterfly spread, you should first determine at what price you believe the underlying stock will most likely not be trading at the expiration date. That price is the strike price for two options that you will buy and is the middle strike price. At the same time, you will sell an option with a lower strike price and sell an option with a higher strike price, where the distance between strike prices is equal.
+
+A short butterfly (at expiration) will have a value somewhere between the amount between the exercise prices and zero.
+
+A short butterfly is a strategy that has limited profit potential and limited risk, and its maximum profit is achieved if the underlying stock trades outside the range of strike prices.
+
+A short butterfly maximum gain occurs (at expiration) if the stock closes at or below the lowest strike price or at or about the highest strike price.
+
+The maximum gain is the credit collected (less commissions). Its maximum loss occurs when the stock is at the middle strike price at expiration.
+
+At expiration, a butterfly is worth its maximum if the underlying stock is at the inside exercise price and is worth zero if the underlying stock is at or below the lowest exercise price or at or above the highest exercise price.
+
+A short butterfly is considered a limited-risk strategy because it cannot be worth more than the difference between the strikes
+
+The break-even points in a short butterfly occur when the stock (at expiration) is at the lowest strike price plus the credit or at the highest strike price minus the credit.
+
+In a short butterfly, the time decay of the short options typically approximates the time decay of the long options, and a volatility increase or decrease affects the value of short options by approximately the same amount as long options.
+
+In a short butterfly, is generally required for the short vertical portion of the spread. A short butterfly may be permitted in an IRA.
+
+Before establishing a short put butterfly spread, you should first determine at what price you believe the underlying stock will most likely not be trading at the expiration date. That price is the strike price for two options that you will buy and is the middle strike price. At the same time, you will sell an option with a lower strike price and sell an option with a higher strike price, where the distance between strike prices is equal.
+
+A short butterfly (at expiration) will have a value somewhere between the amount between the exercise prices and zero.
+
+A short butterfly is a strategy that has limited profit potential and limited risk, and its maximum profit is achieved if the underlying stock trades outside the range of strike prices.
+
+A short butterfly maximum gain occurs (at expiration) if the stock closes at or below the lowest strike price or at or about the highest strike price.
+
+Its maximum gain is the credit collected (less commissions). Its maximum loss occurs when the stock is at the middle strike price at expiration.
+
+At expiration, it is worth its maximum if the underlying stock is at the inside exercise price and is worth zero if the underlying stock is at or below the lowest exercise price or at or above the highest exercise price.
+
+A short butterfly is considered a limited-risk strategy because it cannot be worth more than the difference between the strikes
+
+The break-even point in a short butterfly occurs when the stock (at expiration) is at the lowest strike price plus the credit or at the highest strike price minus the credit.
+
+In a short butterfly, the time decay of the short options typically approximates the time decay of the long options, and a volatility increase or decrease affects the value of short options by approximately the same amount as long options.
+
+In a short butterfly, margin (or buying power) is generally required for the short vertical portion of the spread. A short butterfly may be permitted in an IRA.
+
+You may want to use a long butterfly strategy when you forecast that a particular stock will remain within a trading range (neutral) and you want low volatility in your account, limited risk, low margin, and a reasonable trade-off between risk and reward.
+
+You may want to use a short butterfly strategy when you forecast that a particular stock will trade outside a trading range and you want low volatility, limited risk, and low margin.
+
+The main decision you need to make is the middle strike price because that determines your maximum gain if you are long and your maximum loss if you are short.
+
+You should keep in mind that the middle strike price does not have to be at-the-money when it is established.
+
+Keep in mind that you can close out an option position by offsetting it in the marketplace at any time prior to expiration, and you should use your trading platform software, option calculator, and option chain to estimate option values based on your own assumptions.
+
+ If you are nearing expiration, you can offset your current position, because there are only a few days left in the option expiration cycle, and establish a similar position in a subsequent expiration month.
+
+ It may be difficult, however, to roll a butterfly because there are four contracts involved.
+
+There is assignment risk associated with a butterfly spread. Although it is generally accepted that spread trading reduces the risk of loss, spreads are subject to early exercise or assignment, which can remove the very protection that you wanted. This can lead to margin calls and/or greater losses than anticipated.
+
+As a general rule, it is best to avoid assignment on any leg in a butterfly, or any other short option position, for that matter.
+
+An alternative to being assigned is to offset a short option in the marketplace.
+
+You need to be careful not to be assigned in a butterfly spread because it can create margin problems and complexity.
+
+Being assigned could turn a well-constructed butterfly spread into a Three Stooges trade.
+
+In a long call butterfly, for example, its maximum loss occurs (at expiration) if the stock closes at or below the lowest strike price or at or about the highest strike price.
+
+This may sound like equal results, but the close above the highest strike price has exercise/assignment risk.
+
+The close below the lowest strike price simply results in all options expiring worthless.
+
+The potentially high cost of commissions, including the bid/ask spread, should be taken into consideration before entering into a butterfly.
+
+Commissions are incurred to establish each butterfly leg, to offset the butterfly if you choose to do so, and to execute any exercise and assignment.
+
+As a result, commissions, including the bid/ask spread, may be incurred on the four contracts to establish the butterfly and possibly on an additional four contracts to offset those positions at a later date, for a total of eight commission transactions.
+
+Additional commissions would be incurred on exercise or assignment.
+
+Sometimes I believe they call it a “butterfly” because you pay so much in commissions that you will see your profits fly away.
+
+Another butterfly strategy is called a “broken wing butterfly.” In this strategy, assuming a long call butterfly, you move the highest-strike call to a higher strike to reduce the cost of the debit or even to convert the debit to a credit or zero cost.
+
+Excuse me, but I cannot help but notice the similarities between a butterfly spread and gambling. Maybe all trading, including option trading, in general, is like gambling in many respects, but the butterfly seems to exemplify gambling to a greater degree.
+
+The butterfly can have a lot of merit, but it could also serve as a fallback position for the indecisive trader.
+
+In a butterfly strategy, your losses are limited, even if the stock moves appreciably in either direction.
+
+A trader may choose a long butterfly over a short straddle in a sideways market because of the limited risk of the butterfly.
+
+Unlike a short straddle or short strangle, in a long butterfly strategy, if the stock moves appreciably in one direction or the other, your losses are limited.
+
+In a long butterfly, the most you can lose is the amount paid to purchase the butterfly, but a short straddle has greater profit potential.
+
+If you recall from Chapter 14, a straddle or a strangle can be used to profit from a trading range or to profit from trading outside a range, but the problem with a straddle or a strangle is that there can be a lot of risk.
+
+A butterfly is designed to mitigate such risk. You can get an idea of your chances of success by examining the deltas of the various strike prices.
+
+In general, you should use your trading platform and its simulated (paper) trading feature to enter hypothetical trades to determine the pricing of a call versus a put butterfly spread.
+
+If you are executing a long butterfly, you want to pay as little as possible (with as much upside as possible); if you are executing a short butterfly, you want to collect as much premium as possible (with as little downside as possible).
+
+Whether a butterfly should be executed with calls or puts depends on the relative prices of the options.
+
+

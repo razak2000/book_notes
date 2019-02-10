@@ -1,0 +1,116 @@
+%%
+%% Author: abdul
+%% 7/25/18
+%%
+
+% Preamble
+\documentclass[11pt]{article}
+\title{Factor Models}
+\date{}
+
+% Packages
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+
+% Document
+\begin{document}
+    \maketitle
+    \begin{itemize}
+        \item The reason some of us are reluctant to do hold a stock index for long(30 to 40 years)is market risk: buying-and-holding
+        the stock index has long periods of drawdowns.
+        \item What if we instead hold a long-short market-neutral portfolio? why not just long value stocks and short growth stocks?
+        (we may hear that value stocks offer better long-term returns than growth stocks, value investor Warren Buffett)
+        \item  Just because this portfolio doesn't have market risk doesn't mean it doesn't have some other risk associated with long value and short growth.
+        \item many of the strategies whether they trade stocks or options, have such so-called factor risks, eg: volatility risk factor in option strategies
+        \item the factor risk of each stock is both serially and cross-sectionally correlated over a period of time (? verify if this is for all strategies or for
+        those in the above portfolio)
+        \item ``alphas" - returns that are not known to be associated with factor risks.
+        \item Earning alpha is almost riskless arbitrage, because their risks can be reduced to zero by increasing diversification.
+        The more stocks one includes in a portfolio with positive alpha, the smaller the (white noise) risk compared to its return.
+        \item On the other hand, factor risk cannot be diversified away. No matter how many value stocks you add to the long side of a portfolio,
+        and how many growth stocks you add to the short side, the factor risk remains unchanged.
+        \item alpha's, are especially hard to find. Every time someone finds alpha, they have to keep it a secret. And still, more and more people will discover it eventually,
+        and the alpha diminishes.
+        \item Even if nobody else finds it, alpha has limited capacity, so eventually it diminishes if too much capital has been applied to it
+        \item most factor returns remain alive and well, year after year; trading factor models
+        \item It is true that some factor returns do decrease over time - SMB factor, the put-call implied volatilities factor
+        \item implicit factor exposures in strategies
+        \item \textit{factor models}, This term is confined to simple linear models, where the predictors in the linear regression are our factors.
+        \item regression coefficients for factors are sometimes called \textit{smart betas}, a ``dumb" beta being the regression coefficient between the return of a
+        stock versus the return of the market index.
+        \item difference between time-series and cross-sectional factors
+    \end{itemize}
+    \section*{Time-series Factors}
+        \begin{itemize}
+	            \item examples of time-series factors - the market return and the value-minus-growth return. they vary from time to time, but they do not vary across
+            different stocks or financial assets
+            \item The value-minus-growth factor is often called HML, because it is the returns of a basket of high book-to-market stocks minus that of a basket of
+            low book-to-market stocks. Such a long-short portfolio whose returns represent a time-series factor is called a ``hedge" portfolio
+            \item What do vary across different stocks are their returns in response to this factor. This response is called the \textit{factor loading (or factor exposure)},
+            which is just a regression coefficient
+            \item Time-series factors usually (but not always) have dimensions of returns (i.e., dollar divided by time), but factor loadings are dimensionless
+           \begin{equation}
+               Return(t, s) - r_F = \alpha(t,s) + \beta_1(s) * Factor_1(t) + \beta_2(s) * Factor_2(t) + \dots + \epsilon(t, s)
+               \tag{2.1}\label{eq:2.1}
+           \end{equation}
+            \begin{flalign*}
+                & Return(t, s) \text{ is return of a stock $s$ over a period from $t-1$ to $t$} \\
+                & \beta_i(s) \text{ are the factor loadings of stock $s$} \\
+            \end{flalign*}
+
+            \item The $\alpha$ of a stock is included, indicating stock will have a time-varying return not driven by common factors.
+            In our modeling in this chapter, we won't have any such alpha models, hence $\alpha$ will be set as a constant in time:
+            $\alpha(t, s) = \alpha(s)$
+            \item noise term $\epsilon$, a catchall term that captures anything that our factor or alpha models are unable to explain and is supposed to be uncorrelated
+                both serially (in time) and cross-sectionally (across stocks)
+            \item Since the time-series factors are observable (e.g., we can easily measure the market return) and known historically, all we need to do is use the usual
+                least square fit to find the $\beta_i(s)$'s
+            \item how do we use equation \ref{eq:2.1} for our investment decisions, the time index $t$ is the same on both sides of the equation,
+                This means that this factor model are descriptive and explanatory, but not predictive
+            \item turning equation \ref{eq:2.1} into a predictive equation
+            \begin{flalign*}
+                Return(t+1, s) - r_F = \alpha(s) + \beta_1(s) * Factor_1(t) + \beta_2(s) * Factor_2(t) + \dots + \epsilon(t, s)
+                \tag{2.2}\label{eq:2.2}
+            \end{flalign*}
+            \item run a least square fit on equation $\ref{eq:2.2}$ and once we have obtained estimates of the $\alpha$ and $\beta_i$ for each stock,
+                we can use equation $\ref{eq:2.2}$ for predicting the next period's return
+            \item Besides the market return and HML, other popular time-series factors are SMB-the returns of a basket of small-market-capitalization stocks minus
+                that of a basket of big-market-capitalization stocks, and UMD-the returns of a basket of stocks whose prices went up minus that of a basket of stocks
+                that went down. (People also call this the WML factor: ``Winners minus Losers.")
+            \item Interestingly, both the HML value factor and the UMD momentum factor have positive returns.
+            \item Other macroeconomic factors include economic growth (specifically, real quarterly GDP growth and quarterly real personal consumption expenditures growth),
+                quarterly Consumer Price Index change, and volatility (VIX) change.
+            \item Example: Using Fama-French factors to predict the next-day return
+                \subitem The three time-series factors discussed above, the excess market return (i.e., market return minus the risk free rate), the HML portfolio return,
+                and the SMB portfolio return, are called the FamaFrench factors (Fama and French, 1993).
+                \subitem They are usually used as contemporaneous factors to account for the current returns of a stock, here we will see whether they can be used as predictor factors to predict the next
+                day's returns of stocks in the S\&P 500 Index
+                \subitem For our backtest, we use mid-quotes at market close provided by the Center for Research of Security Prices (CRSP.com) survivorship-bias-free database from January 3, 2007, to December 31, 2013.
+                \subitem We choose the midprice (half of the bid and ask prices) at the market close to represent the closing price in order to avoid effects of the widened bid-ask spread at the close.
+                \subitem The daily market, HML, and SMB factors are from Professor French's website \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html#Research}
+                \subitem We divide this data into two halves, and use the first half as a trainset to estimate the factor loadings for each stock separately (i.e., in a multivariate, multiple regression).
+                \subitem excess return (return minus risk free rate) for the next trading day and the predicted return for the next trading day
+                \subitem We then buy the top 50 stocks with the largest predicted returns and short the bottom 50 with the smallest
+                \subitem Since our data set is a survivorship-bias-free one, there are symbols that stopped trading as well as symbols that just started trading in the middle of the time period. Hence we can only make
+                predictions for the subset of data that has daily returns on a certain day.
+                \subitem the model works very well in-sample: it has a CAGR of 242 percent and a Sharpe ratio of 3.7
+                \subitem However, it generated negative returns out-of-sample. Clearly, the Fama-French factors are not terribly useful for short-term predictions
+        \end{itemize}
+
+    \section*{Cross-sectional Factors}
+
+    \section*{A Two-Factor Model}
+
+    \section*{Short  Interest}
+
+    \section*{Liquidity}
+
+    \section*{Statistical Factors}
+
+    \section*{Putting Them All Together}
+
+
+
+\end{document}

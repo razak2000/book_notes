@@ -1,0 +1,195 @@
+The Greeks are a tool that can enable you to estimate future option values based on a small change in the stock price, time, volatility, and other factors.
+
+ Delta measures the change in the price of an option in response to a one-point increase in the underlying stock.
+
+ Gamma measures the change in the delta of an option resulting from a one-point increase in the underlying stock.
+
+ Theta measures the change in the price of an option from the passage of one day in time (time value).
+
+ Vega measures the change in the price of an option from a one-point increase in implied volatility.
+
+ rho, measures the sensitivity of an option value from a one-point increase in the assumed interest rate
+
+ It is not necessary for you to understand the model’s mathematical details to trade options, but it is helpful to understand the model’s assumptions and limitations. 
+
+ The best-known option pricing model is Black-Scholes, Other option pricing models are Cox-Ross and Bi Nomal. Some advanced traders and firms create their own pricing models. 
+
+ An option pricing model is especially valuable if you have multiple positions or complex positions; for instance, you may be long calls in one position and short puts and/or short calls in another position.
+
+ Keep in mind that option pricing models showing Greeks are only estimates.
+
+ Assumptions of the Black-Scholes model include the following:
+ 	There is a one-unit change.
+
+ 	One Greek changes, while the other Greeks do not change.
+
+ 	In determining whether a sign is positive or negative, the Greeks assume that there is an increase in the underlying stock, an increase in delta, an increase in time, an increase in volatility, or an increase in interest rates.
+
+ Rarely do stocks change exactly one point, and never do the other factors affecting option prices remain constant. Therefore, you should approach the Greeks with an open mind, understanding that they can provide valuable information but do not provide all the information you need to quantify your risks and potential rewards with respect to an option position.
+
+Some other option-pricing-model assumptions include the following: no dividend is paid, European exercise, volatility is constant, interest rates remain constant, no commission is charged, and returns are lognormally distributed (I think this is a fancy way of saying that call and put prices are not symmetrical, even though they may be equidistant from the underlying stock price).
+
+A plus or minus sign for a Greek is based on the assumption that the underlying stock rises, time is moving forward, volatility is increasing, and the interest rate is rising.
+
+A Greek can be a positive or a negative number, depending on whether you are long or short the option and whether it is a call or a put.
+
+If delta is positive, you profit if the underlying stock rises. If delta is negative, you lose if the underlying stock rises. As a result, a long call and short put would have positive signs, whereas a short call and long put would have negative signs.
+
+If theta is positive, you profit with the passage of time. If theta is negative, you lose with the passage of time. As a result, a short call and short put would have positive signs, whereas a long call and long put would have negative signs.
+
+If vega is positive, you profit if volatility rises. If vega is negative, you lose if volatility rises. As a result, a long call and long put would have positive signs, whereas a short call and short put would have negative signs.
+
+Unlike the other Greeks, gamma does not indicate whether you have a profit or loss. Instead, gamma measures the effect on delta based on certain assumptions. Gamma is positive if you are long an option and is negative if you are short an option.
+
+If rho is positive, you profit if the assumed interest rate rises. If rho is negative, you lose if the assumed interest rate rises. As a result, a long call and short put would have positive signs, whereas a short call and long put would have negative signs.
+
+As result, except for gamma, if your position reflects a gain from an increase in what it measures, then it will show a positive sign. If your position reflects a loss from an increase in what it measures, then it will show a negative sign.
+
+Greeks can be expressed as a fraction (or percentage) or converted to dollars to reflect an actual position.
+
+Delta is measured from zero (0 percent) to 1.0 (100 percent) and can be a positive or negative number.
+
+In general, an at-the-money option typically has a delta of approximately 0.50 (50 percent). It is common to refer to such a delta as 50 because it is understood to mean a percentage.
+
+As an aside, the delta is typically around 0.55 for calls and 0.45 for puts if they are at-the-money, but it is assumed for simplicity in this book that all at-the-money options have a delta of 0.50. 
+
+The delta for an in-the-money option is usually greater than 0.50 and increases the further the underlying stock moves in-the-money
+
+The delta for an out-of-the-money option is usually less than 0.50 and declines the further the underlying stock moves out-of-the-money
+
+The problem with delta is that it only calculates what occurs if there is a one-point increase in the stock and does not calculate the value if there is a one-point decline in the stock, although you can reasonably conclude that it would approximate the change from an increase but in the opposite direction.
+
+A long call has a delta ranging from zero (far-out-of-the-money call) to 1.00 (deep-in-the-money call). 
+
+A short call has a delta ranging from zero (far-out-of-the-money call) to -1.00 (deep-in-the-money call).
+
+A long put has a delta ranging from zero (far-out-of-the-money put) to -1.00 (deep-in-the-money put)
+
+A short put has a delta ranging from zero (far-out-of-the-money put) to 1.00 (deep-in-the-money put)
+
+Keep in mind that the delta of an option changes throughout the trading day as there are changes in the price of the underlying stock, time, and volatility.
+
+Position Delta Delta can be expressed as a fraction (or percentage), such as 0.50, or converted to dollars to reflect an actual position, such as $50. 
+
+Your trading platform should help you determine your position delta for long and short option positions.
+
+Your position can also be converted to dollars to create a position gamma, position theta, and position vega so you can see the dollar effect of your actual positions held.
+
+Your trading platform should be able to convert your position so you can see the dollar impact. At the end of the day, you want to know your total exposure by converting your positions to dollars. 
+
+To normalize the Greeks to dollars, you typically multiply the number of contracts times the Greek percentages times 100 (if a stock).
+
+The great thing about delta (if you can get excited about these things) is that it can be used to measure the probability of an option finishing in-the-money on the expiration date. 
+
+If we ignore the sign of the delta, the delta is approximately equal to the probability, according to pricing in the marketplace, that the option will finish in-the-money.
+
+As delta moves closer to 1.00, the option becomes more and more likely to finish in-the-money. 
+
+As delta moves closer to zero, the option becomes less and less likely to finish in-the-money.
+
+If you compare the probability of expiring in-the-money to the delta, you will see that the two percentages are relatively close.
+
+The delta of an option is not a stagnant number and instead expands and contracts in response to changing conditions.
+
+Delta moves closer to 1.0 as a stock moves deeper in-the-money and moves closer to zero as a stock moves further out-of-the-money.
+
+If you are long a call option, for instance, as delta increases, it is like owning additional shares of stock, and as delta declines, it is like owning fewer shares of stock.
+
+Gamma is sometimes referred to as the curvature of an option because it is the rate at which an option delta changes as the price of the underlying stock changes. 
+
+If you were short the call option, gamma would be an indication of your growing exposure. 
+Gamma can be viewed as the gift that keeps on giving because it tells you how your position will accelerate (or decelerate). In effect, it can be viewed as the hidden leverage buried in the option.
+
+Gamma reaches its peak when an option is close to at-the-money and declines gradually the further it moves out-of-the-money or in-the-money. 
+
+A long call and long put have positive gamma and a short call and short put have negative gamma;
+
+Gamma is positive for a long call because the positive delta increases as the underlying stock moves higher. 
+
+Gamma is positive for a long put because the negative delta contracts as the underlying stock moves higher. 
+
+Gamma is negative for a short call because the negative delta increases as the underlying stock moves higher.
+
+Gamma is negative for a short put because the positive delta contracts as the underlying stock moves higher.
+
+A long option position has a negative theta, and a short option position has a positive theta. A positive theta represents a potential gain with respect to the passage of time, and a negative theta represents a risk with respect to the passage of time. 
+
+A positive theta represents a potential gain with respect to the passage of time, and a negative theta represents a risk with respect to the passage of time.
+
+If you are long a call, the increase of the underlying stock helps to increase the value of the option, but the passage of time hurts the value of the option. Said another way, if price movement in the underlying stock helps you (positive gamma), the passage of time hurts you (negative theta).
+
+As a general principle, an option position will have a gamma and a theta of opposite signs. 
+
+Theta reaches its peak when an option is close to at-the-money and declines gradually the further it moves out-of-the-money or in-the-money. 
+
+Because an option gains value with rising volatility, the vega for both long calls and long puts is positive. 
+
+Because an option loses value with declining volatility, the vega for both a short call and a short put is negative. 
+
+A position with a positive vega gains from an increase in implied volatility, whereas a position with a negative vega gains from a decline in implied volatility. 
+
+Vega, like gamma and theta, reaches its peak when an option is close to at-the-money and declines gradually the further it moves out-of-the-money or in-the-money.
+
+A position with a positive rho rises in value from an increase in the assumed interest rate, whereas a position with a negative rho declines in value from an increase in the assumed interest rate. 
+
+The interest rate is usually the least important of the inputs into a theoretical pricing model. 
+
+Rho reaches its peak for a call the further an option is in-the-money. It declines gradually as the option is at-the-money and declines further as it moves out-of-the-money.
+
+The Greeks can be a valuable tool in determining in advance how a change in assumptions can affect your overall position, including spreads
+
+Assuming that an option chain shows strike prices in five-point increments, you can move up and down the chain to the next strike price to determine what would occur if there was a five-point move in the underlying stock.
+
+To estimate gamma, you can move up and down the chain to compare how a 5-point stock change would affect the option price versus a 10-point change, and so on
+
+Although knowing the delta of a one-point change may be useful to some degree, adding an analysis of what a five-point change looks like may also be helpful.
+
+You can use an option chain to estimate time decay (theta) from month to month. For instance, by taking the difference between an option premium that expires in two months and subtracting the option premium from the near-term month, you can determine an estimate of time decay for the first four weeks of the longer-dated-month contract.
+
+Remember that the Greeks produced by typical option pricing models do not address large movements in the underlying stock, volatility, or time.
+
+The use of delta as a probability indicator can be a valuable tool in assessing probabilities to establish positions and manage risk.
+
+Option strategies can be broken down into whether they are in-the-money, at-the-money, or out-of-the-money.
+
+An option that is deep-in-the-money is intended to represent an option that consists almost entirely of intrinsic value and has a nominal extrinsic value.
+
+A slightly-in-the-money option is intended to represent an option that consists mostly of intrinsic value but has a relatively small extrinsic value.
+
+An at-the-money option is intended to represent an option with a strike price the same as, or closest to, the current trading price of the stock.
+
+A slightly-out-of-the-money option is intended to represent an option that is fairly close to the at-the-money strike price, and a far-out-of-the-money option is intended to represent an option that is relatively low priced and unlikely ever to become in-the-money.
+
+It is interesting to observe how delta varies based on the strike price versus the stock price.
+
+The deeper in-the-money an option, the more the option moves like the underlying stock and has a delta closer to 1.0.
+
+When an option is far-out-of-the-money, its value may change only a small fraction relative to the stock value but may move a high percentage relative to itself (the option value)
+
+The delta is greatest when the option is deep-in-the-money, approaches 50 percent when the option is at-the-money, and approaches zero as it goes far-out-of-the-money.
+
+The delta of the call plus the delta of the put (ignoring the negative sign) is equal to 1.
+
+It is interesting to observe how delta varies based on time remaining to expiration. As options near expiration, far-out-of-the-money contracts approach a delta of zero and deep-in-the-money contracts approach a delta of 1.00
+
+delta for an in-the-money option rises as the option expiration date approaches, delta for an at-the-money option declines as the expiration date approaches, and delta for an out-of-the-money option declines at a more rapid rate than the at-the-money option
+
+As a general rule, a rise in volatility moves options toward a 0.50 delta. As a result, if volatility rises, the in-the-money option delta declines because it is above 0.50 and the out-of-the-money delta rises because it is below 0.50.
+
+Likewise, as a general rule, a decline in volatility moves options away from a 0.50 delta. As a result, if volatility declines, the in-the-money option delta rises and the out-of-the-money delta declines.
+
+Option strategies that attempt to profit from a trading range (as opposed to directional strategies) strategy are, in many cases, called delta-neutral because a loss on one side of the position is approximately offset by another side.
+
+A hedge ratio can be determined by dividing 1.00 by an option delta.
+
+The Greeks can be used as money and risk management tools.
+
+The Greeks can be especially useful in evaluating potential trades and monitoring multiple positions.
+
+
+
+
+
+
+
+

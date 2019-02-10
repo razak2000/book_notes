@@ -1,0 +1,341 @@
+CHAPTER 2
+Greek Philosophy
+My wife, Kathleen, is not an options trader. Au contraire. However, she, like just about everyone, uses them from time to time—though without really thinking about it. She was on eBay the other day bidding on a pair of shoes. The bid was $45 with three days left to go. She was concerned about the price rising too much and missing the chance to buy them at what she thought was a good price. She noticed, though, that someone else was selling the same shoes with a buy-it-now price of $49—a good-enough price in her opinion. Kathleen was effectively afforded a call option. She had the opportunity to buy the shoes at (the strike price of) $49, a right she could exercise until the offer expired.
+
+The biggest difference between the option in the eBay scenario and the sort of options discussed in this book is transferability. Actual options are tradable—they can be bought and sold. And it is the contract itself that has value—there is one more iteration of pricing.
+
+For example, imagine the $49 opportunity was a coupon or certificate that guaranteed the price of $49, which could be passed along from one person to another. And there was the chance that the $49-price guarantee could represent a discount on the price paid for the shoes—maybe a big discount—should the price of the shoes rise in the eBay auction. The certificate guaranteeing the $49 would have value. Anyone planning to buy the shoes would want the safety of knowing they were guaranteed not to pay more than $49 for the shoes. In fact, some people would even consider paying to buy the certificate itself if they thought the price of the shoes might rise significantly.
+
+Price vs. Value: How Traders Use Option-Pricing Models
+Like in the common-life example just discussed, the right to buy or sell an underlying security—that is, an option—can have value, too. The specific value of an option is determined by supply and demand. There are several variables in an option contract, however, that can influence a trader’s willingness to demand (desire to buy) or supply (desire to sell) an option at a given price. For example, a trader wou{ld rather own—that is, there would be higher demand for—an option that has more time until expiration than a shorter-dated option, all else held constant. And a trader would rather own a call with a lower strike than a higher strike, all else kept constant, because it would give the right to buy at a lower price.
+
+Several elements contribute to the value of an option. It took academics many years to figure out exactly what those elements are. Fischer Black and Myron Scholes together pioneered research in this area at the University of Chicago. Ultimately, their work led to a Nobel Prize for Myron Scholes. Fischer Black died before he could be honored.
+
+In 1973, Black and Scholes published a paper called “The Pricing of Options and Corporate Liabilities” in the Journal of Political Economy, that introduced the Black-Scholes option-pricing model to the world. The Black-Scholes model values European call options on non-dividend-paying stocks. Here, for the first time, was a widely accepted model illustrating what goes into the pricing of an option. Option prices were no longer wild guesswork. They could now be rationalized. Soon, additional models and alterations to the Black-Scholes model were developed for options on indexes, dividend-paying stocks, bonds, commodities, and other optionable instruments. All the option-pricing models commonly in use today have slightly different means but achieve the same end: the option’s theoretical value. For American-exercise equity options, six inputs are entered into any option-pricing model to generate a theoretical value: stock price, strike price, time until expiration, interest rate, dividends, and volatility.
+
+Theoretical value—what a concept! A trader plugs six numbers into a pricing model, and it tells him what the option is worth, right? Well, in practical terms, that’s not exactly how it works. An option is worth what the market bears. Economists call this price discovery. The price of an option is determined by the forces of supply and demand working in a free and open market. Herein lies an important concept for option traders: the difference between price and value.
+
+Price can be observed rather easily from any source that offers option quotes (web sites, your broker, quote vendors, and so on). Value is calculated by a pricing model. But, in practice, the theoretical value is really not an output at all. It is already known: the market determines it. The trader rectifies price and value by setting the theoretical value to fall between the bid and the offer of the option by adjusting the inputs to the model. Professional traders often refer to the theoretical value as the fair value of the option.
+
+At this point, please note the absence of the mathematical formula for the Black-Scholes model (or any other pricing model, for that matter). Although the foundation of trading option greeks is mathematical, this book will keep the math to a minimum—which is still quite a bit. The focus of this book is on practical applications, not academic theory. It’s about learning to drive the car, not mastering its engineering.
+
+The trader has an equation with six inputs equaling one known output. What good is this equation? An option-pricing model helps a trader understand how market forces affect the value of an option. Five of the six inputs are dynamic; the only constant is the strike price of the option in question. If the price of the option changes, it’s because one or more of the five variable inputs has changed. These variables are independent of each other, but they can change in harmony, having either a cumulative or net effect on the option’s value. An option trader needs to be concerned with the relationship of these variables (price, time, volatility, interest). This multidimensional view of asset pricing is unique to option traders.
+
+Delta
+The five figures commonly used by option traders are represented by Greek letters: delta, gamma, theta, vega, rho. The figures are referred to as option greeks. Vega, of course, is not an actual letter of the greek alphabet, but in the options vernacular, it is considered one of the greeks.
+
+The greeks are a derivation of an option-pricing model, and each Greek letter represents a specific sensitivity to influences on the option’s value. To understand concepts represented by these five figures, we’ll start with delta, which is defined in four ways:
+
+1. The rate of change of an option value relative to a change in the underlying stock price.
+2. The derivative of the graph of an option value in relation to the stock price.
+3. The equivalent of underlying shares represented by an option position.
+4. The estimate of the likelihood of an option expiring in-the-money.1
+Definition 1: Delta (Δ) is the rate of change of an option’s value relative to a change in the price of the underlying security. A trader who is bullish on a particular stock may choose to buy a call instead of buying the underlying security. If the price of the stock rises by $1, the trader would expect to profit on the call—but by how much? To answer that question, the trader must consider the delta of the option.
+
+Delta is stated as a percentage. If an option has a 50 delta, its price will change by 50 percent of the change of the underlying stock price. Delta is generally written as either a whole number, without the percent sign, or as a decimal. So if an option has a 50 percent delta, this will be indicated as 0.50, or 50. For the most part, we’ll use the former convention in our discussion.
+
+Call values increase when the underlying stock price increases and vice versa. Because calls have this positive correlation with the underlying, they have positive deltas. Here is a simplified example of the effect of delta on an option:
+
+Consider a $60 stock with a call option that has a 0.50 delta and is trading for 3.00. Considering only the delta, if the stock price increases by $1, the theoretical value of the call will rise by 0.50. That’s 50 percent of the stock price change. The new call value will be 3.50. If the stock price decreases by $1, the 0.50 delta will cause the call to decrease in value by 0.50, from 3.00 to 2.50.
+
+Puts have a negative correlation to the underlying. That is, put values decrease when the stock price rises and vice versa. Puts, therefore, have negative deltas. Here is a simplified example of the delta effect on a −0.40-delta put:
+
+As the stock rises from $60 to $61, the delta of −0.40 causes the put value to go from $2.25 to $1.85. The put decreases by 40 percent of the stock price increase. If the stock price instead declined by $1, the put value would increase by $0.40, to $2.65.
+
+Unfortunately, real life is a bit more complicated than the simplified examples of delta used here. In reality, the value of both the call and the put will likely be higher with the stock at $61 than was shown in these examples. We’ll expand on this concept later when we tackle the topic of gamma.
+
+Definition 2: Delta can also be described another way. Exhibit 2.1 shows the value of a call option with three months to expiration at a variable stock price. As the stock price rises, the call is worth more; as the stock price declines, the call value moves toward zero. Mathematically, for any given point on the graph, the derivative will show the rate of change of the option price. The delta is the first derivative of the graph of the option price relative to the stock price.
+
+EXHIBIT 2.1 Call value compared with stock price.
+
+Definition 3: In terms of absolute value (meaning that plus and minus signs are ignored), the delta of an option is between 1.00 and 0. Its price can change in tandem with the stock, as with a 1.00 delta; or it cannot change at all as the stock moves, as with a 0 delta; or anything in between. By definition, stock has a 1.00 delta—it is the underlying security. A $1 rise in the stock yields a $100 profit on a round lot of 100 shares. A call with a 0.60 delta rises by $0.60 with a $1 increase in the stock. The owner of a call representing rights on 100 shares earns $60 for a $1 increase in the underlying. It’s as if the call owner in this example is long 60 shares of the underlying stock. Delta is the option’s equivalent of a position in the underlying shares.
+
+A trader who buys five 0.43-delta calls has a position that is effectively long 215 shares—that’s 5 contracts × 0.43 deltas × 100 shares. In option lingo, the trader is long 215 deltas. Likewise, if the trader were short five 0.43-delta calls, the trader would be short 215 deltas.
+
+The same principles apply to puts. Being long 10 0.59-delta puts makes the trader short a total of 590 deltas, a position that profits or loses like being short 590 shares of the underlying stock. Conversely, if the trader were short 10 0.59-delta puts, the trader would theoretically make $590 if the stock were to rise $1 and lose $590 if the stock fell by $1—just like being long 590 shares.
+
+Definition 4: The final definition of delta is considered the trader’s definition. It’s mathematically imprecise but is used nonetheless as a general rule of thumb by option traders. A trader would say the delta is a statistical approximation of the likelihood of the option expiring in-the-money. An option with a 0.75 delta would have a 75 percent chance of being in-the-money at expiration under this definition. An option with a 0.20 delta would be thought of having a 20 percent chance of expiring in-the-money.
+
+Dynamic Inputs
+Option deltas are not constants. They are calculated from the dynamic inputs of the pricing model—stock price, time to expiration, volatility, and so on. When these variables change, the changes affect the delta. These changes can be mathematically quantified—they are systematic. Understanding these patterns and other quirks as to how delta behaves can help traders use this tool more effectively. Let’s discuss a few observations about the characteristics of delta.
+
+First, call and put deltas are closely related. Exhibit 2.2 is a partial option chain of 70-day calls and puts in Rambus Incorporated (RMBS). The stock was trading at $21.30 when this table was created. In Exhibit 2.2, the 20 calls have a 0.66 delta.
+
+EXHIBIT 2.2 RMBS Option chain with deltas.
+
+Notice the deltas of the put-call pairs in this exhibit. As a general rule, the absolute value of the call delta plus the absolute value of the put delta add up to close to 1.00. The reason for this has to do with a mathematical relationship called put-call parity, which is briefly discussed later in this chapter and described in detail in Chapter 6. But with equity options, the put-call pair doesn’t always add up to exactly 1.00.
+
+Sometimes the difference is simply due to rounding. But sometimes there are other reasons. For example, the 30-strike calls and puts in Exhibit 2.2 have deltas of 0.14 and −0.89, respectively. The absolute values of the deltas add up to 1.03. Because of the possibility of early exercise of American options, the put delta is a bit higher than the call delta would imply. When puts have a greater chance of early exercise, they begin to act more like short stock and consequently will have a greater delta. Often, dividend-paying stocks will have higher deltas on some in-the-money calls than the put in the pair would imply. As the ex-dividend date—the date the stock begins trading without the dividend—approaches, an in-the-money call can become more apt to be exercised, because traders will want to own stock to capture the dividend. Here, the call begins to act more like long stock, leading to a higher delta.
+
+Moneyness and Delta
+The next observation is the effect of moneyness on the option’s delta. Moneyness describes the degree to which the option is in- or out-of-the-money. As a general rule, options that are in-the-money (ITM) have deltas greater than 0.50. Options that are out-of-the-money (OTM) have deltas less than 0.50. Finally, options that are at-the-money (ATM) have deltas that are about 0.50. The more in-the-money the option is, the closer to 1.00 the delta is. The more out-of-the-money, the closer the delta is to 0.
+
+But ATM options are usually not exactly 0.50. For ATMs, both the call and the put deltas are generally systematically a value other than 0.50. Typically, the call has a higher delta than 0.50 and the put has a lower absolute value than 0.50. Incidentally, the call’s theoretical value is generally greater than the put’s when the options are right at-the-money as well. One reason for this disparity between exactly at-the-money calls and puts is the interest rate. The more time until expiration, the more effect the interest rate will have, and, therefore, the higher the call’s theoretical and delta will be relative to the put.
+
+Effect of Time on Delta
+In a close contest, the last few minutes of a football game are often the most exciting—not because the players run faster or knock heads harder but because one strategic element of the game becomes more and more important: time. The team that’s in the lead wants the game clock to run down with no interruption to solidify its position. The team that’s losing uses its precious time-outs strategically. The more playing time left, the less certain defeat is for the losing team.
+
+Although mathematically imprecise, the trader’s definition can help us gain insight into how time affects option deltas. The more time left until an option’s expiration, the less certain it is whether the option will be ITM or OTM at expiration. The deltas of both the ITM and the OTM options reflect that uncertainty. The more time left in the life of the option, the closer the deltas tend to gravitate to 0.50. A 0.50 delta represents the greatest level of uncertainty—a coin toss. Exhibit 2.3 shows the deltas of a hypothetical equity call with a strike price of 50 at various stock prices with different times until expiration. All other parameters are held constant.
+
+EXHIBIT 2.3 Estimated delta of 50-strike call—impact of time.
+
+As shown in Exhibit 2.3, the more time until expiration, the closer ITMs and OTMs move to 0.50. At expiration, of course, the option is either a 100 delta or a 0 delta; it’s either stock or not.
+
+Effect of Volatility on Delta
+The level of volatility affects option deltas as well. We’ll discuss volatility in more detail in future chapters, but it’s important to address it here as it relates to the concept of delta. Exhibit 2.4 shows how changing the volatility percentage (explained further in Chapter 3), as opposed to the time to expiration, affects option deltas. In this table, the delta of a call with 91 days until expiration is studied.
+
+EXHIBIT 2.4 Estimated delta of 50-strike call—impact of volatility.
+
+Notice the effect that volatility has on the deltas of this option with the underlying stock at various prices. In this table, at a low volatility with the call deep in- or out-of-the-money, the delta is very large or very small, respectively. At 10 percent volatility with the stock at $58 a share, the delta is 1.00. At that same volatility level with the stock at $42 a share, the delta is 0.
+
+But at higher volatility levels, the deltas change. With the stock at $58, a 45 percent volatility gives the 50-strike call a 0.79 delta—much smaller than it was at the low volatility level. With the stock at $42, a 45-percent volatility returns a 0.30 delta for the call. Generally speaking, ITM option deltas are smaller given a higher volatility assumption, and OTM option deltas are bigger with a higher volatility.
+
+Effect of Stock Price on Delta
+An option that is $5 in-the-money on a $20 stock will have a higher delta than an option that is $5 in-the-money on a $200 stock. Proportionately, the former is more in-the-money. Comparing two options that are in-the-money by the same percentage yields similar results.
+
+As the stock price changes because the strike price remains stable, the option’s delta will change. This phenomenon is measured by the option’s gamma.
+
+Gamma
+The strike price is the only constant in the pricing model. When the stock price moves relative to this constant, the option in question becomes more in-the-money or out-of-the-money. This means the delta changes. This isolated change is measured by the option’s gamma, sometimes called curvature.
+
+Gamma (Γ) is the rate of change of an option’s delta given a change in the price of the underlying security. Gamma is conventionally stated in terms of deltas per dollar move. The simplified examples above under Definition 1 of delta, used to describe the effect of delta, had one important piece of the puzzle missing: gamma. As the stock price moved higher in those examples, the delta would not remain constant. It would change due to the effect of gamma. The following example shows how the delta would change given a 0.04 gamma attributed to the call option.
+
+The call in this example starts as a 0.50-delta option. When the stock price increases by $1, the delta increases by the amount of the gamma. In this example, delta increases from 0.50 to 0.54, adding 0.04 deltas. As the stock price continues to rise, the delta continues to move higher. At $62, the call’s delta is 0.58.
+
+This increase in delta will affect the value of the call. When the stock price first begins to rise from $60, the option value is increasing at a rate of 50 percent—the call’s delta at that stock price. But by the time the stock is at $61, the option value is increasing at a rate of 54 percent of the stock price. To estimate the theoretical value of the call at $61, we must first estimate the average change in the delta between $60 and $61. The average delta between $60 and $61 is roughly 0.52. It’s difficult to calculate the average delta exactly because gamma is not constant; this is discussed in more detail later in the chapter. A more realistic example of call values in relation to the stock price would be as follows:
+
+Each $1 increase in the stock shows an increase in the call value about equal to the average delta value between the two stock prices. If the stock were to decline, the delta would get smaller at a decreasing rate.
+
+As the stock price declines from $60 to $59, the option delta decreases from 0.50 to 0.46. There is an average delta of about 0.48 between the two stock prices. At $59 the new theoretical value of the call is 2.52. The gamma continues to affect the option’s delta and thereby its theoretical value as the stock continues its decline to $58 and beyond.
+
+Puts work the same way, but because they have a negative delta, when there is a positive stock-price movement the gamma makes the put delta less negative, moving closer to 0. The following example clarifies this.
+
+As the stock price rises, this put moves more and more out-of-the-money. Its theoretical value is decreasing by the rate of the changing delta. At $60, the delta is −0.40. As the stock rises to $61, the delta changes to −0.36. The average delta during that move is about −0.38, which is reflected in the change in the value of the put.
+
+If the stock price declines and the put moves more toward being in-the-money, the delta becomes more negative—that is, the put acts more like a short stock position.
+
+Here, the put value rises by the average delta value between each incremental change in the stock price.
+
+These examples illustrate the effect of gamma on an option without discussing the impact on the trader’s position. When traders buy options, they acquire positive gamma. Since gamma causes options to gain value at a faster rate and lose value at a slower rate, (positive) gamma helps the option buyer. A trader buying one call or put in these examples would have +0.04 gamma. Buying 10 of these options would give the trader a +0.4 gamma.
+
+When traders sell options, gamma works against them. When options lose value, they move toward zero at a slower rate. When the underlying moves adversely, gamma speeds up losses. Selling options yields a negative gamma position. A trader selling one of the above calls or puts would have −0.04 gamma per option.
+
+The effect of gamma is less significant for small moves in the underlying than it is for bigger moves. On proportionately large moves, the delta can change quite a bit, making a big difference in the position’s P&(L). In Exhibit 2.1, the left side of the diagram showed the call price not increasing at all with advances in the stock—a 0 delta. The right side showed the option advancing in price 1-to-1 with the stock—a 1.00 delta. Between the two extremes, the delta changes. From this diagram another definition for gamma can be inferred: gamma is the second derivative of the graph of the option price relative to the stock price. Put another way, gamma is the first derivative of a graph of the delta relative to the stock price. Exhibit 2.5 illustrates the delta of a call relative to the stock price.
+
+EXHIBIT 2.5 Call delta compared with stock price.
+
+Not only does the delta change, but it changes at a changing rate. Gamma is not constant. Moneyness, time to expiration, and volatility each have an effect on the gamma of an option.
+
+Dynamic Gamma
+When options are far in-the-money or out-of-the-money, they are either 1.00 delta or 0 delta. At the extremes, small changes in the stock price will not cause the delta to change much. When an option is at-the-money, it’s a different story. Its delta can change very quickly.
+
+ITM and OTM options have a low gamma.
+ATM options have a relatively high gamma.
+Exhibit 2.6 is an example of how moneyness translates into gamma on QQQ calls.
+
+EXHIBIT 2.6 Gamma of QQQ calls with QQQ at $44.
+
+With QQQ at $44, 92 days until expiration, and a constant volatility input of 19 percent, the 36- and 54-strike calls are far enough in- and out-of-the-money, respectively, that if the Qs move a small amount in either direction from the current price of $44, the movement won’t change their deltas much at all. The chances of their money status changing between now and expiration would not be significantly different statistically given a small stock price change. They have the smallest gammas in the table.
+
+The highest gammas shown here are around the ATM strike prices. (Note that because of factors not yet discussed, the strike that is exactly at-the-money may not have the highest gamma. The highest gamma is likely to occur at a slightly higher strike price.) Exhibit 2.7 shows a graph of the corresponding numbers in Exhibit 2.6.
+
+EXHIBIT 2.7 Option gamma.
+
+A decrease in the time to expiration solidifies the likelihood of ITMs or OTMs remaining as such. But an ATM option’s moneyness at expiration remains to the very end uncertain. As expiration draws nearer, the gamma decreases for ITMs and OTMs and increases for the ATM strikes. Exhibit 2.8 shows the same 92-day QQQ calls plotted against 7-day QQQ calls.
+
+EXHIBIT 2.8 Gamma as time passes.
+
+At seven days until expiration, there is less time for price action in the stock to change the expected moneyness at expiration of ITMs or OTMs. ATM options, however, continue to be in play. Here, the ATM gamma is approaching 0.35. But the strikes below 41 and above 48 have 0 gamma.
+
+Similarly-priced securities that tend to experience bigger price swings may have strikes $3 away-from-the-money with seven-day gammas greater than zero. The volatility of the underlying will affect gamma, too. Exhibit 2.9 shows the same 19 percent volatility QQQ calls in contrast with a graph of the gamma if the volatility is doubled.
+
+EXHIBIT 2.9 Gamma as volatility changes.
+
+Raising the volatility assumption flattens the curve, causing ITM and OTM to have higher gamma while lowering the gamma for ATMs.
+
+Short-term ATM options with low volatility have the highest gamma. Lower gamma is found in ATMs when volatility is higher and it is lower for ITMs and OTMs and in longer-dated options.
+
+Theta
+Option prices can be broken down into two parts: intrinsic value and time value. Intrinsic value is easily measurable. It is simply the ITM part of the premium. Time value, or extrinsic value, is what’s left over—the premium paid over parity for the option. All else held constant, the more time left in the life of the option, the more valuable it is—there is more time for the stock to move. And as the useful life of an option decreases, so does its time value.
+
+The decline in the value of an option because of the passage of time is called time decay, or erosion. Incremental measurements of time decay are represented by the Greek letter theta (θ). Theta is the rate of change in an option’s price given a unit change in the time to expiration. What exactly is the unit involved here? That depends.
+
+Some providers of option greeks will display thetas that represent one day’s worth of time decay. Some will show thetas representing seven days of decay. In the case of a one-day theta, the figure may be based on a seven-day week or on a week counting only trading days. The most common and, arguably, most useful display of this figure is the one-day theta based on the seven-day week. There are, after all, seven days in a week, each day of which can see an occurrence with the potential to cause a revaluation in the stock price (that is, news can come out on Saturday or Sunday). The one-day theta based on a seven-day week will be used throughout this book.
+
+Taking the Day Out
+When the number of days to expiration used in the pricing model declines from, say, 32 days to 31 days, the price of the option decreases by the amount of the theta, all else held constant. But when is the day “taken out”? It is intuitive to think that after the market closes, the model is changed to reflect the passing of one day’s time. But, in fact, this change is logically anticipated and may be priced in early.
+
+In the earlier part of the week, option prices can often be observed getting cheaper relative to the stock price sometime in the middle of the day. This is because traders will commonly take the day out of their model during trading hours after the underlying stabilizes following the morning business. On Fridays and sometimes Thursdays, traders will take all or part of the weekend out. Commonly, by Friday afternoon, traders will be using Monday’s days to value their options.
+
+When option prices are seen getting cheaper on, say, a Friday, how can one tell whether this is the effect of the market taking the weekend out or a change in some other input, such as volatility? To some degree, it doesn’t matter. Remember, the model is used to reflect what the market is doing, not the other way around. In many cases, it’s logical to presume that small devaluations in option prices intraday can be attributed to the routine of the market taking the day out.
+
+Friend or Foe?
+Theta can be a good thing or a bad thing, depending on the position. Theta hurts long option positions; whereas it helps short option positions. Take an 80-strike call with a theoretical value of 3.16 on a stock at $82 a share. The 32-day 80 call has a theta of 0.03. If a trader owned one of these calls, the trader’s position would theoretically lose 0.03, or $0.03, as the time until expiration change from 32 to 31 days. This trader has a negative theta position. A trader short one of these calls would have an overnight theoretical profit of $0.03 attributed to theta. This trader would have a positive theta.
+
+Theta affects put traders as well. Using all the same modeling inputs, the 32-day 80-strike put would have a theta of 0.02. A put holder would theoretically lose $0.02 a day, and a put writer would theoretically make $0.02. Long options carry with them negative theta; short options carry positive theta.
+
+A higher theta for the call than for the put of the same strike price is common when an interest rate greater than zero is used in the pricing model. As will be discussed in greater detail in the section on rho, interest causes the time value of the call to be higher than that of the corresponding put. At expiration, there is no time value left in either option. Because the call begins with more time value, its premium must decline at a faster rate than that of the put. Most modeling software will attribute the disparate rates of decline in value all to theta, whereas some modeling interfaces will make clear the distinction between the effect of time decay and the effect of interest on the put-call pair.
+
+The Effect of Moneyness and Stock Price on Theta
+Theta is not a constant. As variables influencing option values change, theta can change, too. One such variable is the option’s moneyness. Exhibit 2.10 shows theoretical values (theos), time values, and thetas for 3-month options on Adobe (ADBE). In this example, Adobe is trading at $31.30 a share with three months until expiration. The more ITM a call or a put gets, the higher its theoretical value. But when studying an option’s time decay, one needs to be concerned only with the option’s time value, because intrinsic value is not subject to time decay.
+
+EXHIBIT 2.10 Adobe theos and thetas (Adobe at $31.30).
+
+The ATM options shown here have higher time value than ITM or OTM options. Hence, they have more time premium to lose in the same three-month period. ATM options have the highest rate of decay, which is reflected in higher thetas. As the stock price changes, the theta value will change to reflect its change in moneyness.
+
+If this were a higher-priced stock, say, 10 times the stock price used in this example, with all other inputs held constant, the option values, and therefore the thetas, would be higher. If this were a stock trading at $313, the 325-strike call would have a theoretical value of 16.39 and a one-day theta of 0.189, given inputs used otherwise identical to those in the Adobe example.
+
+The Effects of Volatility and Time on Theta
+Stock price is not the only factor that affects theta values. Volatility and time to expiration come into play here as well. The volatility input to the pricing model has a direct relationship to option values. The higher the volatility, the higher the value of the option. Higher-valued options decay at a faster rate than lower-valued options—they have to; their time values will both be zero at expiration. All else held constant, the higher the volatility assumption, the higher the theta.
+
+The days to expiration have a direct relationship to option values as well. As the number of days to expiration decreases, the rate at which an option decays may change, depending on the relationship of the stock price to the strike price. ATM options tend to decay at a nonlinear rate—that is, they lose value faster as expiration approaches—whereas the time values of ITM and OTM options decay at a steadier rate.
+
+Consider a hypothetical stock trading at $70 a share. Exhibit 2.11 shows how the theoretical values of the 75-strike call and the 70-strike call decline with the passage of time, holding all other parameters constant.
+
+EXHIBIT 2.11 Rate of decay: ATM vs. OTM.
+
+The OTM 75-strike call has a fairly steady rate of time decay over this 26-week period. The ATM 70-strike call, however, begins to lose its value at an increasing rate as expiration draws nearer. The acceleration of premium erosion continues until the option expires. Exhibit 2.12 shows the thetas for this ATM call during the last 10 days before expiration.
+
+EXHIBIT 2.12 Theta as expiration approaches.
+
+Days to Exp.	ATM Theta
+10	0.075
+ 9	0.079
+ 8	0.084
+ 7	0.089
+ 6	0.096
+ 5	0.106
+ 4	0.118
+ 3	0.137
+ 2	0.171
+ 1	0.443
+Incidentally, in this example, when there is one day to expiration, the theoretical value of this call is about 0.44. The final day before expiration ultimately sees the entire time premium erode.
+
+Vega
+Over the past decade or so, computers have revolutionized option trading. Options traded through an online broker are filled faster than you can say, “Oops! I meant to click on puts.” Now trading is facilitated almost entirely online by professional and retail traders alike. Market and trading information is disseminated worldwide in subseconds, making markets all the more efficient. And the tools now available to the common retail trader are very powerful as well. Many online brokers and other web sites offer high-powered tools like screeners, which allow traders to sift through thousands of options to find those that fit certain parameters.
+
+Using a screener to find ATM calls on same-priced stocks—say, stocks trading at $40 a share—can yield a result worth talking about here. One $40 stock can have a 40-strike call trading at around 0.50, while a different $40 stock can have a 40 call with the same time to expiration trading at more like 2.00. Why? The model doesn’t know the name of the company, what industry it’s in, or what its price-to-earnings ratio is. It is a mathematical equation with six inputs. If five of the inputs—the stock price, strike price, time to expiration, interest rate, and dividends—are identical for two different options but they’re trading at different prices, the difference must be the sixth variable, which is volatility.
+
+Implied Volatility (IV) and Vega
+The volatility component of option values is called implied volatility (IV). (For more on implied volatility and how it relates to vega, see Chapter 3.) IV is a percentage, although in practice the percent sign is often omitted. This is the value entered into a pricing model, in conjunction with the other variables, that returns the option’s theoretical value. The higher the volatility input, the higher the theoretical value, holding all other variables constant. The IV level can change and often does—sometimes dramatically. When IV rises or falls, option prices rise and fall in line with it. But by how much?
+
+The relationship between changes in IV and changes in an option’s value is measured by the option’s vega. Vega is the rate of change of an option’s theoretical value relative to a change in implied volatility. Specifically, if the IV rises or declines by one percentage point, the theoretical value of the option rises or declines by the amount of the option’s vega, respectively. For example, if a call with a theoretical value of 1.82 has a vega of 0.06 and IV rises one percentage point from, say, 17 percent to 18 percent, the new theoretical value of the call will be 1.88—it would rise by 0.06, the amount of the vega. If, conversely, the IV declines 1 percentage point, from 17 percent to 16 percent, the call value will drop to 1.76—that is, it would decline by the vega.
+
+A put with the same expiration month and the same strike on the same underlying will have the same vega value as its corresponding call. In this example, raising or lowering IV by one percentage point would cause the corresponding put value to rise or decline by $0.06, just like the call.
+
+An increase in IV and the consequent increase in option value helps the P&(L) of long option positions and hurts short option positions. Buying a call or a put establishes a long vega position. For short options, the opposite is true. Rising IV adversely affects P&(L), whereas falling IV helps. Shorting a call or put establishes a short vega position.
+
+The Effect of Moneyness on Vega
+Like the other greeks, vega is a snapshot that is a function of multiple facets of determinants influencing option value. The stock price’s relationship to the strike price is a major determining factor of an option’s vega. IV affects only the time value portion of an option. Because ATM options have the greatest amount of time value, they will naturally have higher vegas. ITM and OTM options have lower vega values than those of the ATM options.
+
+Exhibit 2.13 shows an example of 186-day options on AT&T Inc. (T), their time value, and the corresponding vegas.
+
+EXHIBIT 2.13 AT&T theos and vegas (T at $30, 186 days to Expry, 20% IV).
+
+Note that the 30-strike calls and puts have the highest time values. This strike boasts the highest vega value, at 0.085. The lower the time premium, the lower the vega—therefore, the less incremental IV changes affect the option. Since higher-priced stocks have higher time premium (in absolute terms, not necessarily in percentage terms) they will have higher vega. Incidentally, if this were a $300 stock instead of a $30 stock, the 186-day ATMs would have a 0.850 vega, if all other model inputs remain the same.
+
+The Effect of Implied Volatility on Vega
+The distribution of vega values among the strike prices shown in Exhibit 2.13 holds for a specific IV level. The vegas in Exhibit 2.13 were calculated using a 20 percent IV. If a different IV were used in the calculation, the relationship of the vegas to one another might change. Exhibit 2.14 shows what the vegas would be at different IV levels.
+
+EXHIBIT 2.14 Vega and IV.
+
+Note in Exhibit 2.14 that at all three IV levels, the ATM strike maintains a similar vega value. But the vegas of the ITM and OTM options can be significantly different. Lower IV inputs tend to cause ITM and OTM vegas to decline. Higher IV inputs tend to cause vegas to increase for ITMs and OTMs.
+
+The Effect of Time on Vega
+As time passes, there is less time premium in the option that can be affected by changes in IV. Consequently, vega gets smaller as expiration approaches. Exhibit 2.15 shows the decreasing vega of a 50-strike call on a $50 stock with a 25 percent IV as time to expiration decreases. Notice that as the value of this ATM option decreases at its nonlinear rate of decay, the vega decreases in a similar fashion.
+
+EXHIBIT 2.15 The effect of time on vega.
+
+Rho
+One of my early jobs in the options business was clerking on the floor of the Chicago Board of Trade in what was called the bond room. On one of my first days on the job, the trader I worked for asked me what his position was in a certain strike. I told him he was long 200 calls and long 300 puts. “I’m long 500 puts?” he asked. “No,” I corrected, “you’re long 200 calls and 300 puts.” At this point, he looked at me like I was from another planet and said, “That’s 500. A put is a call; a call is a put.” That lesson was the beginning of my journey into truly understanding options.
+
+Put-Call Parity
+Put and call values are mathematically bound together by an equation referred to as put-call parity. In its basic form, put-call parity states:
+
+where
+
+c = call value,
+
+PV(x) = present value of the strike price,
+
+p = put value, and
+
+s = stock price.
+
+The put-call parity assumes that options are not exercised before expiration (that is, that they are European style). This version of the put-call parity is for European options on non-dividend-paying stocks. Put-call parity can be modified to reflect the values of options on stocks that pay dividends. In practice, equity-option traders look at the equation in a slightly different way:
+
+Traders serious about learning to trade options must know put-call parity backward and forward. Why? First, by algebraically rearranging this equation, it can be inferred that synthetically equivalent positions can be established by simply adding stock to an option. Again, a put is a call; a call is a put.
+
+and
+
+For example, a long call is synthetically equal to a long stock position plus a long put on the same strike, once interest and dividends are figured in. A synthetic long stock position is created by buying a call and selling a put of the same month and strike. Understanding synthetic relationships is intrinsic to understanding options. A more comprehensive discussion of synthetic relationships and tactical considerations for creating synthetic positions is offered in Chapter 6.
+
+Put-call parity also aids in valuing options. If put-call parity shows a difference in the value of the call versus the value of the put with the same strike, there may be an arbitrage opportunity. That translates as “riskless profit.” Buying the call and selling it synthetically (short put and short stock) could allow a profit to be locked in if the prices are disparate. Arbitrageurs tend to hold synthetic put and call prices pretty close together. Generally, only professional traders can capture these types of profit opportunities, by trading big enough positions to make very small profits (a penny or less per contract sometimes) matter. Retail traders may be able to take advantage of a disparity in put and call values to some extent, however, by buying or selling the synthetic as a substitute for the actual option if the position can be established at a better price synthetically.
+
+Another reason that a working knowledge of put-call parity is essential is that it helps attain a better understanding of how changes in the interest rate affect option values. The greek rho measures this change. Rho is the rate of change in an option’s value relative to a change in the interest rate.
+
+Although some modeling programs may display this number differently, most display a rho for the call and a rho for the put, both illustrating the sensitivity to a one-percentage-point change in the interest rate. When the interest rate rises by one percentage point, the value of the call increases by the amount of its rho and the put decreases by the amount of its rho. Likewise, when the interest rate decrease by one percentage point, the value of the call decreases by its rho and the put increases by its rho. For example, a call with a rho of 0.12 will increase $0.12 in value if the interest rate used in the model is increased by one percentage point. Of course, interest rates usually don’t rise or fall one percentage point in one day. More commonly, rates will have incremental changes of 25 basis points. That means a call with a 0.12 rho will theoretically gain $0.03 given an increase of 0.25 percentage points.
+
+Mathematically, this change in option value as a product of a change in the interest rate makes sense when looking at the formula for put-call parity.
+
+and
+
+But the change makes sense intuitively, too, when a call is considered as a cheaper substitute for owning the stock. For example, compare a $100 stock with a three-month 60-strike call on that same stock. Being so far ITM, there would likely be no time value in the call. If the call can be purchased at parity, which alternative would be a superior investment, the call for $40 or the stock for $100? Certainly, the call would be. It costs less than half as much as the stock but has the same reward potential; and the $60 not spent on the stock can be invested in an interest-bearing account. This interest advantage adds value to the call. Raising the interest rate increases this value, and lowering it decreases the interest component of the value of the call.
+
+A similar concept holds for puts. Professional traders often get a short-stock rebate on proceeds from a short-stock sale. This is simply interest earned on the capital received when the stock is shorted. Is it better to pay interest on the price of a put for a position that gives short exposure or to receive interest on the credit from shorting the stock? There is an interest disadvantage to owning the put. Therefore, a rise in interest rates devalues puts.
+
+This interest effect becomes evident when comparing ATM call and put prices. For example, with interest at 5 percent, three-month options on an $80 stock that pays a $0.25 dividend before option expiration might look something like this:
+
+The ATM call is higher in theoretical value than the ATM put by $0.75. That amount can be justified using put-call parity:
+
+(Here, simple interest of $1 is calculated as 80 × 0.05 × [90 / 360] = 1.)
+
+Changes in market conditions are kept in line by the put-call parity. For example, if the price of the call rises because of an increase in IV, the price of the put will rise in step. If the interest rate rises by a quarter of a percentage point, from 5 percent to 5.25 percent, the interest calculated for three months on the 80-strike will increase from $1 to $1.05, causing the difference between the call and put price to widen. Another variable that affects the amount of interest and therefore option prices is the time until expiration.
+
+The Effect of Time on Rho
+The more time until expiration, the greater the effect interest rate changes will have on options. In the previous example, a 25-basis-point change in the interest rate on the 80-strike based on a three-month period caused a change of 0.05 to the interest component of put-call parity. That is, 80 × 0.0025 × (90/360) = 0.05. If a longer period were used in the example—say, one year—the effect would be more profound; it will be $0.20: 80 × 0.0025 × (360/360) = 0.20. This concept is evident when the rhos of options with different times to expiration are studied.
+
+Exhibit 2.16 shows the rhos of ATM Procter & Gamble Co. (PG) calls with various expiration months. The 750-day Long-Term Equity AnticiPation Securities (LEAPS) have a rho of 0.858. As the number of days until expiration decreases, rho decreases. The 22-day calls have a rho of only 0.015. Rho is usually a fairly insignificant factor in the value of short-term options, but it can come into play much more with long-term option strategies involving LEAPS.
+
+EXHIBIT 2.16 The effect of time on rho (Procter & Gamble @ $64.34)
+
+Why the Numbers Don’t Don’t Always Add Up
+There will be many times when studying the rho of options in an option chain will reveal seemingly counterintuitive results. To be sure, the numbers don’t always add up to what appears logical. One reason for this is rounding. Another is that traders are more likely to use simple interest in calculating value, whereas the model uses compound interest. Hard-to-borrow stocks and stocks involved in mergers and acquisitions may have put-call parities that don’t work out right. But another, more common and more significant fly in the ointment is early exercise.
+
+Since the interest input in put-call parity is a function of the strike price, it is reasonable to expect that the higher the strike price, the greater the effect of interest on option prices will be. For European options, this is true to a large extent, in terms of aggregate impact of interest on the call and put pair. Strikes below the price where the stock is trading have a higher rho associated with the call relative to the put, whereas strikes above the stock price have a higher rho associated with the put relative to the call. Essentially, the more in-the-money an option is, the higher its rho. But with European options, observing the aggregate of the absolute values of the call and put rhos would show a higher combined rho the higher the strike.
+
+With American options, the put can be exercised early. A trader will exercise a put before expiration if the alternative—being short stock and receiving a short stock rebate—is a wiser choice based on the price of the put. Professional traders may own stock as a hedge against a put. They may exercise deep ITM puts (1.00-delta puts) to avoid paying interest on capital charges related to the stock. The potential for early exercise is factored into models that price American options. Here, when puts get deeper in-the-money—that is, more apt to be exercised—the rho decreases. When the strike price is very high relative to the stock price—meaning the put is very deep ITM—and there is little or no time value left to the call or the put, the aggregate put-call rho can be zero. Rho is discussed in greater detail in Chapter 7.
+
+THE GREEKS DEFINED
+Delta (Δ) is:
+1. The rate of change in an option’s value relative to a change in the underlying asset price.
+2. The derivative of the graph of an option’s value in relation to the underlying asset price.
+3. The equivalent of underlying asset represented by an option position.
+4. The estimate of the likelihood of an option’s expiring in-the-money.
+Gamma (Γ) is the rate of change in an option’s delta given a change in the price of the underlying asset.
+Theta (θ) is the rate of change in an option’s value given a unit change in the time to expiration.
+Vega is the rate of change in an option’s value relative to a change in implied volatility.
+Rho (ρ) is the rate of change in an option’s value relative to a change in the interest rate.
+Where to Find Option Greeks
+There are many sources from which to obtain greeks. The Internet is an excellent resource. Googling “option greeks” will display links to over four million web pages, many of which have real-time greeks or an option calculator. An option calculator is a simple interface that accepts the input of the six variables to the model and yields a theoretical value and the greeks for a single option.
+
+Some web sites devoted to option education, such as MarketTaker.com/option_modeling, have free calculators that can be used for modeling positions and using the greeks.
+
+In practice, many of the option-trading platforms commonly in use have sophisticated analytics that involve greeks. Most options-friendly online brokers provide trading platforms that enable traders to conduct comprehensive manipulations of the greeks. For example, traders can look at the greeks for their positions up or down one, two, or three standard deviations. Or they can see what happens to their position greeks if IV or time changes. With many trading platforms, position greeks are updated in real time with changes in the stock price—an invaluable feature for active traders.
+
+Caveats with Regard to Online Greeks
+Often, online greeks are one click away, requiring little effort on the part of the trader. Having greeks calculated automatically online is a quick and convenient way to eyeball greeks for an option. But there is one major problem with online greeks: reliability.
+
+For active option traders, greeks are essential. There is no point in using these figures if their accuracy cannot be assured. Experienced traders can often spot these inaccuracies a proverbial mile away.
+
+When looking at greeks from an online source that does not require you to enter parameters into a model (as would be the case with professional option-trading platforms), special attention needs to be paid to the relationship of the option’s theoretical values to the bid and offer. One must be cautious if the theoretical value of the option lies outside the bid-ask spread. This scenario can exist for brief periods of time, but arbitrageurs tend to prevent this from occurring routinely. If several options in a chain all have theoretical values below the bid or above the offer, there is probably a problem with one or more of the inputs used in the model. Remember, an option-pricing model is just that: a model. It reflects what is occurring in the market. It doesn’t tell where an option should be trading.
+
+The complex changes that occur intraday in the market—taking the day or weekend out, changes in stock price, volatility, and the interest rate—are not always kept current. The user of the model must keep close watch. It’s not reasonable to expect the computer to do the thinking for you. Automatically calculated greeks can be used as a starting point. But before using these figures in the decision-making process, the trader may have to override the parameters that were used in the online calculation to make the theos line up with market prices. Professional traders will ignore online greeks altogether. They will use the greeks that are products of the inputs they entered in their trading software. It comes down to this: if you want something done right, do it yourself.
+
+Thinking Greek
+The challenge of trading option greeks is to adapt to thinking in terms of delta, gamma, theta, vega, and rho. One should develop a feel for how greeks react to changing market conditions. Greeks need to be monitored as closely as and in some cases more closely than the option’s price itself. This greek philosophy forms the foundation of option trading for active traders. It offers a logical way to monitor positions and provides a medium in and of itself to trade.
+
+Notes
+1. Please note that definition 4 is not necessarily mathematically accurate. This “trader’s definition” is included in the text because many option traders use delta as a quick rule of thumb for estimating probability without regard to the mathematical shortcomings of doing so.
+
+2. Note that the interest input in the equation is the interest, in dollars and cents, on the strike. Technically, this would be calculated as compounded interest, but in practice many traders use simple interest as a quick and convenient way to do the calculation.

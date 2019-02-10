@@ -1,0 +1,108 @@
+ Writing a put option has many of the same characteristics as a short call option, except a put option profits in the opposite direction
+
+A short put involves the sale of a put option and is a bullish and neutral strategy. A short put has limited reward potential and unlimited risk.
+
+A put typically increases in value from a decline in the underlying stock or volatility expansion and declines in value from a decline in the underlying stock, time decay, or volatility contraction.
+
+summary profile of a short put:
+    Direction: Bullish/neutral.
+    Profit potential: Limited to premium collected.
+    Risk: Unlimited. (Technically, strike price minus premium collected.)
+    Time decay: Positive (theta).
+    Volatility: Increase is negative (negative theta), decrease is positive.
+    Delta: Positive.
+    Gamma: Negative.
+    Theta (time): Positive.
+    Vega (volatility): Negative.
+    Breakeven: Stock at strike price minus premium collected.
+    Margin: Generally, 20 percent standard margin, or portfolio margin for equities.
+    Exercise and assignment: Can be assigned if in-the-money.
+    How to exit: Offset in closing transaction, assignment, or let expire worthless.
+    IRA: Permitted if fully funded.
+    Main advantages: Time decay; requires less capital in comparison to long stock.
+    Main disadvantages: Can lose more than premium collected.
+
+An option seller makes a profit when the value of an option that was written (sold) is later offset at a price below the level it was written or when it expires worthless. An option seller has a loss when the value of an option that was written is later offset at a price above the level it was written.
+
+An attraction of writing a put is that you can profit under the three scenarios of the underlying stock rising, moving sideways, or declining by a relatively small amount (down to the strike price if out-of-the-money).
+
+An advantage of writing a naked put is that it can be structured to have a higher probability of success than trading the underlying stock or buying a put. A disadvantage to writing any option is that you can lose more than the premium you collect.
+
+Writing a put is typically considered a bullish strategy because you primarily profit if the underlying stock rises.
+
+Writing an option, in effect, does not require you to be as precise, in exchange for limited upside potential but unlimited risk. The maximum gain occurs when the underlying stock is at or above the strike price at expiration.
+
+The initial margin requirement for an uncovered equity option is commonly the premium collected plus 20 percent (or 25 percent) of the underlying stock minus the amount that the option is out-of-the-money, subject to a minimum.
+
+If implied volatility increases, assuming that all other factors remain constant, a put option will increase in value. If implied volatility declines, assuming that all other factors remain constant, a put option will decline in value
+
+If you are short a put and are assigned, you are forced to buy the underlying stock at the exercise price.
+
+The fractional (percentage) movement of a short put relative to the movement in a stock price (delta) varies based on the strike price versus the stock price; for example, the deeper in-the-money an option, the more the option moves like the underlying stock and the closer its delta to 1.0. (A delta of 1.0 means 100 percent, so when the stock moves one point, the option moves one point.) In this case, when an option is deep-in-the-money, it changes at a rate almost point for point equal to that of the underlying stock. If the underlying stock price declines one point, such a put will rise by approximately one point; likewise, if the underlying stock price rises one point, such a put will decline by approximately one point. When an option is at-the-money, its value typically changes at approximately 50 percent relative to the underlying stock. When an option is far-out-of-the-money, its value may change only a small fraction relative to a change in the underlying stock.
+
+Also, the lower the strike price, the lower the probability that a put option will end up in-the-money at the expiration date.
+
+A short deep-in-the-money put option typically has a strike price 10 points or more above the stock price and has a delta of 0.75 to 1.0 (75 to 100 percent). If you believe that a stock is ready to rise in value, you can sell a deep-in-the-money put option, which will enable you to benefit almost dollar for dollar on the rise in the value of the stock.
+
+You cannot gain more than the premium collected. You can lose more than the premium collected because you do not have a built-in risk management feature with this strategy
+
+If you are selling an option as a proxy for long stock and are collecting a small extrinsic value, selling an option does not usually make a lot of sense.
+
+A short slightly-in-the-money put option typically has a strike price five points above the stock price and has a delta of 0.60 to 0.75 (60 to 75 percent)
+
+A short at-the-money put option has a strike price nearest the stock price and has a delta of 0.45 to 0.55 (45 to 55 percent). With an at-the-money put option, there is no intrinsic value, and the option consists entirely of extrinsic value.
+
+If the option value declines, you can offset it or let it expire worthless for a profit. If the stock plunges, the value of the option will rise and will generate a loss. You can lose more than the premium collected because you do not have a built-in risk management feature with this strategy
+
+Selling an at-the-money option can enable you to take advantage of a slight statistical probability edge. At-the-money options are, in many cases, the most liquid and the most heavily traded and seem to attract the attention of option traders.
+
+Remember that an at-the-money call option consists entirely of extrinsic value and, as a result, you are subject to benefits from time decay and volatility contraction, but you can lose more than the premium collected.
+
+A short slightly-out-of-the-money put option typically has a strike price five points below the stock price and has a delta of 0.25 to 0.45 (25 to 45 percent). With a slightly-out-of-the-money put option, there is no intrinsic value and the option consists entirely of extrinsic value.
+
+Selling slightly-out-of-the-money options can provide a statistical probability edge. A slightly-out-of-the-money call option consists entirely of extrinsic value. As a result, you are subject to benefits from time decay and volatility contraction. Unfortunately, you do not have a built-in risk management feature with this strategy, and you can lose more than the premium collected.
+
+As time approaches the expiration date, especially during the last week of option expiration, some stocks may have very little extrinsic value. Selling a put option near parity is not usually an attractive strategy unless your intent is to own the stock through assignment, especially if volatility is expected to increase from an event such as the release of an earnings report.
+
+A short far-out-of-the-money put option typically has a strike price 10 points or more above the stock price and has a delta of zero to 0.25 (0 to 25 percent). A far-out-of-the-money put option consists entirely of extrinsic value and is the most leveraged strategy. This can be a high-probability strategy because the further you move away from the price of the underlying stock, the lower the probability that the stock will end up in-the-money. It can be an effective strategy to attempt to earn consistent income
+
+Some traders find the risk-reward trade-off of selling far-out-of-the-money options to be worthwhile. A far-out-of-the-money put option is usually sold at a relatively low price, which is why some option sellers shy away from them initially; however, to some option sellers, they present an opportunity for consistent income.
+
+Keep in mind that along with the potential for profit is also greater risk. Selling far-out-of-the-money options can enable a trader to take advantage of a statistical probability edge. Unfortunately, you can lose more than the premium collected.
+
+As an alternative to offsetting a short put position at a loss, a trader can consider rolling a put option position. Under this strategy, the trader can offset the current position and reestablish it at a lower strike price
+
+When you sell a put and have the money available in the brokerage account to buy the stock, it is called a cash-secured put
+
+Selling a put option can be used as a strategy to earn premium income if the underlying stock should rise, but buy the stock at a lower price if the stock declines below the strike price
+
+The maximum risk of a cash-secured put is similar to owning the stock itself (ignoring the premium collected).
+
+Selling a cash-secured put is the sale of a naked option, so it has risk. One risk of selling a naked option is that the stock price could gap below the strike price so that you end up paying substantially more than the new market value of the stock.
+
+Selling a cash-secured put can be at an attractive strategy because it can be used to help buy stock at the purchase price you desire.
+
+Keep in mind that this may be little consolation if you have a loss in your brokerage account for the difference between the strike price and the stock price.
+
+An alternative to the cash-secured put strategy is simply to wait until the stock drops to your targeted purchase price. In that case, however, you do not collect a premium and the stock could simply continue to rise. With a cash-secured put, you are being compensated to wait.
+
+Another strategy is to sell far-out-of-the-money puts so that they have a low delta and are highly unlikely to be assigned. In this way, your primary focus is on earning premium income and avoiding assignment.
+
+As you add more short puts, you are increasing your risks because the market can gap down and the power of leverage can work against you.
+
+In general, I have found that a broad-based index, such as the S&P 500, can be a good candidate for selling far-out-of-the-money options
+
+Although margin is not permitted in an IRA, some brokerage firms allow the shorting of a naked put because the risk is mathematically limited to the difference between the strike price and zero (ignoring the premium).
+
+Like a call, when writing an equity option, the minimum margin requirement for uncovered options is 20 percent (or 25 percent) of the underlying stock minus the amount the option is out-of-the-money, if any, plus the premium collected, but not less than 10 percent of the stock value.
+
+The out-of-the-money amount is the difference between the strike price and stock price times the number of contracts times the unit of measure
+
+A futures options margin is calculated differently than margin on stock options.
+
+An option seller can sell a put, for instance, because he is interested in earning premium income, knowing that the downside risk is that he may be obligated to purchase the underlying stock that he is interested in buying at a lower price. In this case, the seller is not willing to purchase the stock at its current price because he believes that it is overvalued. Alternatively, an option seller may sell put premium to earn income without ever having the intention to own the underlying stock.
+
+When selling an at-the-money or out-of-the-money put option, you can profit if the underlying stock moves higher, sideways, or even lower (down to the strike price if out-of-the-money). The advantage of selling an out-of-the-money put option is that you can shift the statistical probabilities on your side. Unfortunately, leverage cuts both ways and losses can accumulate quickly, and an option may have a wide bid/ask spread.
+
+ An option seller has time on his side and does not need to be as precise in his choice of the direction, timing, and magnitude of the move. Keep in mind that leverage is greatest the further a put option is out-of-the-money. 
+

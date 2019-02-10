@@ -1,0 +1,157 @@
+When discussing random variables, we typically describe them in terms of probability distributions. That is, the probability that each value can come out of the random variable.
+
+We can easily see how modeling random variables can come in handy when dealing with finance; financial assets are often expressed as moving according to deterministic and random patterns, with the random patterns being expressed with random variables. To do this we would 'sample' from the random variable at each timestep, then move the financial instrument by that amount. This analysis is used because much of the motion in assets is unexplained using determinstic models.
+
+Each random variable follows a probability distribution, a function which describes it. The probability distribution assigns probabilities to all possible values of a random variable.
+
+Probability distributions form the basis for the Black-Scholes and binomial pricing models as well as the CAPM. An understanding of them is also necessary in order to perform Monte Carlo simulations.
+
+For each probability distribution function, we also have a **cumulative distribution function** (CDF). This is defined as $P(X \leq x)$, the probability that the random variable is less than or equal to a particular value. 
+
+import statsmodels.stats as stats
+from statsmodels.stats import stattools
+from __future__ import division
+
+A discrete random variable is one with a countable number of outcomes. Each of these outcomes has a separate probability associated with it. 
+
+Discrete random variables do not always have equal weights for all outcomes. The basic unit of a discrete random variable is its **probability mass function** (PMF), another name for the probability function $p(x)$.
+
+The PMF, or probability function, gives a probability, a mass, to each point in the domain of the probability distribution. 
+
+The most basic type of probability distribution is the uniform distribution. With a discrete uniform distribution, equal weight is assigned to all outcomes. 
+
+When attempting to sample other probability distributions, we can use compositions of the uniform distribution with certain functions in order to get the appropriate samples. However, this method can be tremendously inefficient.
+
+A binomial distribution is used to describe successes and failures. This can be very useful in an investment context as many of our choices tend to be binary like this. 
+
+When we take a single success/failure trial, we call it a Bernoulli trial. 
+
+A binomial distribution takes a set of  𝑛  Bernoulli trials. As such, we can have somewhere between  0  and  𝑛  successes. 
+
+We can describe the entire binomial random variable using only $n$ and $p$, signified by the notation $X$ **~** $B(n, p)$. This states that $X$ is a binomial random variable with parameters $n$ and $p$.
+
+In order to define the probability function of a binomial random variable, we must be able to choose some number of successes out of the total number of trials.
+
+samples = np.random.binomial(self.numberOfTrials, self.probabilityOfSuccess, numberOfSamples)
+
+Here we see that in the particular case where $p = 0.50$, the binomial distribution is symmetric. Because we have an equal probability for both an upward and a downward move, the only differentiating factor between probabilities ends up being the combination aspect of the probability function, which is itself symmetric. If we were to slightly modify the value of $p$ we would end up with an asymmetric distribution.
+
+Say that we changed our parameters so that $p = 0.25$. This makes it so that $P(X = 0) = 0.23730$, skewing our distribution much more towards lower values. 
+
+Changing the value of $p$ from $0.50$ to $0.25$ clearly makes our distribution asymmetric. We can extend this idea of stock price moving with a binomial random variable into a framework that we call the Binomial Model of Stock Price Movement. This is used as one of the foundations for option pricing.
+
+In the Binomial Model, it is assumed that for any given time period a stock price can move up or down by a value determined by the up or down probabilities. This turns the stock price into the function of a binomial random variable, the magnitude of upward or downward movement, and the initial stock price. We can vary these parameters in order to approximate different stock price distributions.
+
+Continuous random variables differ from discrete random variables in that continuous ones can take infinitely many outcomes. They cannot be counted or described as a list. As such, it means very little when we assign individual probabilities to outcomes. Because there are infinitely many outcomes, the probability of hitting any individual outcome has a probability of 0.
+
+We can resolve this issue by instead taking probabilities across ranges of outcomes. 
+
+It is worth noting that because the probability at an individual point with a continuous distribution is $0$, the probabilities at the endpoints of a range are $0$. Hence, $P(a \leq X \leq b) = P(a < X \leq b) = P(a \leq X < B) = P(a < X < b)$. 
+
+samples = np.random.uniform(self.low, self.high, numberOfSamples)
+
+The uniform distribution can also be defined within the framework of a continous random variable. We take $a$ and $b$ to be constant, where $b$ is the highest possible value and $a$ is the lowest possible value that the outcome can obtain. Then the PDF of a uniform random variable is:
+$$f(x) = \begin{cases}\frac{1}{b - a} & \text{for $a < x < b$} \ 0 & \text{otherwise}\end{cases}$$
+
+x = np.linspace(a, b, 100)
+
+As before in the discrete uniform case, the continuous uniform distribution PDF is constant for all values the variable can take on. The only difference here is that we cannot take the probability for any individual point. The CDF, which we get from integrating the PDF is:
+$$ F(x) = \begin{cases} 0 & \text{for $x \leq a$} \ \frac{x - a}{b - a} & \text{for $a < x < b$} \ 1 & \text{for $x \geq b$}\end{cases}$$
+
+The convenience of the normal distribution finds its way into certain algorithmic trading strategies as well. For example, as covered in the [pairs trading](https://www.quantopian.com/lectures/introduction-to-pairs-trading) notebook, we can search for stock pairs that are cointegrated, and bet on the direction the spread between them will change based on a normal distribution.
+
+samples = np.random.normal(self.mean, self.standardDeviation, numberOfSamples)
+
+When describing a normal random variable we only need to know its mean ($\mu$) and variance ($\sigma^2$, where $\sigma$ is the standard deviation). We denote a random variable $X$ as a normal random variable by saying $X$ **~** $N(\mu, \sigma^2)$.
+
+In modern portfolio theory, stock returns are generally assumed to follow a normal distribution.
+
+One major characteristic of a normal random variable is that a linear combination of two or more normal random variables is another normal random variable. 
+
+This is useful for considering mean returns and variance of a portfolio of multiple stocks.
+
+Up until this point, we have only considered single variable, or univariate, probability distributions. When we want to describe random variables at once, as in the case of observing multiple stocks, we can instead look at a multivariate distribution.
+
+A multivariate normal distribution is described entirely by the means of each variable, their variances, and the distinct correlations between each and every pair of variables.
+
+This is important when determining characteristics of portfolios because the variance of the overall portfolio depends on both the variances of its securities and the correlations between them.
+
+The PDF of a normal random variable is:
+$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+$$
+
+By changing the mean and standard deviation of the normal distribution, we can change the depth and width of the bell curve. With a larger standard deviation, the values of the distribution are less concentrated around the mean.
+
+Rather than using normal distribution to model stock prices, we use it to model returns. Stock prices cannot go below  0 while the normal distribution can take on all values on the real line, making it better suited to returns.
+
+Given the mean and variance of a normal distribution, we can make the following statements:
+* Around $68\%$ of all observations fall within one standard deviations around the mean ($\mu \pm \sigma$)
+* Around $95\%$ of all observations fall within two standard deviations around the mean ($\mu \pm 2\sigma$)
+* Around $99\%$ of all observations fall within three standard deviations aroud the mean ($\mu \pm 3\sigma$)
+
+These values are important for understanding confidence intervals as they relate to the normal distribution. When considering the mean and variance of a sample distribution, we like to look at different confidence intervals around the mean.
+
+Using the central limit theorem, we can standardize different random variables so that they become normal random variables.
+
+We standardize a random variable $X$ by subtracting the mean and dividing by the variance, resulting in the standard normal random variable $Z$.
+$$
+Z = \frac{X - \mu}{\sigma}
+$$
+
+In the case of a binomial random variable, the mean is $\mu = np$ and the variance is $\sigma^2 = np(1 - p)$.
+
+The idea that we can standardize random variables is very important. By changing a random variable to a distribution that we are more familiar with, the standard normal distribution, we can easily answer any probability questions that we have about the original variable. This is dependent, however, on having a large enough sample size.
+
+Y = pd.Series(np.cumsum(Y_returns), name = 'Y') + Y_initial
+
+Now we will attempt to fit a probability distribution to the returns of a stock. We will take the returns of Tesla and try to fit a normal distribution to them. The first thing to check is whether the returns actually exhibit properties of a normal distribution. For this purpose, we will use the Jarque-Bera test, which indicates non-normality if the p-value is below a cutoff.
+
+start = '2015-01-01'
+end = '2016-01-01'
+prices = get_pricing('TSLA', fields=['price'], start_date=start, end_date=end)
+
+#/ Take the daily returns
+returns = prices.pct_change()[1:]
+#/ Set a cutoff
+cutoff = 0.01
+#/ Get the p-value of the JB test
+_, p_value, skewness, kurtosis = stattools.jarque_bera(returns)
+print "The JB test p-value is: ", p_value
+print "We reject the hypothesis that the data are normally distributed ", p_value < cutoff
+print "The skewness of the returns is: ", skewness
+print "The kurtosis of the returns is: ", kurtosis
+plt.hist(returns.price, bins = 20)
+plt.xlabel('Value')
+plt.ylabel('Occurrences');
+
+The low p-value of the JB test leads us to reject the null hypothesis that the returns are normally distributed. This is due to the high kurtosis (normal distributions have a kurtosis of  3 ).
+
+We will proceed from here assuming that the returns are normally distributed so that we can go through the steps of fitting a distribution. Next we calculate the sample mean and standard deviation of the series.
+
+#/ Take the sample mean and standard deviation of the returns
+sample_mean = np.mean(returns.price)
+sample_std_dev = np.std(returns.price)
+
+Now let's see how a theoretical normal curve fits against the actual values.
+
+x = np.linspace(-(sample_mean + 4 * sample_std_dev), (sample_mean + 4 * sample_std_dev), len(returns))
+sample_distribution = ((1/np.sqrt(sample_std_dev * sample_std_dev * 2 * np.pi)) * np.exp(-(x - sample_mean)*(x - sample_mean) / (2 * sample_std_dev * sample_std_dev)))
+plt.hist(returns.price, bins = 20, normed = True);
+plt.plot(x, sample_distribution)
+plt.xlabel('Value')
+plt.ylabel('Occurrences');
+
+Our theoretical curve for the returns has a substantially lower peak than the actual values, which makes sense because the returns are not actually normally distributed. This is again due to the kurtosis of the normal distribution. 
+
+The returns have a kurtosis value of around  5.20 , while the kurtosis of the normal distribution is  3 . A higher kurtosis leads to a higher peak
+
+A major reason why it is so difficult to model prices and returns is due to the underlying probability distributions.
+
+A lot of theories and frameworks in finance require that data be somehow related to the normal distribution. This is a major reason for why the normal distribution seems to be so prevalent. For example, the basis of the Black-Scholes pricing model for options assumes that stock prices are log-normally distributed. However, it is exceedingly difficult to find real-world data that fits nicely into the assumptions of normality.
+
+When actually implementing a strategy, you should not assume that data follows a distribution that it demonstrably does not unless there is a very good reason for it.
+
+Generally, when trying to fit a probability distribution to real-world values, we should have a particular distribution (or distributions) in mind. There are a variety of tests for different distributions that we can apply to see what might be the best fit.
+
+In additon, as more information becomes available, it will become necessary to update the sample mean and standard deviation or maybe even to find a different distribution to more accurately reflect the new information. The shape of the distribution will change accordingly.

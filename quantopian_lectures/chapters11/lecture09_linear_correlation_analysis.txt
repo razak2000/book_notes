@@ -1,0 +1,79 @@
+The correlation coefficient measures the extent to which the relationship between two variables is linear. Its value is always between -1 and 1.
+
+A positive coefficient indicates that the variables are directly related, i.e. when one increases the other one also increases. 
+
+A negative coefficient indicates that the variables are inversely related, so that when one increases the other decreases.
+
+The closer to 0 the correlation coefficient is, the weaker the relationship between the variables.
+
+Two random sets of data will have a correlation coefficient close to 0:
+
+The correlation coefficient of two series $X$ and $Y$ is defined as
+$$r = \frac{Cov(X,Y)}{std(X)std(Y)}$$
+where $Cov$ is the covariance and $std$ is the standard deviation.
+
+Correlation is simply a normalized form of covariance. 
+
+X = np.random.rand(50)
+Y = 2 * X + 4
+print 'Covariance of X and Y: \n' + str(np.cov(X, Y))
+print 'Correlation of X and Y: \n' + str(np.corrcoef(X, Y))
+
+The covariance matrix is an important concept in statistics. Often people will refer to the covariance of two variables $X$ and $Y$, but in reality that is just one entry in the covariance matrix of $X$ and $Y$. For each input variable we have one row and one column. The diagonal is just the variance of that variable, or $Cov(X, X)$, entries off the diagonal are covariances between different variables. The matrix is symmetric across the diagonal.
+
+cov_matrix = np.cov(X, Y)
+#We need to manually set the degrees of freedom on X to 1, as numpy defaults to 0 for variance
+#This is usually fine, but will result in a slight mismatch as np.cov defaults to 1
+error = cov_matrix[0, 0] - X.var(ddof=1)
+print 'error: ' + str(error)
+
+### Determining related assets
+Once we've established that two series are probably related, we can use that in an effort to predict future values of the series. 
+
+#Pull the pricing data for our two stocks and S&P 500
+start = '2013-01-01'
+end = '2015-01-01'
+bench = get_pricing('SPY', fields='price', start_date=start, end_date=end)
+a1 = get_pricing('LRCX', fields='price', start_date=start, end_date=end)
+a2 = get_pricing('AAPL', fields='price', start_date=start, end_date=end)
+plt.scatter(a1,a2)
+plt.xlabel('LRCX')
+plt.ylabel('AAPL')
+plt.title('Stock prices from ' + start + ' to ' + end)
+print "Correlation coefficients"
+print "LRCX and AAPL: ", np.corrcoef(a1,a2)[0,1]
+print "LRCX and SPY: ", np.corrcoef(a1,bench)[0,1]
+print "AAPL and SPY: ", np.corrcoef(bench,a2)[0,1]
+
+Another reason that correlation is useful in finance is that uncorrelated assets produce the best portfolios. The intuition for this is that if the assets are uncorrelated, a drawdown in one will not correspond with a drawdown in another. This leads to a very stable return stream when many uncorrelated assets are combined.
+
+It's hard to rigorously determine whether or not a correlation is significant, especially when, as here, the variables are not normally distributed.
+
+Their correlation coefficient is close to 1, so it's pretty safe to say that the two stock prices are correlated over the time period we use, but is this indicative of future correlation?
+
+One fundamental problem is that it is easy to datamine correlations by picking the right time period. To avoid this, one should compute the correlation of two quantities over many historical time periods and examine the distibution of the correlation coefficient.
+
+rolling_correlation = pd.rolling_corr(a1, a2, 60)
+plt.plot(rolling_correlation)
+plt.xlabel('Day')
+plt.ylabel('60-day Rolling Correlation')
+
+The correlation coefficient can be useful for examining the strength of the relationship between two variables. 
+
+However, it's important to remember that two variables may be associated in different, predictable ways which this analysis would not pick up. For instance, one variable might precisely follow the behavior of a second, but with a delay.  There are techniques for dealing with this lagged correlation. 
+
+Alternatively, a variable may be related to the rate of change of another. Neither of these relationships are linear, but can be very useful if detected.
+
+Additionally, the correlation coefficient can be very sensitive to outliers. This means that including or excluding even a couple of data points can alter your result, and it is not always clear whether these points contain information or are simply noise.
+
+X = np.random.rand(100)
+Y = X + np.random.poisson(size=100)
+plt.scatter(X, Y)
+np.corrcoef(X, Y)[0, 1]
+
+In conclusion, correlation is a powerful technique, but as always in statistics, one should be careful not to interpret results where there are none.
+
+
+
+
+

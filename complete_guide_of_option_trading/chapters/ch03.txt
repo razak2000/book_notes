@@ -1,0 +1,100 @@
+Analyzing option pricing can be a challenge because sometimes it is like trying to hit a moving target.
+
+what causes one option to be priced higher or lower than the other
+
+strike price, time remaining, implied volatility, assumed interest rate, assumed dividend
+
+A call increases in value when the underlying stock rises, volatility rises, or there is a later expiration.
+A put increases in value when the underlying stock declines, volatility rises, or there is a later expiration.
+
+a stock price is one-dimensional but options are multidimensional
+
+
+rate of decay depends on a number of factors, including time to expiration and whether the option is in-the-money, at-the-money, or out-of-the-money, and depending on the type of underlying instrument such as a stock, stock index, ETF, or futures.
+
+The rate of time decay can also differ to some degree depending on whether the option is a call versus a put.
+Another factor affecting implied volatility that is rarely discussed is its correlation to volume.
+
+As a general rule, I have observed anecdotally that as volume of the underlying stock increases, implied volatility tends to increase. Likewise, as volume declines, implied volatility, everything else being equal, tends to decline. 
+
+Implied volatility can be viewed as a gauge of fear and uncertainty
+
+The Chicago Board Options Exchange (CBOE) Volatility index (VIX) measures implied volatility of options on the S&P 500 index and is often referred to as the fear gauge of the overall market 
+
+Implied volatility differs for each individual option and can differ dramatically from stock to stock, from futures contract to futures contract, and from strike price to strike price, and for puts versus calls.
+
+Implied volatility is the percentage you can see on your trading platform or option calculator for a particular option. It is not a measure of the actual volatility of the stock. Implied volatility is expressed in percentage terms because it measures annual standard deviation. 
+
+For a stock, my general rule of thumb is that implied volatility of less than 30 percent is considered relatively low and implied volatility of greater than 70 percent is considered relatively high.
+extrinsic value reaches its peak when the strike price is at-the-money and then declines as you go further out-of-the-money
+
+It is sometimes taught that the further out in time you go, the smaller the time decay. Although this may be true on a percentage basis, you should examine each option on a facts-and-circumstances basis to determine if that same theory holds true on a dollar basis.
+
+The implied volatility is the number that must be imported into a theoretical option pricing model to produce the price of the option in the marketplace.
+
+Implied volatility is built into an option’s price by the marketplace and it is available using a computer model available at most brokerage firms. The implied volatility of an option should be available in your trading platform.
+
+With an option price, you have a quantifiable mechanism to capture the demand component: implied volatility.
+
+Volatility is a statistical measurement of risk or uncertainty. 
+
+Another factor affecting implied volatility that is rarely discussed is its correlation to volume.
+
+As a general rule, I have observed anecdotally that as volume of the underlying stock increases, implied volatility tends to increase. Likewise, as volume declines, implied volatility, everything else being equal, tends to decline. 
+
+Implied volatility can be viewed as a gauge of fear and uncertainty
+
+The Chicago Board Options Exchange (CBOE) Volatility index (VIX) measures implied volatility of options on the S&P 500 index and is often referred to as the fear gauge of the overall market 
+
+Implied volatility differs for each individual option and can differ dramatically from stock to stock, from futures contract to futures contract, and from strike price to strike price, and for puts versus calls.
+
+Implied volatility is the percentage you can see on your trading platform or option calculator for a particular option. It is not a measure of the actual volatility of the stock. Implied volatility is expressed in percentage terms because it measures annual standard deviation. 
+
+For a stock, my general rule of thumb is that implied volatility of less than 30 percent is considered relatively low and implied volatility of greater than 70 percent is considered relatively high.
+
+By comparing the implied volatilities of various options across a number of different stocks and indexes, you can begin to develop a feel for what is considered below average, average, or above average implied volatility.
+
+Time and volatility are closely interconnected. More time to expiration means that there is more time for volatility to occur, whereas less time to expiration may mean that any change in volatility will have less of a dollar effect on an option value. Therefore, everything else being equal, a longer-term option is more sensitive in dollar terms to a change in volatility.
+
+a higher interest rate results in call values rising and put values declining. A lower interest rate results in call values declining and put values rising. Option models include an interest rate assumption, typically using a risk-free interest rate such as a short-term U.S. Treasury rate.
+
+The interest rate factor can be one of the reasons why call prices do not have premiums that are symmetrical with put premiums.
+
+In reality, call prices on stocks are typically higher in comparison to put prices, where the call and put are at an equal distance from the price of the underlying instrument. 
+
+In general, option pricing models have a tendency to value calls more than comparable puts because of interest rate assumptions and because of the fact that a stock can theoretically increase in value to infinity, but a stock can only decline in value to zero. It is interesting that, conversely, on broad-based indexes, the call/put pricing relationship is reversed. 
+
+An out-of-the-money call on an underlying broad-based index typically has a lower value relative to a put.
+
+a cash dividend can result in a lower call premium and a higher put premium when the stock opens trading at the lower price
+
+An option price typically anticipates a dividend and takes into account the payment in advance of the ex-dividend date. 
+
+Special dividends may come as a surprise and may not be reflected initially in the option price.
+
+An extraordinary dividend above a certain threshold may result in a strike price adjustment.
+
+FORECASTING OPTION PRICES
+I like to use three estimation methods to stress test (forward test) an option’s value:
+	Examine an option chain to compare option values at various strike prices within the same month and compare option values at the same strike prices from month to month. 
+
+	Use an option calculator to estimate option values at future points in time based on changes in assumptions for the strike versus stock volatility, interest, and/or dividends.
+
+	Utilize the Greeks. Keep in mind that the Greeks only estimate the change in an option value for a small change in the underlying stock price, time, or implied volatility.
+
+An option chain includes a wealth of information. You can use an option chain to estimate time decay from month to month or forecast the change in an option’s value based on a change in the stock price.
+
+By taking the difference between an option premium that expires in two months and subtracting the near-term month premium at the same strike price, you can estimate the amount of time decay that will be applicable to the first four-week (or five-week) period if you were to buy or sell the longer-term-month contract. 
+
+You can use an option calculator to determine estimated option values (theoretical values) based on assumptions you choose. With an option calculator, you can customize input parameters such as option type, price of the underlying stock, strike price, time remaining to expiration, implied volatility, interest rate, and dividends. An option calculator can be downloaded, presently free of charge, from the CBOE web site (www.cboe.com). Your trading platform should also have this capability.
+
+FINAL THOUGHTS
+Understanding strike price versus stock price, volatility, and how an option value erodes over time is important if you want to become a successful option trader
+
+time decay is one reason why option selling can be a higher-probability strategy in comparison to option buying.
+
+The option buyer is racing against the clock, whereas the option seller has time on his side. We will cover this extensively in later chapters.
+
+To forward test an option price, various other tools are at your disposal, such as option calculators and analytical tools available through your broker. Forward testing utilizing an option chain, option calculator, trading platform, or the Greeks has certain inherent limitations
+
+

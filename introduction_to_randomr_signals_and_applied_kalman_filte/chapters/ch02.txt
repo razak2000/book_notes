@@ -1,0 +1,699 @@
+The only really careful way to describe noise is to begin with a
+probabilistic description and then proceed to derive the associated spectral char-
+acteristics from the probabilistic model
+
+time will usually be the independent variable, although this does not
+necessarily need to be the case
+
+A signal is said to be deterministic if it is exactly
+predictable for the time span of interest
+
+They are
+described by functions in the usual mathematical sense;
+
+In contrast with a deterministic signal, a random signal always has some
+element of chance associated with it. Thus, it is not predictable in a deterministic
+sense
+
+Signals such as (d), (e), and (f) are formally known as random or
+stochastic processes, and we will use the terms random and stochastic interchange-
+ably throughout the remainder of the book
+
+We
+might expect such a signal to have some kind of spectral description, because the
+signal is audible to the human ear. Yet the precise mathematical description of such
+a signal is remarkably elusive, and it eluded investigators prior to the 1940s
+
+However, with random variables we
+must be able to visualize a conceptual statistical experiment in which samples of
+the random variable are obtained under identical chance circumstances.
+
+It would not
+be proper in this case to sample X by taking successive time samples of the same
+signal, because, if they were taken very close together, there would be a close
+statistical connection among nearby samples
+
+Therefore, the conceptual experiment
+in this case must consist of many “identical” radios, all playing simultaneously, all
+being tuned away from regular stations in different portions of the broadcast band,
+and all having their volumes turned up to the same sound level.
+This then leads to the
+notion of an ensemble of similar noiselike signals
+
+It can be seen then that a random process is a set of random variables that
+unfold with time in accordance with some conceptual chance experiment. Each of
+the noiselike time signals so generated is called a sample realization of the process.
+
+The radio experiment just described is an example of a continuous-time
+random process in that time evolves in a continuous manner. In this example,
+the probability density function describing the amplitude variation also happens to
+be continuous
+
+2.2
+One way to specify a random process is to
+describe in detail the conceptual chance experiment giving rise to the process.
+
+Obviously, more information
+than just mean and variance is needed to completely describe a random process.
+
+Obviously, the first-order probability density functions f X 1 ðxÞ; f X 2 ðxÞ; . . . ; f X k ðxÞ,
+are important in describing the process because they tell us something about the
+process amplitude distribution
+
+Note that
+the first-order densities tell us something about the relative distribution of the
+process amplitude as well as its mean and mean-square value
+
+It should be clear that the joint densities relating any pair of random variables,
+for example, f X 1 X 2 ðx 1 ; x 2 Þ; f X 1 X 3 ðx 1 ; x 3 Þ, and so forth, are also important in our
+process description
+
+It is these density functions that tell us something about how
+rapidly the signal changes with time, and these will eventually tell us something
+about the signal’s spectral content
+
+Continuing on, the third, fourth, and subsequent
+higher-order density functions provide even more detailed information about the
+process in probabilistic terms
+
+However, this leads to a formidable description of
+the process, to say the least, because a k-variate density function is required where k
+can be any positive integer
+
+Recall from probability theory that two random variables X and Y are said to be
+statistically independent if their joint density function can be written in product
+form
+f XY ðx; yÞ 1⁄4 f X ðxÞf Y ðyÞ
+
+Similarly, random processes X(t) and Y(t) are statistically independent if the joint
+density for any combination of random variables of the two processes can be written
+in product form, that is, X(t) and Y(t) are independent if
+f X 1 X 2 ...Y 1 Y 2 ... 1⁄4 f X 1 X 2 ... f Y 1 Y 2 ...
+
+the sample times do not have to be the same
+for the two processes.
+
+2.3
+It is defined as one in which all the density functions
+describing the process are normal in form.
+
+Note that it is not sufficient that just
+the “amplitude” of the process be normally distributed; all higher-order density
+functions must also be normal
+
+The multivariate normal density function was discussed in Section 1.14. It
+was pointed out there that matrix notation makes it possible to write out all k-
+variate density functions in the same compact matrix form, regardless of the size
+of k.
+
+All we have to do is specify the vector random-variable mean and covariance
+matrix, and the density function is specified.
+
+In the case of a Gaussian random
+process the “variates” are the random variables X(t 1 ), X(t 2 ), . . . , X(t k ), where the
+points in time may be chosen arbitrarily.
+
+Thus, enough information must
+be supplied to specify the mean and covariance matrix regardless of the choice
+of t 1 , t 2 , . . . , t k .
+
+2.4
+A random process is said to be time stationary or simply stationary if the density
+functions describing the process are invariant under a translation of time
+
+Note that this applies to all the higher-
+order density functions
+
+The adjective strict is also used occasionally with this
+type of stationarity to distinguish it from wide-sense stationarity, which is a less
+restrictive form of stationarity
+
+A random process is said to be ergodic if time averaging is equivalent to
+ensemble averaging
+
+In a qualitative sense this implies that a single sample time
+signal of the process contains all possible statistical variations of the process
+
+Thus,
+no additional information is to be gained by observing an ensemble of sample
+signals over the information obtained from a one-sample signal, for example, one
+long data recording.
+
+Obviously, time and ensemble sampling do not lead to
+the same result in this case, so the process is not ergodic. It is, however, a stationary
+process because the “statistics” of the process do not change with time.
+
+In the case of physical noise processes, one can rarely justify strict stationarity
+or ergodicity in a formal sense. Thus, we often lean on heuristic knowledge of the
+processes involved and simply make assumptions accordingly
+
+Random processes are sometimes classified according to two categories,
+deterministic and nondeterministic. As might be expected, a deterministic random
+process resembles a deterministic nonrandom signal in that it has some special
+deterministic structure.
+
+Specifically, if the process description is such that knowl-
+edge of a sample signal’s past enables exact prediction of its future, it is classified as
+a deterministic random process.
+
+Random processes that are not deterministic are classified as nondetermin-
+istic. These processes have no special functional structure that enables their
+exact prediction by specification of certain key parameters or their past history.
+
+Typical “noise” is a good example of a nondeterministic random process. It
+wanders on aimlessly, as determined by chance, and has no particular determi-
+nistic structure.
+
+2.5
+The autocorrelation function for a random process X(t) is defined as *
+R X ðt 1 ; t 2 Þ 1⁄4 E1⁄2Xðt 1 ÞXðt 2 Þ
+(2.5.1)
+where t 1 and t 2 are arbitrary sampling times.
+
+Clearly, it tells how well the process is
+correlated with itself at two different times.
+
+If the process is stationary, its
+probability density functions are invariant with time, and the autocorrelation
+function depends only on the time difference t 2  t 1 .
+
+Stationarity assures us that the
+expectation is not dependent on t.
+
+Note that the autocorrelation function is the ensemble average (i.e., expect-
+ation) of the product of X(t 1 ) and X(t 2 )
+
+However,
+Eq. (2.5.3) is often not the simplest way of determining R X because the joint density
+function f X 1 X 2 ðx 1 ; x 2 Þ must be known explicitly in order to evaluate the integral
+
+If
+the ergodic hypothesis applies, it is often easier to compute R X as a time average
+rather than an ensemble average.
+
+Note that for
+stationary ergodic processes, the direction of time shift t is immaterial, and hence
+the autocorrelation function is symmetric about the origin.
+
+Sometimes, the random process under consideration is not ergodic, and it is
+necessary to distinguish between the usual autocorrelation function (ensemble
+average) and the time-average version.
+
+Thus, we define the time autocorrelation
+function as ...
+where X A (t) denotes a sample realization of the X(t) process
+
+There are some general properties that are common to all autocorrelation functions
+for stationary processes
+
+Also the
+magnitude of the correlation coefficient relating two random variables is
+never greater than unity.
+
+It is of interest to note that if the
+process is ergodic as well as stationary and if the periodic component
+is sinusoidal, then R X (t) will contain no information about the phase of
+the sinusoidal component. The harmonic component always appears
+in the autocorrelation function as a cosine function, irrespective of
+its phase.
+
+It was mentioned previously that strict stationarity is a severe requirement,
+because it requires that all the higher-order probability density functions be
+invariant under a time translation. This is often difficult to verify.
+
+Thus, a less
+demanding form of stationarity is often used, or assumed. A random process is said
+to be covariance stationary or wide-sense stationary if E[X(t 1 )] is independent of t 1
+and E[X(t 1 )X(t 2 )] is dependent only on the time difference t 2  t 1 .
+
+Obviously, if the
+second-order density f X 1 X 2 ðx 1 ; x 2 Þ is independent of the time origin, the process is
+covariance stationary.
+
+the autocorrelation function is an important descriptor
+of a random process and one that is relatively easy to obtain because it depends on
+only the second-order probability density for the process.
+
+2.6
+The crosscorrelation function between the processes X(t) and Y(t) is defined as ...
+
+Again, if the processes are stationary, only the time difference between sample
+points is relevant, so the crosscorrelation function reduces to ...
+
+Just as the autocorrelation function tells us something about how a process is
+correlated with itself, the crosscorrelation function provides information about the
+mutual correlation between the two processes.
+
+A skew-symmetric relation exists for stationary processes as follows.
+
+Thus, interchanging the order of the subscripts of the crosscorrelation function has
+the effect of changing the sign of the argument.
+
+We frequently need to consider additive combinations of random processes.
+
+The autocorrelation function of the summed process is then ....
+
+2.7
+Qualitatively, if the autocorrelation function
+decreases rapidly with t, the process changes rapidly with time; conversely, a
+slowly changing process will have an autocorrelation function that decreases slowly
+with t
+
+For stationary
+processes, there is an important relation known as the Wiener–Khinchine relation:
+
+power spectral density function or simply
+the spectral density function of the process
+
+The adjectives power and spectral come from the relationship of S X ( jv) to the
+usual spectrum concept for a deterministic signal
+
+If the process X(t) is time stationary, it wanders on ad
+infinitum and is not absolutely integrable. Thus, the defining integral for the Fourier
+transform does not converge
+
+For any particular sample realization of X T (t), the quantity inside the brackets is
+known as the periodogram for that particular signal.
+
+It will now be shown that
+averaging over an ensemble of periodograms for large T yields the power spectral
+density function.
+
+The factor 1  jtj=T that multiplies R X (t) may be thought of as a triangular
+weighting factor that approaches unity as T becomes large
+
+Equation (2.7.9) is a most important relationship, because it is this that ties the
+spectral function S X (jv) to “spectrum” as thought of in the usual deterministic sense.
+
+Remember that the spectral density function, as formally defined by Eq. (2.7.1), is a
+probabilistic concept. On the other hand, the periodogram is a spectral concept
+in the usual sense of being related to the Fourier transform of a time signal.
+
+The
+relationship given by Eq. (2.7.9) then provides the tie between the probabilistic and
+spectral descriptions of the process, and it is this equation that suggests the name for
+S X (jv), power spectral density function.
+
+the determination of the spectral function from experimental data.
+
+Occasionally, it is convenient to write the spectral density function in terms
+of the complex frequency variable s rather than v. This is done by simply replacing
+jv with s; or, equivalently, replacing v 2 with s 2 .
+
+From Fourier transform theory, we know that the inverse transform of the
+spectral function should yield the autocorrelation function, that is, ...
+
+Equation (2.7.16) provides a convenient means of computing the mean square value
+of a stationary process, given its spectral function.
+
+In summary, we see that the autocorrelation function and power spectral
+density function are Fourier transform pairs
+
+Thus, both contain the same basic
+information about the process, but in different forms.
+
+Since we can easily transform
+back and forth between the time and frequency domains, the manner in which the
+information is presented is purely a matter of convenience for the problem at hand
+
+Before leaving the subject of power spectral density, it is worthy of mention
+that when two processes x and y are uncorrelated, the spectral density of the sum is
+given by ...
+
+2.8
+White noise is defined to be a stationary random process having a constant spectral
+density function.
+
+The corresponding autocorrelation function for white noise is then ...
+
+However,
+by assuming the spectral amplitude of white noise to be constant for all frequencies
+(for the sake of mathematical simplicity), we find ourselves in the awkward
+situation of having defined a process with infinite variance
+
+Qualitatively, white
+noise is sometimes characterized as noise that is jumping around infinitely far, infinitely fast
+
+This is obviously physical nonsense but it is a useful abstraction. The
+saving feature is that all physical systems are bandlimited to some extent, and a
+bandlimited system driven by white noise yields a process that has finite variance;
+that is, the end result makes sense
+
+Bandlimited white noise is a random process whose spectral amplitude is
+constant over a finite range of frequencies, and zero outside that range
+
+It is of interest to note that the autocorrelation
+function for baseband bandlimited white noise is zero for t 1⁄4 1=2W, 2=2W, 3=2W,
+etc.
+
+From this we see that if the process is sampled at a rate of 2W samples/second
+(sometimes called the Nyquist rate), the resulting set of random variables are
+uncorrelated. Since this usually simplifies the analysis, the white bandlimited
+assumption is frequently made in bandlimited situations.
+
+he frequency band for bandlimited white noise is sometimes offset from the
+origin and centered about some center frequency W 0
+
+It is worth noting the bandlimited white noise has a finite mean-square value,
+and thus it is physically plausible, whereas pure white noise is not.
+
+However, the
+mathematical forms for the autocorrelation and spectral functions in the band-
+limited case are more complicated than for pure white noise.
+
+Before leaving the subject of white noise, it is worth mentioning that the
+analogous discrete-time process is referred to as a white sequence.
+
+A white sequence
+is defined simply as a sequence of zero-mean, uncorrelated random variables.
+That is, all members of the sequence have zero means and are mutually uncorrelated
+with all other members of the sequence.
+
+If the random variables are also normal,
+then the sequence is a Gaussian white sequence.
+
+2.9
+A stationary Gaussian process X(t) that has an exponential autocorrelation is called
+a Gauss–Markov process.
+
+The autocorrelation and spectral functions for this process are then of the form ..
+
+The mean-square value and time
+constant for the process are given by the s 2 and 1=b parameters, respectively.
+
+The
+process is nondeterministic, so a typical sample time function would show no
+deterministic structure and would look like typical “noise.”
+
+The exponential
+autocorrelation function indicates that sample values of the process gradually
+become less and less correlated as the time separation between samples increases.
+
+The autocorrelation function approaches zero as t ! 1, and thus the mean value
+of the process must be zero.
+
+The Gauss–Markov process is an important process in applied work because
+(1) it seems to fit a large number of physical processes with reasonable accuracy,
+and (2) it has a relatively simple mathematical description.
+
+As in the case of all
+stationary Gaussian processes, specification of the process autocorrelation function
+completely defines the process. This means that any desired higher-order probability
+density function for the process may be written out explicitly, given the auto-
+correlation function.
+
+Now that C X has been written out explicitly, we can use the general normal form
+given by Eq. (1.14.5)
+
+The simple scalar Gauss–Markov process whose autocorrelation function is
+exponential is sometimes referred to as a first-order Gauss–Markov process
+
+This is
+because the discrete-time version of the process is described by a first-order
+difference equation of the form ..
+
+where W(t k ) is an uncorrelated zero-mean Gaussian sequence.
+
+Discrete-time
+Gaussian processes that satisfy higher-order difference equations are also often
+referred to as Gauss–Markov processes of the appropriate order. Such processes are
+best described in vector form
+
+2.10
+In both control and communication systems, we frequently encounter situations
+where a very narrowband system is excited by wideband Gaussian noise.
+
+A high-Q
+tuned circuit and/or a lightly damped mass–spring arrangement are examples of
+narrowband systems.
+
+The resulting output is a noise process with essentially all its
+spectral content concentrated in a narrow frequency range.
+
+If one were to observe
+the output of such a system, the time function would appear to be nearly sinusoidal,
+especially if just a few cycles of the output signal were observed. However, if one
+were to carefully examine a long record of the signal, it would be seen that the quasi-
+sinusoid is slowly varying in both amplitude and phase.
+
+Such a signal is called
+narrowband noise and, if it is the result of passing wideband Gaussian noise through
+a linear narrowband system, then it is also Gaussian.
+
+The quasi-sinusoidal character depends only on the narrowband property,
+and the exact spectral shape within the band is immaterial.
+
+The mathematical description of narrowband Gaussian noise follows. ...
+
+where X(t) and Y(t) are independent Gaussian random processes with similar
+narrowband spectral functions that are centered about zero frequency
+
+The fre-
+quency v c is usually called the carrier frequency, and the effect of multiplying X(t)
+and Y(t) by cos v c t and sin v c t is to translate the baseband spectrum up to a similar
+spectrum centered about v c
+
+The independent X(t) and Y(t)
+processes are frequently called the in-phase and quadrature components of S(t).
+
+If X and Y are independent normal random variables with the same
+variance s 2 , their individual and joint densities are ...
+
+The corresponding densities for R and Q are Rayleigh and uniform
+
+It is of interest to note here that if we consider simultaneous time samples of
+envelope and phase, the resulting random variables are statistically independent.
+
+However, the processes R(t) and Q(t) are not statistically independent (5). This is
+due to the fact that the joint probability density associated with adjacent samples
+cannot be written in product form
+
+The higher-order density functions for S will, of course, depend on the specific
+shape of the spectral density for the process.
+
+2.11
+
+Suppose we start at the origin and take n steps forward or backward at random,
+with equal likelihood of stepping in either direction. We pose two questions:
+After taking n steps, (1) what is the average distance traveled, and (2) what is the
+variance of the distance? This is the classical random-walk problem of statistics.
+
+The averages considered here must be taken in an ensemble sense; for example,
+think of running simultaneous experiments and then averaging the results for a
+given number of steps
+
+It is shown in elementary statistics
+p ffiffiffi that
+the variance after n unit steps is just n, or the standard deviation is n
+
+The continuous analog of random-walk is the output of an integrator driven
+with white noise
+
+Now, add the further requirement that the input be Gaussian white noise. The
+output will then be a Gaussian process because integration is a linear operation on
+the input.
+
+he resulting continuous random-walk process is known as the Wiener or
+Brownian-motion process.
+
+The process is nonstationary, it is Gaussian, and its
+mean, mean-square value, and autocorrelation function are given by ...
+
+Since the process is nonstationary, the autocorrelation function is a general function
+of the two arguments t 1 and t 2 .
+
+It was mentioned before that there are difficulties in defining directly what is
+meant by Gaussian white noise. This is because of the “infinite variance” problem.
+
+The Wiener process is well behaved, though. Thus, we can reverse the argument
+given here and begin by arbitrarily defining it as a Gaussian process with an
+autocorrelation function given by Eq. (2.11.7). This completely specifies the
+process.
+
+We can now describe Gaussian white noise in terms of its integral.
+That is, Gaussian white noise is that hypothetical process which, when integrated,
+yields a Wiener process.
+
+2.12
+As the name implies, pseudorandom signals have the appearance of being random,
+but are not truly random.
+
+In order for a signal to be truly random, there must be
+some uncertainty about it that is governed by chance. Pseudorandom signals do
+not have this “chance” property.
+
+Pseudorandom noise of the type just described would not be of much value in
+today’s digital world. Yet, computer-generated pseudorandom noise has proved
+quite useful in a variety of practical applications,
+
+2.13
+pectral determination is a
+relatively complicated problem with many pitfalls, and one should approach it
+with a good deal of caution
+
+It is closely related to the larger problem of digital data
+processing, because the amount of data needed is usually large, and processing it
+either manually or in analog form is often not feasible.
+
+We first consider the span of
+observation time of the experimental data, which is a fundamental limitation,
+irrespective of the means of processing the data.
+
+The time span of the data to be analyzed must, of course, be finite; and, as a
+practical matter, we prefer not to analyze any more data than is necessary to achieve
+reasonable results
+
+Remember that since this is a matter of statistical inference, there
+will always remain some statistical uncertainty in the result.
+
+One way to specify the
+accuracy of the experimentally determined spectrum or autocorrelation function is
+to say that its variance must be less than a specified value
+
+General accuracy bounds
+applicable to all processes are not available but there is one special case, the
+Gaussian process, that is amenable to analysis.
+
+We will not give the proof here, but it
+can be shown (11) that the variance of an experimentally determined auto-
+correlation function satisfies the inequality ...
+
+It should be mentioned that in determining the time average of X T (t)X T (t þ t), we
+cannot use the whole span of time T, because X T (t) must be shifted an amount of t
+with respect to itself before multiplication.
+
+The true extension of X T (t) beyond the
+experimental data span is unknown; therefore, we simply omit the nonoverlapped
+portion in the integration:
+
+We first note that V X (t) is the result of analyzing a single time signal;
+therefore, V X (t) is itself just a sample function from an ensemble of functions
+
+It is
+hoped that V X (t) as determined by Eq. (2.13.2) will yield a good estimate of R X (t)
+and, in order to do so, it should be an unbiased estimator.
+
+Equation (2.13.1) is of little value if the process autocorrelation function is not
+known.
+
+So, at this point, we assume that X(t) is a Gauss–Markov process with an
+autocorrelation function ...
+
+The s 2 and b parameters may be difficult to determine in a real-life problem, but we
+can get at least a rough estimate of the amount of experimental data needed for a
+given required accuracy
+
+Note that 10 percent accuracy is really not an especially
+demanding requirement, but yet the data required is 200 times the time constant of
+the process.
+
+It can be seen that accurate determination of the autocorrelation
+function is not a trivial problem in some applications
+
+The main point to be learned from this example is that reliable determination of
+the autocorrelation function takes considerably more experimental data than one
+might expect intuitively.
+
+The spectral density function is just the Fourier transform
+of the autocorrelation function, so we might expect a similar accuracy problem in its
+experimental determination.
+
+As just mentioned, the spectral density function for a given sample signal may
+be estimated by taking the Fourier transform of the experimentally determined
+autocorrelation function. This, of course, involves a numerical procedure of some
+sort because the data describing V X (t) will be in numerical form
+
+The spectral
+function may also be estimated directly from the periodogram of the sample signal.
+
+Unfortunately, since we do not usually have the luxury of having a large
+ensemble of periodograms to average, there are pitfalls in this approach, just as there
+are in going the autocorrelation route.
+
+Nevertheless, modern digital processing
+methods using fast Fourier transform (FFT) techniques have popularized the
+periodogram approach. Thus, it is important to understand its limitations (6).
+
+First, there is the truncation problem. When the time record being analyzed is
+finite in length, we usually assume that the signal will “jump” abruptly to zero
+outside the valid data interval. This causes frequency spreading and gives rise to
+high-frequency components that are not truly representative of the process under
+consideration, which is assumed to ramble on indefinitely in a continuous manner.
+
+Thus, the first rule is that we must
+have a long time record relative to the typical time variations in the signal. This is
+true regardless of the method used in analyzing the data. There is, however, a
+statistical convergence problem that arises as the record length becomes large
+
+In Section 2.7 it was shown that the expectation of the periodogram approaches
+the spectral density of the process for large T. This is certainly desirable, because we
+want the periodogram to be an unbiased estimate of the spectral density
+
+It is also of
+interest to look at the behavior of the variance of the periodogram as T becomes
+large
+
+But E(M) approaches the spectral function as T ! 1. Thus, the variance of the
+periodogram does not go to zero as T ! 1 (except possibly at those exceptional
+points where the spectral function is zero). In other words, the periodogram does not
+converge in the mean as T ! 1! This is most disturbing, especially in view of the
+popularity of the periodogram method of spectral determination.
+
+Increasing T will not help reduce the ripples in the
+individual periodogram. It simply makes M “jump around” faster with v.
+
+Our treatment of the general problem of autocorrelation and spectral determi-
+nation from experimental data must be brief. However, the message here should be
+clear. Treat this problem with respect. It is fraught with subtleties and pitfalls.
+
+Engineering literature abounds with reports of shoddy spectral analysis methods
+and the attendant questionable results. Know your digital signal processing methods
+and recognize the limitations of the results.
+
+2.14
+Consider a time function g(t) that is bandlimited,
+Under the conditions of Eq. (2.14.1), the time function can be written in the form ...
+
+The theorem says that if one
+were to specify an infinite sequence of sample values . . . , g 1 , g 2 , g 3 , . . . , uniformly
+spaced 1/2W sec apart as shown in Fig. 2.27, then there would be one and only one
+bandlimited function that would go through all the sample values.
+
+In other words,
+specifying the signal sample values and requiring g(t) to be bandlimited indirectly
+specify the signal in between the sample points as well. The sampling rate of 2W Hz is
+known as the Nyquist rate.
+
+This represents the minimum sampling rate needed to
+preserve all the information content in the continuous signal
+
+If we sample g(t) at less
+than the Nyquist rate, some information will be lost, and the original signal cannot be
+exactly reconstructed on the basis of the sequence of samples.
+
+Certainly, a signal
+lying within the bandwidth W also lies within a bandwidth greater than W.
+
+In describing a stationary random process that is bandlimited, it can be seen
+that we need to consider only the statistical properties of samples taken at the
+Nyquist rate of 2W Hz. This simplifies the process description considerably
+
+If
+we add the further requirement that the process is Gaussian and white within the
+bandwidth W, then the joint probability density for the samples may be written as a
+simple product of single-variate normal density functions
+
+Since there is symmetry in the direct and inverse Fourier transforms, we would
+expect there to be a corresponding sampling theorem in the frequency domain
+
+All of the previous comments relative to time domain sampling have their
+corresponding frequency-domain counterparts.
+
+
+
+
+
+
+
+
+

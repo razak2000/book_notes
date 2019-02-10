@@ -1,0 +1,313 @@
+Options can be used to manage risk, generate income, take advantage of leverage, and potentially profit under almost any market condition.
+
+Options can enable you to speculate on whether a stock, exchange-traded fund (ETF), stock index, or futures will rise, decline, or move sideways within your selected time frame.
+
+With options, you can engage in a high- or low-probability trade or a trade with limited or unlimited risk.
+
+With options, you can generate income from the up, down, and sideways movements of a stock, ETF, index, or futures. The key is to first determine your view of a stock (or market) and time frame and then determine the option strategy that can meet that perspective.
+
+Sometimes the markets go through periods in a trading range that can last for weeks, months, or years. In these periods of consolidation, markets seem to fluctuate sideways and back and forth.
+
+Using options, you can speculate that a stock (or futures) will be stuck in neutral and you can design option strategies to profit from the lack of movement
+
+Buying an option can be an attractive strategy because you can have limited risk with high profit potential, whereas selling (writing) an option can be attractive because you may have the odds on your side.
+
+The goal of option selling is the same as that of traditional trading but in reverse order:
+
+When selling an option, the goal is to sell high and buy low
+
+Because markets can trend sideways for many years, selling options can provide a unique tool to potentially profit in sideways markets.
+
+One advantage of selling an option is that close is sometimes good enough—in comparison to buying, where you need to be more precise in timing and direction.
+
+Selecting the best underlying instrument is one of the most important trading decisions you will make
+
+In general, I have found that a broad-based index, such as the S&P 500 index, can be a good candidate for option selling:
+
+An option sale is a bet against volatility, and an index is typically less volatile than an individual stock.
+
+On the other hand, I find that stocks can be a good candidate for buying options because stocks can be very volatile.
+
+Developing a plan and working hard are essential to your success. Remember that the definition of luck is “preparation meets opportunity.” The more knowledge you have, the greater your chances of success.
+
+You should have a thorough understanding of risk management strategies, have access to specialized option software and trading platforms (free or low-cost software are accessible), learn strategies that maximize your probabilities of success and can limit losses, and appreciate the importance of education.
+
+You should keep expenses low; maximum interest income credited to your account; and open accounts to trade options on stocks, ETFs, indexes, and futures
+
+It is important to protect your investment capital. Manage risk by observing the following tips:
+    • If selling options, establish positions with probabilities of success of at least 75 percent.
+    • Trade limited-risk strategies.
+    • Have an exit strategy with defined profit and loss objectives.
+    • Have the courage to exit a position at a loss to protect capital.
+    • Use stop losses to automatically exit positions.
+    • Do not overtrade or feel compelled to be in the market at all times.
+    • Use technical analysis to time when and where to establish positions.
+    • Trade liquid options.
+    • Control expenses.
+    • Keep your losses small.
+    • Have a plan.
+    • Do not get greedy.
+
+Before engaging in any option transaction, you should determine your maximum profit, maximum loss, break-even point, and probabilities of success.
+
+You should develop a clear view of the direction, timing, and magnitude of the underlying stock and have strategies readily available to place yourself in a position to maximize your return and limit your losses.
+
+Before you get started, you should open brokerage accounts to take advantage of margin, and you should understand how option trading can be affected, depending on whether an account is a taxable account versus an individual retirement account (IRA) or a futures account.
+
+You should also understand how to maximize interest income and minimize commissions and taxes.
+
+You should practice option strategies using a practice (simulated) account until you become proficient at what you plan to trade.
+
+Discipline and decisiveness are factors critical to your success, and you should not allow your emotions to control your investment decisions
+
+To trade successfully, it is important that you develop guidelines on when to buy and when to sell. Buying and selling options, like other investments, can be an emotional roller coaster, if you let it become one.
+
+You should trade when you are levelheaded and calm, using a systematic approach determined beforehand
+
+Which option strategies are best for you depends in part on the amount of your capital; your risk tolerance; and your confidence in determining the direction, timing, and magnitude of various moves in the marketplace.
+
+Bulls make money, bears make money, and pigs get slaughtered.
+
+Ideally, you should exit a position with predetermined profit or loss objectives; for instance, if you buy an option, a rule of thumb may be to exit a position if a loss reaches 50 percent of the amount paid to establish a trade. If you sell an option, a guideline may be to close out a position if you have a profit of 70 percent of the maximum possible profit in a position.
+
+Overtrading and establishing excessive positions should be avoided.
+
+Risk increases where too many options are bought (or sold), as leverage cuts both ways.
+
+Confidence and discipline are key components of developing your edge, and it is important to remember that always following the crowd can be hazardous to your wealth.
+
+It is important to protect your investment capital. A popular risk and money management strategy is to let profits run and keep losses small.
+
+You simply cannot let your losses run too high
+
+If you lose a certain level of capital, it becomes more difficult to ever get back to where you began
+
+If you do not have the emotional or psychological ability to cut your losses, then you should not trade options.
+
+Probably one of the most difficult aspects of successful trading is deciding when to exit a position
+
+More important, when wrong, know when to get out and act accordingly
+
+It is best to take proactive action for risk management purposes. In such times, capital preservation should be your main priority.
+
+A stop loss order is an order placed with a broker to sell an option when it reaches a certain price. It is designed to limit an investor’s loss on an option position.
+
+You should use discipline in adhering to protective stop losses. Your goal in some market conditions is simply to preserve capital.
+
+Simulated trading can help you become familiar with the types of option orders that can be entered; using a practice account prior to executing any real trades can help you gain confidence.
+
+If simulated trading is not available at your broker, you can trade one option at a time, making sure that the risk is small.
+
+A call option is a contract that provides the buyer (purchaser) the right, but not the obligation, to buy an asset (100 shares, if a stock) at a particular price (called the strike price or exercise price) within a defined time frame.
+
+A put option is a contract that provides the buyer the right, but not the obligation, to sell an asset (100 shares, if a stock) at the strike price within a defined time frame.
+
+A call seller is obligated to sell at the strike price within a defined time frame, and a put seller is obligated to buy at the strike price within a defined time frame.
+
+In general, if you expect an increase in the value of a stock, you buy a call, but if you expect a decrease in a stock, you buy a put.
+
+An option is typically described with the underlying stock (or other instrument) name, followed by the expiration month, strike price, and type of option.
+
+A call option premium (what you pay for the option) is priced on a per-share basis, and each option corresponds to 100 shares.
+
+As a result, one call option provides the option owner (holder) the right to buy 100 shares of a stock
+
+As you can imagine, the value of the option will change in response to the change in stock price.
+
+The value of the call option, however, will not change in lockstep, dollar for dollar with the XYZ stock
+
+Like a call option, a put option premium is priced on a per share basis, and each option on a stock corresponds to 100 shares.
+
+One put option provides the owner the right to sell 100 shares of a stock.
+
+If the stock price declines, then the put price will rise, and if the stock price rises, then the put price will decline.
+
+The value of the put option will not change dollar for dollar with the stock.
+
+ It only makes sense that the longer the time frame of the option, the more expensive the option, ignoring all other factors, because it provides additional time for the option owner to make a decision and for the value to rise.
+
+ The centralized marketplace for options usually provides sufficient volume so that orders can be filled according to the supply and demand of the market
+
+In the world of options, a seller may not actually own the underlying asset (stock), and buyers and sellers can select the strike price and expiration date that are available to meet their own risk-reward profile, according to standardized option contracts and terms.
+
+With a call option, you have the potential to profit, based on the number of points a stock increases in value instead of the percentage increase in the stock price.
+
+Likewise, a put option can provide leverage from the decline in the value of a stock.
+
+A put option can be compared to insurance, where the difference between the strike price and stock price is like the deductible, the option expiration period is like the insurance coverage period, and the option premium is similar to the premium paid for rights under the insurance contract
+
+If risk is perceived to be high, a high insurance (and option) premium will be charged; if risk is low, a low insurance (and option) premium will be charged.
+
+Insurance companies charge a greater premium for longer-term coverage and a lower deductible (option premiums are similar in that respect)
+
+With options, when there is a greater chance of the underlying stock’s advancing or declining through the exercise price, risk is perceived to be greater, and the premium is increased.
+
+Like put options, calls can also be compared to insurance, except that movement is in the opposite direction
+
+What makes option trading attractive is that you can sell options just as easily as you can buy them
+
+However, in the listed equity and futures options markets, contract terms are standardized, the buyer and seller never meet, and payments are made to or received from a third-party intermediary (centralized clearinghouse).
+
+The buyer and seller of an option on a listed stock or futures option can choose among available standardized contracts.
+
+Orders are handled by option exchanges, which clear the trades and establish the fixed strike prices, expiration dates, and other terms.
+
+Exchange-traded (listed) equity options are standardized contracts that have predetermined terms and conditions, such as standard strike prices, expiration dates, and number of shares controlled.
+
+The premium is the price at which an option is bought (or sold).
+
+The option buyer is the person who pays the premium, and the option seller (writer or grantor) collects the premium.
+
+When you buy an option, you are long the option and profit if the option increases in value.
+
+When you sell (write) an option, you are short the option and profit if the option declines in value.
+
+In a long option, the buyer cannot lose more than the premium paid (in addition to commission and other transaction costs, of course).
+
+In a short option, the seller (writer) cannot gain more than the premium collected (minus commission and other transaction costs).
+
+A person who has bought an option contract is considered to be long the option contract.
+
+A person who has sold an option contract (that is still open) is considered to be short the option contract.
+
+An option is a derivative financial instrument. This means that the price of the option is directly dependent on (i.e., derived from) the value of a stock (or other underlying instrument, e.g., an ETF, index, or stock index futures), in combination with other factors.
+
+An option involves the trading of rights or obligations but does not directly transfer property.
+
+A long call provides the right to buy and a short call provides the obligation to sell.
+
+A buy of a put provides the right to sell, and a sell of a put provides the obligation to buy.
+
+A premium paid by the buyer is reflected as a debit in his account because it results in a subtraction (expense) in the account.
+
+A premium collected by the seller is reflected as a credit in his account because it results in an addition to the account.
+
+The underlying instrument is the asset from which the option bases its value.
+
+An option value can be based on an underlying instrument, such as a stock, index, ETF, or futures.
+
+The futures options covered in this book are based on stock indexes and are called stock index futures.
+
+The exercise price, commonly referred to as the strike price, is the price at which the stock (underlying instrument) can be bought (in the case of a call) or sold (in the case of a put) by the holder (buyer) of the option.
+
+Many ETF option strike price intervals are, in contrast, at a minimum of one-point interval increments.
+
+The expiration date is the date at which the option terminates.
+
+The expiration date for stock options is usually the Saturday immediately after the third Friday of the expiration month. To a trader, however, the significant date is the third Friday of each month.
+
+The expiration date of an option can be short term, such as one week, or longer term, such as more than one year.
+
+Option expiration dates are on standardized cycles.
+
+An option cycle (or expiration cycle) provides the months in which options expire.
+
+Equity options generally expire in the current month and immediate subsequent month, in addition to being on an option cycle.
+
+An option cycle can vary, depending on the type of underlying instrument, so that an equity option may have a different cycle than that of an option on an index or stock index futures.
+
+Options have option cycles that typically extend to nine months, but the option cycle may also include longer-term options, known as long-term equity anticipation securities (LEAPS).
+
+LEAPS are longer-dated options that typically have an expiration date of January of each year. LEAPS have all of the rights and obligations of a traditional option but are longer dated, typically up to three years, giving you an extended period of time in which to invest.
+
+The intrinsic value of an option is the amount at which the current price for the underlying stock is above the strike price of a call option or below the strike price of a put option. The remainder of the option premium is extrinsic value.
+
+Intrinsic value can be viewed as the minimum price inherent in the value of the option relative to the stock value.
+
+Extrinsic value is commonly called time value.
+
+In-the-money describes an option contract that has intrinsic value.
+
+An option contract, as a general rule, that is in-the-money by at least two strike prices and consists almost entirely of intrinsic value is referred to as deep-in-the-money.
+
+The concept of parity applies if an option is trading in-the-money.
+
+An option is at parity if the option price is equal to the intrinsic value (in-the-money amount).
+
+If the option is trading for more than intrinsic value, it is trading above parity; if it is trading at the same amount as intrinsic value, it is selling at parity; and if it is trading at less than intrinsic value, it is trading below parity.
+
+Most options trade above parity.
+
+At-the-money means that an option’s strike price is the same as, or closest to, the current trading price of the underlying stock.
+
+Out-of-the-money describes an option that has no intrinsic value and, instead, consists entirely of extrinsic value.
+
+In general, an option contract is far-out-of-the-money if the strike price is at a level where it is highly unlikely to ever become in-the-money.
+
+If a call is in-the-money, a put with the same strike price must be out-of-the-money.
+
+Conversely, if the put is in-the-money, a call at the same strike price must be out-of-the-money.
+
+At-the-money options tend to have the highest liquidity, with the greatest open interest .
+
+Open interest is the total number of options and/or futures contracts that are not closed or delivered on a particular day.
+
+An option has sufficient liquidity if there are sufficient buyers and sellers (volume) to execute an orderly market, without a disruption in price.
+
+Open interest is the total number of option contracts that are outstanding and are still open (have not been exercised, closed out, or allowed to expire)
+
+A liquid market is a market in which selling and buying can be accomplished with minimal effect on price.
+
+If you are long a call and choose to exercise, you buy stock at the strike price; if you are long a put and choose to exercise, you sell stock at the strike price.
+
+If the buyer decides to exercise his right under the option contract, the option seller (writer) is assigned, requiring him to sell (in the case of a call) or buy (in the case of a put) the underlying stock at the strike price.
+
+An American-style option can be exercised by the option holder (buyer) at any time up until the expiration date, whereas a European-style option can be exercised only at expiration.
+
+Equity options, including ETFs, are generally American-style expirations.
+
+When an option is exercised by the owner, the seller of the option is assigned.
+
+An exercise notice is a notification by a broker of assignment.
+
+Assignment is a designation by which the option writer is required (forced) to sell a stock at the specified exercise price if it is a call and buy a stock at the specified exercise price if it is a put.
+
+You should keep in mind that most options are not exercised and instead are either offset in the marketplace or expire worthless
+
+If you are long a call, you can have the stock called away from the call seller. If you are long a put, you can put the stock to the put seller by forcing him to buy it.
+
+Although anything is possible, it is rare that a stock with extrinsic value is exercised because the holder is better off selling the option rather than exercising it.
+
+When buying or selling an option, a trader should determine in advance the point (or points) where the underlying stock must rise or fall for an option position to break even.
+
+Assuming you do not have a position in the underlying stock, when buying (or selling) a call, the break-even point is typically where the underlying stock, at the expiration date, equals the strike price plus the premium paid for the option contract.
+
+When buying (or selling) a put, the break-even point is typically where the underlying stock, at the expiration date, equals the strike price minus the premium paid.
+
+Probably the greatest advantage of trading options is leverage. Probably the greatest disadvantage of trading options is leverage.
+
+The true nature of option trading is the ability to control large sums of assets with small amounts of capital.
+
+Leverage is a double-edged sword and could lead to losses as well as gains.
+
+We all come to the markets with our own strengths. Some traders are naturally bearish (and that can be an advantage in some cases), whereas others are naturally bullish; some are confident in the long term, whereas others believe in trading short term; some do not like the stress of trading, whereas others seem to thrive on it; some like to follow the markets closely, whereas others do not look at their investments more than once a month (or longer).
+
+The key seems to be to find trading strategies that fit your strengths.
+
+Each trader has his own unique risk tolerance, personality, and investing style, and you should therefore try to match your risk tolerance and investing style with how you trade options.
+
+Which option strategies are best for you depends in part on the amount of capital you have, your risk tolerance, and your confidence level.
+
+When trading, you should not trade to the point where you cannot sleep at night.
+
+Most of the time you are trading options, you should be trading conservatively, but there are other times when you need to know when to put on a full-court press. This does not mean that you should take excessive risk, but there are times when you should be more heavily invested than others.
+
+Of course, there are also times when you should be out of the market entirely.
+
+You should never feel compelled to be in the market.
+
+Technical analysis can be a valuable tool in determining trends and can place you on a more level playing field with professional traders.
+
+It is best to have a well-diversified portfolio.
+
+Trading in your brokerage account should be coordinated with your overall financial situation and should be part of a diversified portfolio; for example, your portfolio of investments should include domestic and international mutual funds, stocks, bonds, and homeownership.
+
+After you have determined your portfolio investments and weighed them against your debts, you are in a position to determine how much money you can risk on trading options.
+
+As you gain experience in trading options, you should identify strategies that you like best, in view of your risk profile and profit objectives. Not only that, but some strategies may fit your lifestyle better than others, depending on whether you want to trade every day, once a week, or only once in a while
+
+
+
+
+
+

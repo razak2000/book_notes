@@ -1,0 +1,273 @@
+A calendar spread attempts to exploit the difference in time decay between options that expire in different months
+
+The typical calendar spread exploits the naturally inflated time decay of a near-term option relative to a longer-term option
+
+A calendar spread, also called a time spread, can be executed to take advantage of near-term time decay relative to longer-term time decay (long calendar spread) or to take advantage of longer-term time decay relative to near-term decay (short calendar spread)
+
+A calendar spread involves the purchase of a call (or put) option and the simultaneous sale of a call (or put) option with the same strike price but a different expiration date.
+
+You are long a calendar spread when the longer-term option (back month) is purchased and the near-term option (front month) is sold
+
+You are short a calendar spread when the longer-term option is sold and the near-term option is purchased
+
+A short calendar spread is also called a “reverse time spread
+
+A calendar spread is a limited-risk/limited-reward strategy in which you can take advantage of a range-bound market (long calendar spread) or trading outside a range (short calendar spread).
+
+It has limited risk because the number of short and long options is equal, and all options have the same strike price.
+
+A calendar spread is also called a “horizontal spread” or “time spread.”
+
+As an aside, a calendar spread is the inverse of a vertical spread
+
+A calendar spread involves the same strike price and a different expiration month, whereas a vertical spread involves different strike prices and the same expiration month
+
+What you need to remember is that you profit in a debit spread (long calendar spread) when the value of the spread increases, and you profit in a credit spread (short calendar spread) when the value of the spread contracts.
+
+What can make a spread increase or contract depends on the interaction of the opposing long and short options that make up the spread
+
+The profit and loss of a calendar spread can be analyzed as of the expiration date of the near-term option
+
+In a long calendar spread, the maximum profit cannot be determined in advance because it is impossible to determine the value of the longer-term option when the near-term option expires
+
+A long call calendar spread offers limited risk, and the maximum loss is limited to the net debit paid
+
+In a long calendar spread, you want the near-term (short) option to contract in value and the longer-term (long) option to rise as much in value
+
+The calendar spread will show a profit as long as the gain from the near-term option exceeds the loss from the longer-term option
+
+You can execute a long or short calendar spread with calls or puts
+
+The gain or loss on a calendar spread cannot be determined in advance because the spread consists of options that expire at different times
+
+As a general rule, a calendar spread achieves its maximum value, on the near-term option expiration date, if the underlying stock closes at the calendar strike price.
+
+Assuming calls are used, if a stock plunges prior to the near-term option expiration date, near-term and longer-term call options will both simultaneously contract toward zero, thus contracting the spread
+
+Likewise, if the stock surges prior to the near-term option expiration date, values of the near-month and longer-term call options will both simultaneously increase to near-parity, thus contracting the spread
+
+As a result, volatility in either direction results in a contraction of the spread, whereas a trading range environment maximizes the value of the spread.
+
+An analysis of a calendar spread should include a forecast of the value of the longer-term option at the time the near-term option expires. Unfortunately, you cannot know this value at the time a calendar spread is established, and it is simply a prediction
+
+In some option literature, it is stated that if the underlying stock is at the strike price at the expiration date of the near-term option, a long calendar spread will automatically produce a profit at that point in time.
+
+The theory behind this is that the time decay of the near-term option will exceed the time decay of the longer-term option, resulting in expansion of the calendar spread
+
+However, implied volatility of the longer-term option is an important ingredient in determining the ultimate profitability of the spread
+
+In a long calendar spread, if implied volatility of the longer-term option expands relative to the near-term option, then the debit of the calendar spread will expand, producing a greater gain
+
+ If implied volatility of a longer-term option contracts relative to the near-term option, then the debit of the calendar spread will contract, producing a lower gain, or even a loss
+
+There are no guarantees because a severe collapse in implied volatility of the longer-term option can reduce the debit and even produce a loss, even though the underlying stock is at the strike price on the date the near-term option expires.
+
+The profit and loss picture would be reversed for a short calendar spread so that an explosion in implied volatility of the longer-term short option works against the shorter calendar spread.
+
+This also means that the break-even point cannot be determined in advance
+
+An option chain and option calculator should be used to project values and determine the likely break-even point for a calendar spread to project possible outcomes.
+
+As a general rule, a long calendar spread may be most effective using equity options, where the strike price is at-the-money.
+
+Conversely, a short calendar spread may be more appropriate for options on ETFs, indexes, and stock index futures
+
+In a long call calendar spread, you sell a near-term call option and buy a longer-term call option to take advantage of the accelerated time decay of the near-term option versus the longer-term option
+
+If things go according to plan, the value of the near-term option will decline by more than the longer-term option.
+
+A long calendar spread is profitable if the underlying stock trades within a range.
+
+The maximum profit of a long calendar spread is achieved when the stock closes at the calendar strike price at the near-term expiration date.
+
+However, you cannot precisely predict a calendar spread maximum profit dollar amount when you first establish the position because it is impossible to know in advance the value of an option at any point in time prior to its expiration
+
+The maximum loss is limited to the net debit and occurs (at the near-term expiration date) if the underlying stock closes appreciably above or below the calendar spread strike price.
+
+The break-even point at the expiration of the near-dated option cannot be determined because the value of the longer-term option cannot be determined in advance.
+
+The time decay of the near-term option typically exceeds the time decay of the longer-term option, and a volatility increase or decrease typically affects the value of the longer-term option by a greater amount than the value of the near-term option as expiration approaches
+
+For a long call calendar spread, a debit is charged to your account and must be paid in full. A long call calendar spread may be permitted in an IRA.
+
+In a long put calendar spread, you sell a near-term put option and buy a longer-term put option to take advantage of the accelerated time decay of the near-term option versus the longer-term option.
+
+If things go according to plan, the value of the near-term option will decline by more than the longer-term option.
+
+For a long put calendar spread, a debit is charged to your account and must be paid in full. A long put calendar spread may be permitted in an IRA.
+
+In a short call calendar spread, you sell a longer-term call option and buy a near-term call option to take advantage of the accelerated time decay of the longer-term option versus the near-term option. If things go according to plan, the value of the long-term option will decline by more than the near-term option.
+
+The maximum gain is limited to the net credit and occurs (at the near-term expiration date) if the underlying stock closes appreciably above or below the calendar spread strike price.
+
+A short calendar spread is profitable if the underlying instrument trades outside a range.
+
+The maximum loss of a short calendar spread is achieved when the stock closes at the calendar strike price on the near-term expiration date.
+
+However, you cannot precisely predict a calendar spread maximum loss dollar amount when you first establish the position because it is impossible to know in advance the value of an option at any point in time prior to its expiration.
+
+The break-even point at the expiration of the near-term option cannot be determined because the value of the longer-term option cannot be determined in advance.
+
+The time decay of the near-term option typically exceeds the time decay of the longer-term option, and a volatility increase or decrease typically affects the value of the longer-term option by a greater amount than the value of the near-term option as expiration approaches.
+
+Margin is required for a short call calendar spread. A short call calendar spread may not be permitted in an IRA.
+
+In a short put calendar spread, you sell a longer-term put option and buy a near-term put option to take advantage of the accelerated time decay of the longer-term option versus the near-term option. If things go according to plan, the value of the long-term option will decline by more than the near-term option.
+
+The maximum gain is limited to the net credit and occurs (at the near-term expiration date) if the underlying stock closes appreciably above or below the calendar spread strike price.
+
+A short calendar spread is profitable if the underlying instrument trades outside a range.
+
+The maximum loss of a short calendar spread is achieved when the stock closes at the calendar strike price at the near-term expiration date.
+
+However, you cannot precisely predict a calendar spread maximum loss dollar amount when you first establish the position because it is impossible to know in advance the value of an option at any point in time prior to its expiration.
+
+The break-even point at the expiration of the near-term option cannot be determined because the value of the longer-term option cannot be determined in advance.
+
+The time decay of the near-term option typically exceeds the time decay of the longer-term option, and a volatility increase or decrease typically affects the value of the longer-term option by a greater amount than the value of the near-term option as expiration approaches.
+
+Margin is required for a short put calendar spread. Although margin is not permitted in an IRA, some brokerage firms allow the shorting of naked puts because the risk is mathematically limited to the difference between the strike price and zero.
+
+In a long calendar spread, you typically pay a debit and profit if the underlying stock trades within a range.
+
+Likewise, a credit in a short calendar spread profits if the underlying stock trades outside a range and is contrary to the general rule that a credit in a vertical spread strategy typically profits as an underlying stock trades sideways or in one direction.
+
+An equity calendar spread typically involves options that are at-the-money, but it can be bullish (out-of-the-money call) or bearish (out-of-the-money put) as well.
+
+In a long calendar spread, the longer-term option has a higher price than the shorter-term option and, in options lingo, this is consistent with referring to a spread that is executed as a debit as a long position (a credit is typically a short position).
+
+A debit spread can be viewed as an option position that profits when the spread difference (debit) increases
+
+A profit is made if the value difference between the two options increases, regardless of whether the increase is from one of the following:
+    A decline in the value of the short option.
+    • A rise in the value of the long option.
+    • A greater decline in the short option value relative to the long option value.
+    • A greater rise in the long option value relative to the short option value.
+
+The long calendar spread is attempting to exploit the higher rate of time decay typically associated with a near-term option relative to the decay of a longer-term option
+
+A long calendar spread is a strategy that can be used to exploit this relative time decay discrepancy
+
+As a result, a long calendar spread typically wants sideways movement of the underlying stock so that the time decay advantage associated with the near-term option can be exploited, whereas the longer-dated option, hopefully, retains its value.
+
+A credit spread can be viewed as an option position that profits when the spread difference (credit) contracts; for example, a credit spread may consist of buying an option at $5 and selling a later-term option at $10
+
+A profit is made if the value difference between the two options declines, regardless of whether the decline is from one of the following:
+    • A decline in the value of the short option.
+    • A rise in the value of the long option.
+    • A greater decline in the short option value relative to the long option value.
+    • A greater rise in the long option value relative to the short option value.
+
+A short calendar spread may work best using out-of-the-money options on an index such as the S&P 500 (SPX) and S&P 500 futures.
+
+Contrary to equities, the near-term options, in general, in some cases can have a lower rate of time decay than longer-term options for out-of-the-money options on an index such as the SPX.
+
+A short calendar spread is a strategy that can be used to exploit this relative time decay discrepancy. A large movement in the underlying instrument in either direction can result in a contraction of the spread differential.
+
+An analysis breaking down how much premium may be earned per day based on various option expiration scenarios can be helpful in deciding whether to enter into a calendar spread
+
+As a result, long calendar spreads may be advisable on stocks, but short calendar spreads may be advisable on out-of-the-money SPX (and S&P 500 futures) options.
+
+A unique feature of the long calendar spread is its flexibility to continue a new calendar spread each month.
+
+In a calendar spread, the near-term option expires and leaves the longer-term option with an effectively reduced cost basis.
+
+After expiration of the near-term option, in a perfect scenario, the next month option with the same strike price is sold to establish a new calendar spread, and so on
+
+Converting the initial calendar spread into a new calendar spread should, in some cases, be accomplished before the actual expiration of the near-term option.
+
+In many cases, the rolling to the next month is accomplished by offsetting the near-term option before expiration and simultaneously selling the next month option, in a rollout
+
+A rollout strategy should occur if the near-term option is in-the-money because expiration can trigger an assignment. In this case, the near-term option is rolled to avoid an assignment.
+
+The overall objective of a long calendar spread is to sell the time value in the near-term option, with the objective that it will decay faster than the time value in the longer-term option.
+
+To exploit this difference, you can establish a longer-term option that expires at least two months after the expiration of the shorter-dated option. This will allow at least one new calendar spread to be established after the first expiration date.
+
+Keep in mind that you can close out an option position by offsetting it in the marketplace at any time prior to expiration, and you should use your trading platform software, option calculator, and option chain to estimate option values based on your own assumptions.
+
+It is best to examine your trading platform and option chain prior to buying or selling an option
+
+If you are nearing expiration, you can offset your current position, because there are only a few days left in the option’s expiration cycle, and establish a similar position in the subsequent expiration month.
+
+You can roll to minimize risk, cut losses, and/or take into account your new view of the market.
+
+To manage a calendar spread, you may consider rolling one leg at a time to fine-tune a position and mitigate risk.
+
+A calendar spread is sensitive to changes in the underlying stock price but also to changes in implied volatility.
+
+A calendar spread tends to widen when implied volatility rises because a change in implied volatility has a greater dollar effect on a longer-term option as expiration approaches.
+
+Similarly, a calendar spread tends to contract when implied volatility declines.
+
+The contraction is that a long calendar spreader typically wants sideways movement in an underlying stock so the stock lands at or near the strike price, but sideways movement in a stock is typically accompanied by declining implied volatility, not rising implied volatility.
+
+An increase in implied volatility will typically help a long calendar spread, whereas a decrease in implied volatility will hurt a long calendar spread.
+
+Likewise, an increase in implied volatility will hurt a short calendar spread, whereas a decrease in implied volatility will help a short calendar spread.
+
+In general, a longer-term option is more sensitive in total points (dollars) to a change in volatility than a near-term option with the same exercise price.
+
+Like a butterfly spread, an important decision is the calendar spread strike price because that determines where you achieve your maximum gain if you are long and your maximum loss if you are short.
+
+You should keep in mind that the strike price does not have to be at-the-money when it is established
+
+You can use your trading platform to determine whether there is more favorable pricing using a call versus a put calendar spread under your scenarios.
+
+There is assignment risk associated with a calendar spread. Although it is generally accepted that spread trading reduces the risk of loss, spreads are subject to early assignment, and that can remove the very protection that you wanted.
+
+This can lead to margin calls and/or greater losses than anticipated.
+
+As a general rule, it is best to avoid assignment on a calendar spread or any other short option position, for that matter.
+
+An alternative to being assigned is to offset a short option in the marketplace.
+
+When the near-term month expires, a long calendar spread will continue to have limited risk because a long option will remain.
+
+However, in a short calendar spread, when the near-term option expires, you will be holding an uncovered short option, which means unlimited risk and a margin requirement.
+
+As a result, you need to make a decision regarding your position after the near-term option expires to make sure that your position continues to meet your risk-reward parameters.
+
+For a stock, a near-term option often has a higher value relative to a longer-term option, based on the number of days to expiration, and this pricing discrepancy can be inflated, for example, when a company is ready to release an earnings report (or approaches another significant event).
+
+At first glance, if you believe that volatility will increase after an earnings report, you may be tempted to buy a naked call or put (or establish a long straddle or strangle), but you need to be careful because option prices may already anticipate the volatility
+
+In this circumstance, even if you are right about an increase in volatility of the stock, you can lose money because the implied volatility of the near-term option can decline after the earnings release.
+
+If near-term implied volatility on an option is inflated relative to implied volatility on a longer-term option at the same strike price, you may want to consider exploiting this discrepancy using a long calendar spread because it can enable you to take advantage of disproportionate volatility contraction in the near-term option
+
+If volatility contracts after the release of earnings, for example, the near-term option value will likely decline by a greater amount than the longer-term option, generating a profit in the calendar spread
+
+A short calendar spread typically has an initial margin requirement for the short option leg
+
+Full payment is required if the spread is a long calendar spread
+
+In a long calendar spread, like a long butterfly or condor, you are trying to predict where the underlying stock will land at a future point in time (the near-term expiration date)
+
+In a short calendar spread, like a short butterfly or condor, you are trying to predict where the underlying stock will not land at a future point in time.
+
+When executing a long calendar spread, you sell the near-term option and buy the later-term option at a greater price. If things go according to plan, the longer-term option will decline in value because time will lapse, which is counter to what you typically want when you purchase an option
+
+However, the calendar spread is expected to be profitable because the short near-term option is expected to decline by more than the longer-term option. Therefore, you are attempting to profit from a decline in a long option simply because the short option will decline by even more
+
+The net decline results in an expansion of the spread
+
+A debit spread is initially created by purchasing one option at a price greater than an option that is sold
+
+After an option position is established, the debit is the difference between the long option value and the short option value, and it does not matter if the differential is created by an increase in the long option value, a decrease in the short option value, or a decrease in both options at a different rate
+
+As a general rule, you may want to execute a long calendar spread on stocks because the rate of time decay on a near-term option often exceeds the rate of time decay on a longer-term option
+
+A near-term option may be abnormally inflated in value, for instance, because of the anticipation of an earnings release
+
+Conversely, the rate of time decay on a near-term option on an index, such as the SPX (and S&P 500 futures), may be less than the rate of time decay on a longer-term option.
+
+This anomaly may be caused, in part, by the existence of the volatility skew, discussed in Chapter 27, and possibly can cause a short calendar spread to be a viable strategy.
+
+An implied volatility increase prior to the release of the earnings report (or other significant event) can create a near-term versus longer-term pricing discrepancy, and you can use a long calendar spread to exploit this discrepancy and take advantage of a volatility contraction in the near-term option.
+
+A calendar spreader should be aware of the effects of a change in volatility.
+
+You can modify practically any spread strategy to a calendar-type spread; for example, you can establish a calendar condor by executing a condor spread utilizing different expiration months or establish an iron condor utilizing different expiration months
+
+

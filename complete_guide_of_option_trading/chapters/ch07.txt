@@ -1,0 +1,115 @@
+A long call involves the purchase of a call option and is a bullish strategy.
+
+An advantage of a long call is that if the stock rises, you have unlimited profit potential with limited risk
+
+A long call typically increases in value from a rise in the underlying stock and volatility expansion and declines in value from a decline in the underlying stock, time decay, and volatility contraction.
+
+summary profile of a long call:
+    Direction: Bullish.
+    Profit potential: Unlimited.
+    Risk: Limited to premium paid.
+    Time decay: Negative (theta).
+    Volatility: Increase is positive (positive theta), decrease is negative.
+    Delta: Positive.
+    Gamma: Positive.
+    Theta (time): Negative.
+    Vega (volatility): Positive.
+    Breakeven: Stock at strike price plus premium paid.
+    Margin: None; premium paid in full at time of purchase.
+    Exercise and assignment: Can exercise if in-the-money.
+    How to exit: Sell in closing transaction, exercise, or let expire worthless.
+    IRA: Permitted.
+    Main advantages: Unlimited profit potential; risk is limited; requires less capital in comparison to long stock.
+    Main disadvantages: Can cost more than you are willing to pay; time decay; can lose entire premium.
+
+If implied volatility (a measurement of the volatility component built into your trading platform model) increases, assuming that all other factors remain constant, a call option will increase in value.
+
+If implied volatility declines, assuming that all other factors remain constant, a call option will decline in value
+
+A change in volatility is a two-edged sword because a spike in volatility helps an existing long option holder but hurts a short option position.
+
+An American-style option can be exercised by the option holder (buyer) at any time up until the expiration date, whereas a European-style option can be exercised only at expiration.
+
+Equity options are American-style expirations.
+
+The fractional (percentage) movement of a long call relative to the movement in a stock price (delta) varies based on the strike price versus the stock price; for example, the deeper in-the-money an option, the more the option moves like the underlying stock and the closer delta is to 1.0.
+
+When an option is at-the-money, its value typically changes at approximately 50 percent relative to the underlying stock.
+
+When an option is far-out-of-the-money, its value may change only a small fraction relative to a change in the underlying stock.
+
+Also, the higher the strike price, the lower the probability that a call option will end up in-the-money at the expiration date
+
+A long deep-in-the-money call option typically has a strike price 10 points or more below the stock price and a delta of 0.75 to 1.0 (75 to 100 percent).
+
+If you believe a stock is ready to increase in value, you can buy a deep-in-the-money call option, which will enable you to pay less than the full value of the stock yet benefit almost dollar for dollar on the rise in the value of the stock.
+
+The attraction of buying a deep-in-the-money call is that it can serve as a proxy for long stock, is straightforward, and can mimic the stock to the extent of intrinsic value.
+
+Buying a deep-in-the-money option removes some of the uncertainty associated with time decay because there is little extrinsic value.
+
+If you can buy a call option as a proxy for stock and are paying a small extrinsic value, it may make sense to purchase a call option in lieu of paying the full price for the stock.
+
+A long slightly-in-the-money call option typically has a strike price five points below the stock price and a delta of 0.60 to 0.75 (60 to 75 percent).
+
+A slightly-in-the-money call option can, in some circumstances, track almost dollar for dollar a rise in a stock’s price and, at the same time, limit risk.
+
+A slightly-in-the-money option can be an attractive strategy because it can provide a reasonably attractive (high) delta with relatively low extrinsic value.
+
+As time approaches the expiration date, especially during the last week of option expiration, some stocks may have little extrinsic value and can be bought relatively cheaply.
+
+Buying such a call option near parity can be an attractive strategy, especially if volatility is expected to increase from an event such as an earnings report.
+
+A long at-the-money call option has a strike price nearest the stock price and a delta of 0.45 to 0.55 (45 to 55 percent).
+
+With an at-the-money call option, there is no intrinsic value, and the option consists entirely of extrinsic value.
+
+A long slightly-out-of-the-money call option typically has a strike price five points above the stock price and a delta of 0.25 to 0.45 (25 to 45 percent).
+
+With a slightly-out-of-the-money call option, there is no intrinsic value, and the option consists entirely of extrinsic value.
+
+A long far-out-of-the-money call option typically has a strike price 10 points or more above the stock price and a delta of zero to 0.25 (0 to 25 percent).
+
+A far-out-of-the-money call option consists entirely of extrinsic value and is the most leveraged strategy.
+
+This can be a low-probability strategy because the further you move away from the price of the underlying stock, the lower the probability will be that the stock or futures will end up in-the-money.
+
+Although it has a low probability of success in many cases, it can be an effective strategy for a stock making a big move to the upside
+
+A trader should consider rolling an in-the-money option if the value of a long call has increased dramatically. Under this strategy, the trader should offset an existing position and reestablish it at a higher strike price, where there is lower intrinsic value and minimal extrinsic value. In this way, the trader has locked in profits for the difference between the original strike price and the newly established strike price
+
+An experienced option trader might exit only part of the position or roll the option position to a different strike price or expiration month as the underlying stock fluctuates, potentially locking in profits along the way
+
+Strike versus Stock Price By analyzing the Greeks included in this chapter, you can develop general rules of thumb to help you determine the characteristics of various options.
+
+On the basis of these examples, patterns emerge when comparing call options with different strike prices:
+    A deep-in-the-money call moves almost dollar for dollar (delta), reaches near 0.50 at-the-money, and approaches zero the further it is out-of-the-money.
+    Theta, vega, and gamma reach their peaks near at-the-money and decline the further the option moves in-the-money or out-of-the-money.
+
+Like theta and vega, extrinsic value is also at its peak when the strike price is at-the-money and declines the further the option moves in-the-money or out-of-the-money.
+
+Patterns emerge when comparing shorter-dated options versus longer-dated options. The shorter-dated February options, regardless of strike price, in these examples have a higher delta, higher gamma, greater time decay (theta), and lower sensitivity to volatility (vega).
+
+An increase in volatility, by itself, has the effect of increasing an option’s price, but the passage of time works in the opposite direction (time only moves in one direction).
+
+Shorter-dated options, in general, are more sensitive to time decay than longer-dated options.
+
+Keep in mind that the closer to expiration the option is, the smaller the premium will be, and the longer to expiration, the higher the premium.
+
+A key ingredient to becoming a successful option trader is to select the best strike price and time frame to match your risk profile and goals.
+
+Selecting the best strike price is somewhat of a trade-off between paying as little as possible but trying to gain as much upside potential as possible.
+
+Your goal should be to choose a strike price and expiration date that provide sufficient profit potential at a reasonable cost. You should review an option chain to see the options available.
+
+ The higher the strike price of a call, the lower the option price, the lower the delta, and the greater the leverage.
+
+ The attraction of buying a deep-in-the-money call option is that it is straightforward and can mimic the stock to the extent of intrinsic value.
+
+ Keep in mind that buying out-of-the-money call options can provide great leverage with which to capture a big move.
+
+  At-the-money and out-of-the-money options seem to attract the attention of option buyers. The problem with out-of-the-money option purchases is that they may not provide you with an edge and can be a low-probability strategy.
+
+
+
+

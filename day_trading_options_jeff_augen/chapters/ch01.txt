@@ -1,0 +1,158 @@
+There are ETFs that short gold, oil, bonds, indexes, and equities in various sectors.
+
+Many are labeled “ultrashort” because they are structured to rise at twice the rate of decline of the underlying instruments.
+
+These investments are available to anyone with a brokerage account or an IRA and, unlike with traditional short positions, no margin is required.
+
+Many investors prefer bear markets because the declines are often much steeper than the increases associated with a traditional bull market. Stated differently, markets can crash down but they rarely crash up.
+
+As always, timing is everything. But the more important lesson is that blindly hanging on with a bullish or bearish view is a flawed strategy.
+
+Every investment has a window of opportunity; unless that window can be identified, leaving the money invested is somewhat like gambling.
+
+That said, the window can be relatively long—sometimes spanning months or years.
+
+Option trading in turbulent times can also be difficult. Implied volatilities rise sharply, making simple long put or call positions unreasonably expensive, and the risks associated with naked short positions are simply too large for any conservative investor.
+
+Structured positions, such as calendar spreads, ratios, and vertical spreads, are difficult to trade because stocks frequently cross several strike prices in a single month—sometimes in both directions.
+
+Investors can avoid all these pitfalls by entering the market at very specific times and structuring trades that capitalize on well-characterized pricing anomalies and distortions.
+
+Option traders can use these distortions to structure positions that are both statistically advantaged and direction neutral. The most popular example being long straddles that have the potential to generate profit from a large price change in either direction.
+
+Investors who structure day trades that take advantage of these changes can generate more profit in one day than most experienced investors realize in an entire month—sometimes an entire year.
+
+Unlike other trading strategies that are linked—sometimes in subtle ways—to a specific set of market conditions, options day trading focuses only on the underlying mathematics. It does not rely on any financial predictions, company results, or market direction.
+
+Trading subtle price distortions in the options market is a complex affair that requires an unusual blend of pricing knowledge and trading skill.
+
+Day trading is a mathematical game distinctly different from stock picking. Its potential gains, however, are enormous—far greater than those of any “long-term” strategy.
+
+That said, short-term trading strategies can also be simple. It is often possible to simply trade the news
+
+As we have just seen, options provide a distinct advantage because they allow the construction of direction-neutral positions.
+
+This dynamic distinctly changes the character of short-term trading.
+
+Option traders can decide that a position is underpriced because it does not adequately represent the risk of an upcoming news event. This view then forms the basis of a structured position that can profit from a large swing in either direction.
+
+Option day traders can also profit from implied volatility swings—a distinct advantage unique to the options world.
+
+Option buyers were predictably hesitant to overpay for contracts that were about to lose a significant amount of value while the market was closed.
+
+The result was persistently falling implied volatility from the open to the close on Thursday, April 9
+
+This efficiency of the market represented a tremendous trading opportunity because it condensed three days of time decay near the end of an expiration cycle into a single trading day.
+
+Day trading the stock would have been very difficult because it would have required precise timing to capitalize on intraday price changes.
+
+Day trading the option was simple; it required nothing more than opening a position in the morning and closing it in the afternoon.
+
+Moreover, the trade generated a steadily growing profit throughout the day as implied volatility collapse followed a straight path with a steep slope of 2.3% per hour
+
+An aggressive investor who understood the phenomenon could have generated more profit in a single day than most skilled traders realize in an entire year with no overnight risk and very limited market exposure
+
+Until recently, day trading options was difficult because bid-ask spreads were large, and contract liquidity was often limited. Those dynamics have changed dramatically
+
+The markets have deployed penny pricing programs that all but eliminate bid-ask spreads, and options volume has soared in recent years
+
+Heavily traded stocks typically have enough options volume to support even the wealthiest private investors creating multimillion-dollar positions
+
+Additionally, improvements in trading platforms have completely leveled the playing field between large institutions and private day traders
+
+An individual sitting at his or her desk at home can experience the same rapid execution and instant price updates as the largest institutional investor on the floor of the exchange.
+
+Contemporary trading platforms also provide access to sophisticated charting tools as well as the level II trading queue. This level of access allows a private investor to view the activities of individual market makers trading on different exchanges, and to take advantage of subtle and fleeting changes in bid-ask spreads
+
+Savvy day traders who watch the level II queue often capitalize on this opportunity to sell options that quickly lose value if the stock reverses direction and corrects slightly downward.
+
+Private investors trading relatively small numbers of contracts also have an advantage because their trades are usually executed using the “best” bid and ask prices
+
+They typically outperform institutional investors who place very large trades that cannot be filled from the top of the queue. The difference affects both pricing and execution
+
+A private investor sitting in front of a computer can open and close small trades consisting of just a few contracts with the simple click of a mouse. His institutional counterpart trading thousands or tens of thousands of contracts does not have that luxury.
+
+The distance between strike prices is also important to option traders.
+
+ Increasing the number of strikes and reducing the spacing makes it easier for option traders to precisely calibrate their position structures. These changes are particularly important to day traders as they attempt to structure positions that profit from relatively small underlying price changes.
+
+Long straddles are an excellent example because they should be initiated only with the stock trading close to a strike price where put and call deltas are equal.
+
+Day traders seeking to launch long straddles must often wait for the right conditions to avoid placing trades with a directional character. Closer strike price spacing helps solve this problem by increasing the probability of a stock trading at a relatively delta-neutral price.
+
+Excessive market turmoil has also changed the dynamics of option pricing in three specific ways:
+    Higher implied volatility across all option contracts
+    Steepened implied volatility skew from low to high strike prices
+    Large implied volatility swings (implied volatility has become more volatile)
+
+The environment of the steeper curve is highly beneficial to option traders because it allows complex positions to be structured across many strikes. It also increases liquidity.
+
+The skew—or “smile,” as it is often called—is a response to a crashing market in which large amounts of money can be lost by investors who sell out-of-the-money puts.
+
+The smile first became steep after the 1987 crash that took the market down 25% in a single day. Since then, implied volatility profiles for equity and index options have taken on a distinctly negative skew—that is, volatility tends to rise as the strike price decreases.
+
+This effect causes out-of-the-money puts to be relatively more expensive than traditional option pricing theory predicts.
+
+Additionally, since put-call parity dictates that the relationship between strike price and implied volatility be the same for both types of contracts, in-the-money calls should also be more expensive.
+
+Far out-of-the-money call prices normally flatten out with implied volatility stabilizing several strike prices above the trading price of the stock. This flattening is what gives rise to a curve with a shape that can be referred to as a smile.
+
+The smile also allows us to create a deep out-of-the-money short position with options that would be illiquid and nearly worthless if priced using the much lower at-the-money implied volatility of 95%.
+
+These dynamics make it difficult to structure a similar trade with call options because the volatility skew disproportionately increases the price of the long strike over the short strike.
+
+Bear market volatility skews generally favor trades that are structured with short components at lower strikes.
+
+Furthermore, because the trade is structured with deep out-of-the-money options that have significant amounts of remaining time premium, it is very likely that outsized downward spikes can be handled through adjustments to the original position. At this level of analysis, the trade appears to be mathematically sound.
+
+The sharp increase in out-of-the-money put prices is likely to be too small to accommodate a sharp downward spike.
+
+Structured trades designed to profit from sharp downward spikes do exceptionally well during times of such instability. Put backspreads are excellent examples
+
+Another popular trade for bearish investors involves buying far out-of-the-money puts and paying for the trade by selling equally far out-of-the-money calls.
+
+The position generates neither profit nor loss as long as the stock remains between the strikes until expiration. However, in the event of a sharp downward spike like that of September 17, the trade can return profits in the hundreds of percent.
+
+In addition to the millions of private investors, large institutions and hedge funds constantly exploit very subtle market changes with algorithmic trading systems that can react almost instantly.
+
+In principle, an algorithmic trading system uses a sequence of steps to test and recognize patterns in real-time market data.
+
+Many of these systems are designed to spot short-lived arbitrages that allow an investor to realize a profit from slight pricing differences between markets. Most of these arbitrages exist for only a few seconds before market efficiencies extinguish them.
+
+To create a reliable technical indicator that can be used to repeatedly generate a profit, you must discover a market inefficiency that is fundamentally the same as an arbitrage. Discovering such an inefficiency in today’s markets using traditional charting techniques is difficult at best. Worse still, if you were to discover an indicator that reliably predicts the direction of a stock’s next move, its use would quickly erase the inefficiency that originally allowed it to work.
+
+Today’s systems allow institutional traders to simultaneously monitor a large number of different algorithmic systems using a graphical display that is somewhat like a dashboard. Rather than selecting individual trades, modern institutional traders spend much of their time working with quantitative analysts to fine-tune algorithmic systems.
+
+As with any automated trading system, the goal is to reduce the time between the receipt of market data and the final trading decision.
+
+By achieving lower latency and higher data rates, the new system can respond to market situations before they can be detected by other institutional investors.
+
+Such systems have created unprecedented levels of market efficiency.
+
+The implication is that the market responds to news so quickly that the complete response tends to be contained in a single minute. This behavior seems to hold true for even the largest price changes.
+
+As we shall see, these dynamics are consistent for individual stocks, indexes, and the broad market.
+
+They are also apparent in data sets that span a broad range of time frames ranging from one minute to several days. The implications of these simple facts are far-reaching, and they weigh heavily against many highly regarded forms of technical analysis
+
+Fortunately, these assertions do not invalidate technical analysis or charting. However, they raise the bar considerably by questioning whether the recent price history of a stock encodes information that can be used to predict its future direction. The discussion must be expanded to include a variety of complex indicators across many different financial markets.
+
+Examples include, but are not limited to, fixed income, foreign exchange, precious metals, agricultural commodities, oil, stock and index futures, volatility options and futures, and dozens of indexes that track metrics for stock exchanges around the world.
+
+Institutional trading systems are sometimes optimized to exploit a specific distortion between markets.
+
+
+A much more realistic approach is to take advantage of occasional pricing inefficiencies that arise in the options market.
+
+These distortions can be related to earnings announcements, expiration week, weekend time decay, intraday implied volatility swings, differences between overnight and intraday volatility, or news and rumors.
+
+Private investors can learn to capitalize on such distortions to generate very large returns with relatively little risk.
+
+They can also leverage the advances that have been achieved in trading platforms to capture as much profit as possible from efficient execution.
+
+Combined with narrow bid-ask spreads and high levels of liquidity, these advances have created unprecedented opportunities for private investors who want to exploit the technical advantages and financial leverage of options while trading in the time frame of a single day.
+
+
+
+
+

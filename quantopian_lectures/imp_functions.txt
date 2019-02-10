@@ -1,0 +1,360 @@
+xs = np.linspace(-6,6, 300)
+normal = stats.norm.pdf(xs)
+
+print 'Skew:', stats.skew(returns)
+
+plt.plot(xs,stats.laplace.pdf(xs), label='Leptokurtic')
+print 'Excess kurtosis of leptokurtic distribution:', (stats.laplace.stats(moments='k'))
+print 'Excess kurtosis of mesokurtic distribution:', (stats.norm.stats(moments='k'))
+plt.plot(xs,stats.cosine.pdf(xs), label='Platykurtic')
+print 'Excess kurtosis of platykurtic distribution:', (stats.cosine.stats(moments='k'))
+
+print "Excess kurtosis of returns: ", stats.kurtosis(returns)
+
+from statsmodels.stats.stattools import jarque_bera
+_, pvalue, _, _ = jarque_bera(X)
+
+lecture_9
+print 'Covariance of X and Y: \n' + str(np.cov(X, Y))
+print 'Correlation of X and Y: \n' + str(np.corrcoef(X, Y))
+cov_matrix = np.cov(X, Y)
+print "LRCX and AAPL: ", np.corrcoef(a1,a2)[0,1]
+print "LRCX and SPY: ", np.corrcoef(a1,bench)[0,1]
+print "AAPL and SPY: ", np.corrcoef(bench,a2)[0,1]
+
+rolling_correlation = pd.rolling_corr(a1, a2, 60)
+np.corrcoef(X, Y)[0, 1]e
+
+lecture_10
+from statsmodels.stats.stattools import jarque_bera
+jarque_bera(X)
+
+mu = pd.rolling_mean(pricing, window=90)
+std = pd.rolling_std(pricing, window=90)
+
+lecture_11
+from statsmodels.stats import stattools
+samples = np.random.binomial(self.numberOfTrials, self.probabilityOfSuccess, numberOfSamples)
+samples = np.random.uniform(self.low, self.high, numberOfSamples)
+x = np.linspace(a, b, 100)
+samples = np.random.normal(self.mean, self.standardDeviation, numberOfSamples)
+Y = pd.Series(np.cumsum(Y_returns), name = 'Y') + Y_initial
+returns = prices.pct_change()[1:]
+_, p_value, skewness, kurtosis = stattools.jarque_bera(returns)
+
+lecture_12
+model = regression.linear_model.OLS(Y, X).fit()
+plt.scatter(X, Y, alpha=0.3)
+seaborn.regplot(r_b.values, r_a.values);
+
+lecture_13
+mu, std = scipy.stats.norm.fit(X)
+
+pdf = scipy.stats.norm.pdf
+
+X = np.random.exponential(TRUE_LAMBDA, 1000)
+_, l = scipy.stats.expon.fit(X, floc=0)
+
+pdf = scipy.stats.expon.pdf
+plt.hist(X, bins=x, normed='true')
+
+absolute_returns = np.diff(prices)
+
+mu, std = scipy.stats.norm.fit(returns)
+
+jarque_bera(returns)
+jarque_bera(np.random.normal(0, 1, 100))
+
+lecture_14
+from statsmodels import regression, stats
+import statsmodels.api as sm
+
+ x = sm.add_constant(X) # Add a row of 1's so that our model has a constant term
+ model = regression.linear_model.OLS(Y, x).fit()
+ 
+np.random.seed(107) # Fix seed for random number generation
+rand = np.random.randn(20)
+xs = np.arange(20)
+
+seaborn.regplot(xs, rand)
+
+regression.linear_model.OLS(pricing, sm.add_constant(xs)).fit().resid)[1]
+
+mlr = regression.linear_model.OLS(asset, sm.add_constant(np.column_stack((b1, b2)))).fit()
+
+sp.stats.pearsonr(b1,b2)[0] # Second return value is p-valuee
+
+lecture_15
+from statsmodels import regression
+
+X = sm.add_constant( np.column_stack( (X1, X2) ) )
+results = regression.linear_model.OLS(Y, X).fit()
+slr = regression.linear_model.OLS(asset1, sm.add_constant(asset2)).fit()
+
+mlr.summary()
+
+tmp = pd.concat([selected, data[element]], axis=1)
+
+lecture_16
+residuals = np.random.poisson(size = 100)
+_, pvalue, _, _ = statsmodels.stats.stattools.jarque_bera(residuals)
+
+slr1 = regression.linear_model.OLS(y1, sm.add_constant(xs)).fit()
+
+_, pvalue1, _, _ = stats.diagnostic.het_breushpagan(residuals1, xs_with_constant)
+_, pvalue2, _, _ = stats.diagnostic.het_breushpagan(residuals2, xs_with_constant)
+
+print slr2.get_robustcov_results().summary()
+
+model = regression.linear_model.OLS(y, sm.add_constant(x)).fit()
+model.summary()
+
+_, prices_qstats, prices_qstat_pvalues = statsmodels.tsa.stattools.acf(y, qstat=True)
+_, prices_qstats, prices_qstat_pvalues = statsmodels.tsa.stattools.acf(y-prediction, qstat=True)
+
+cov_mat = stats.sandwich_covariance.cov_hac(model)
+
+slr = regression.linear_model.OLS(a, sm.add_constant(b1)).fit()
+
+from scipy.stats import pearsonr
+print 'Pearson r:', pearsonr(x1, y1)[0], pearsonr(x2, y2)[0], pearsonr(x3, y3)[0], pearsonr(x4, y4)[0]
+
+lecture_17
+slr12 = regression.linear_model.OLS(a2, sm.add_constant(a1)).fit()
+print "LRCX and AAPL: ", slr12.rsquared
+
+print 'SLR R-squared:', slr.rsquared_adj
+
+pool = np.hstack((sample1, sample2))
+data.dropna(inplace=True)
+
+lecture_18
+breusch_pagan_p = smd.het_breushpagan(model.resid, model.model.exog)[1]
+
+Y_heteroscedastic_diff = np.diff(Y_heteroscedastic)
+breusch_pagan_p = smd.het_breushpagan(residuals, model.model.exog)[1]
+
+Y_heteroscedastic_box_cox = stats.boxcox(Yiu c 5heteroscedastic)[0]
+
+ljung_box = smd.acorr_ljungbox(residuals, lags = 10)
+
+lecture_19
+from scipy import poly1d
+lin = np.polyfit(x, y, 1)
+plt.plot(xs, poly1d(lin)(xs))
+
+mu_30d = pricing.rolling(window=30).mean()
+mu_60d = pricing.rolling(window=60).mean()
+
+lecture_20
+norm_pdf = lambda x: (1/np.sqrt(2 * np.pi)) * np.exp(-x * x / 2)
+
+ax.fill_between(x, 0, y, where = x > 1.96)
+ax.fill_between(x, 0, y, where = x < -1.96)
+
+from scipy.stats import t
+p_val = 2 * (1 - t.cdf(test_statistic, n - 1))
+
+from scipy.stats import chi2
+y_1 = chi2.pdf(x, 1)
+y_2 = chi2.pdf(x, 2)
+
+
+crit_value = chi2.ppf(0.99, len(returns_sample) - 1)
+
+from scipy.stats import f
+upper_crit_value = f.ppf(0.975, df1, df2)
+lower_crit_value = f.ppf(0.025, df1, df2)
+
+lecture_21
+import seaborn as sns
+heights = np.random.normal(POPULATION_MU, POPULATION_SIGMA, sample_size)
+
+stats.sem(heights, ddof=0)
+y = stats.norm.pdf(x,0,1)
+plt.fill_between(fill_x, fill_y)
+se = stats.sem(samples[i])  # calculate sample standard error
+h = se*stats.t.ppf((1+0.95)/2, len(samples[i])-1) # calculate t; 2nd param is d.o.f. 
+plt.axvline(x=0, ymin=0, ymax=1, linestyle='--', label = 'Population Mean');
+
+t_val = stats.t.ppf((1+0.95)/2, 9)  # d.o.f. = 10 - 1
+
+print stats.norm.interval(0.95, loc=mean_height, scale=SE)
+
+lecture_22
+import scipy.stats as stats
+r_s = stats.spearmanr(Y, X)
+
+plt.hist(pvalues)
+
+lecture_23
+print 'Ranking: ', list(stats.rankdata(l, method='average'))
+
+X = np.random.poisson(size=n)
+Xrank = stats.rankdata(X, method='average')
+c_c = np.corrcoef(X, Y)[0,1]
+
+spearman_dist = np.ndarray(experiments)
+
+Xrank = stats.rankdata(X, method='average')
+r_s = stats.spearmanr(X, Y)
+
+lecture_24
+from __future__ import division
+
+lecture_25
+results[i] = np.random.binomial(n = 1, p=0.51)
+R_1 = np.random.normal(1.01, 0.03, 100)
+A_1 = np.cumprod(R_1)
+
+cov_matrix[i][j] = np.random.uniform(-1, 1)
+
+lecture_26
+from sklearn import covariance
+
+in_sample_lw = covariance.ledoit_wolf(returns)[0]
+
+out_sample_lw = covariance.ledoit_wolf(oos_returns)[0]
+
+lw_errors = sum(abs(np.subtract(in_sample_lw, out_sample_lw)))
+
+sns.boxplot(
+    data = pd.DataFrame({
+        'Sample Covariance Error': sample_errors,
+        'Ledoit-Wolf Error': lw_errors
+    })
+)
+
+lecture_36
+from numpy import linalg as LA
+
+imgplot = plt.imshow(X, cmap='gray')
+
+C = np.cov(X)
+np.linalg.matrix_rank(C)
+
+P, L = LA.eigh(C)
+
+np.allclose(L.dot(np.diag(P)).dot(L.T), C)
+
+plt.semilogy(P, '-o')
+
+V = L.T.dot(X)
+
+from sklearn.decomposition import PCA
+
+pca = PCA(n_components=num_pc) # number of principal components
+pca.fit(X)
+
+percentage =  pca.explained_variance_ratio_
+
+pca_components = pca.components_
+
+plt.subplots_adjust(bottom = 0.1)
+
+lecture_42
+from scipy.stats import norm
+
+portfolio_returns = returns.iloc[-lookback_days:].dot(weights)
+return np.percentile(portfolio_returns, 100 * (1-alpha)) * value_invested
+
+(mu - portfolio_std * norm.ppf(0.95)) * value_invested
+
+y = norm.pdf(x, loc=mu, scale=portfolio_std)
+plt.axvline(value_at_risk_N(mu = 0.01, sigma = portfolio_std, alpha=0.95), color='red', linestyle='solid');
+
+_, pvalue, _, _ = jarque_bera(portfolio_returns)
+
+from statsmodels.tsa.stattools import adfuller
+results = adfuller(portfolio_returns)
+
+return value_invested * np.nanmean(portfolio_returns[portfolio_returns < var_pct_loss])
+
+lecture_43
+from statsmodels.tsa.stattools import coint, adfuller
+
+plt.hlines(m, 0, len(B), linestyles='dashed', colors='r')
+
+pvalue = adfuller(X)[1]
+
+A1 = np.cumsum(A)
+
+X1 = X.diff()[1:]
+
+X1 = sm.add_constant(X1)
+results = sm.OLS(X2, X1).fit()
+
+from statsmodels.tsa.stattools import coint
+coint(X1, X2)
+
+lecture_47
+import statsmodels.api as sm
+import statsmodels.tsa as tsa
+
+A[1, k] = 1 - stats.norm.cdf(k + 1) # Compare to Gaussian distribution
+
+from statsmodels.tsa.stattools import acf, pacf
+X_acf = acf(X, nlags=nlags)
+X_pacf = pacf(X, nlags=nlags)
+
+X_acf, X_acf_confs = acf(X, nlags=nlags, alpha=0.05)
+X_pacf, X_pacf_confs = pacf(X, nlags=nlags, alpha=0.05)
+
+model = tsa.api.AR(X)
+model = model.fit()
+
+model = tsa.api.AR(X)
+model = model.fit(maxlag=(i+1))
+AIC[i] = model.aic
+
+model_min = np.argmin(AIC)
+
+from statsmodels.stats.stattools import jarque_bera
+score, pvalue, _, _ = jarque_bera(model.resid)
+
+lecture_48
+import cvxopt
+from functools import partial
+
+A[1, k] = 1 - stats.norm.cdf(k + 1)
+plt.hist(X, bins=50)
+
+both = np.matrix([X, X2])
+plt.axhline(X2.std(), color='yellow', linestyle='--')
+
+model = sm.OLS(Y2, X2)
+F = np.asscalar(theta * np.linalg.inv(omega) * theta.T)
+
+chi2dist = scipy.stats.chi2(p)
+pvalue = 1-chi2dist.cdf(F)
+
+print theta/np.diag(omega)
+
+objective = partial(negative_log_likelihood, X)
+
+result = scipy.optimize.minimize(objective, (1, 0.5, 0.5),
+                        method='SLSQP',
+                        constraints = cons)
+                        
+objective = partial(gmm_objective, X, W)
+W = np.linalg.inv(gmm_variance(X, theta_gmm_estimate))e
+
+lecture_49
+from pykalman import KalmanFilter
+from scipy import poly1d
+
+kf = KalmanFilter(n_dim_obs=1, n_dim_state=2, # position is 1-dimensional, (x,v) is 2-dimensional
+
+state_means, state_covs = kf.filter(sim)
+
+smoothed_state_means, _ = kf.smooth(sim)
+
+cb = plt.colorbar(sc)
+
+cb.ax.set_yticklabels([str(p.date()) for p in x[::len(x)//9].index])
+obs_mat = np.expand_dims(np.vstack([[x], [np.ones(len(x))]]).T, axis=1)
+
+state_means, state_covs = kf.filter(y.values)
+
+plt.plot(xi, poly1d(np.polyfit(x, y, 1))(xi), '0.4')
+plt.axis([125, 210, 150, 410])

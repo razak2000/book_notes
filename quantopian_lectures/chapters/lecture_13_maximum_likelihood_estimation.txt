@@ -1,0 +1,63 @@
+Now let's try our functions out on our sample data and see how they compare to the built-in np.mean and np.std
+
+Now let's estimate both parameters at once with scipy's built in fit() function.
+
+mu, std = scipy.stats.norm.fit(X)
+print "mu estimate: " + str(mu)
+print "std estimate: " + str(std)
+
+Now let's plot the distribution PDF along with the data to see how well it fits. We can do that by accessing the pdf provided in scipy.stats.norm.pdf.
+
+pdf = scipy.stats.norm.pdf
+# We would like to plot our data along an x-axis ranging from 0-80 with 80 intervals
+# (increments of 1)
+x = np.linspace(0, 80, 80)
+plt.hist(X, bins=x, normed='true')
+plt.plot(pdf(x, loc=mu, scale=std))
+plt.xlabel('Value')
+plt.ylabel('Observed Frequency')
+plt.legend(['Fitted Distribution PDF', 'Observed Data', ]);
+
+TRUE_LAMBDA = 5
+X = np.random.exponential(TRUE_LAMBDA, 1000)
+
+`numpy` defines the exponential distribution as
+$$\frac{1}{\lambda}e^{-\frac{x}{\lambda}}$$
+So we need to invert the MLE from the lecture notes. There it is
+$$\hat\lambda = \frac{T}{\sum_{t=1}^{T} x_t}$$
+Here it's just the reciprocal, so
+$$\hat\lambda = \frac{\sum_{t=1}^{T} x_t}{T}$$
+
+# The scipy version of the exponential distribution has a location parameter
+# that can skew the distribution. We ignore this by fixing the location
+# parameter to 0 with floc=0
+_, l = scipy.stats.expon.fit(X, floc=0)
+
+pdf = scipy.stats.expon.pdf
+x = range(0, 80)
+plt.hist(X, bins=x, normed='true')
+plt.plot(pdf(x, scale=l))
+plt.xlabel('Value')
+plt.ylabel('Observed Frequency')
+plt.legend(['Fitted Distribution PDF', 'Observed Data', ]);
+
+prices = get_pricing('TSLA', fields='price', start_date='2014-01-01', end_date='2015-01-01')
+# This will give us the number of dollars returned each day
+absolute_returns = np.diff(prices)
+# This will give us the percentage return over the last day's value
+# the [:-1] notation gives us all but the last item in the array
+# We do this because there are no returns on the final price in the array.
+returns = absolute_returns/prices[:-1]
+
+mu, std = scipy.stats.norm.fit(returns)
+pdf = scipy.stats.norm.pdf
+x = np.linspace(-1,1, num=100)
+h = plt.hist(returns, bins=x, normed='true')
+l = plt.plot(x, pdf(x, loc=mu, scale=std))
+
+Of course, this fit is meaningless unless we've tested that they obey a normal distribution first. We can test this using the Jarque-Bera normality test. The Jarque-Bera test will reject the hypothesis of a normal distribution if the p-value is under a c.
+
+from statsmodels.stats.stattools import jarque_bera
+jarque_bera(returns)
+
+jarque_bera(np.random.normal(0, 1, 100))
